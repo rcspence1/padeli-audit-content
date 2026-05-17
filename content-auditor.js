@@ -917,6 +917,117 @@ function analyseExpertSeo(wp, contentType) {
     });
   }
 
+  // ──────────────────────────────────────────────────────────────────────
+  // AI Search Readiness Checks (E29-E34)
+  // Source: Google's AI Optimization Guide
+  // developers.google.com/search/docs/fundamentals/ai-optimization-guide
+  // ──────────────────────────────────────────────────────────────────────
+
+  // E29: First-hand experience markers — AI Overviews favour content with
+  // distinctive perspective over summarising existing sources.
+  {
+    const firstHandPatterns = [
+      /\bin (our|my) (experience|test|view|opinion)\b/i,
+      /\bwe (tested|visited|measured|observed|reviewed|tracked|verified)\b/i,
+      /\bI (visited|tested|tried|measured|observed|reviewed|spoke with|interviewed)\b/i,
+      /\bour data shows\b/i,
+      /\baccording to (our|padeli's) (data|tracking|verification)\b/i,
+      /\bverified (on|by) [A-Z][a-z]+\s+\d/i,  // "verified on Apr 15" etc.
+      /\bper (the venue's|Playtomic|Google Business Profile)\b/i,
+    ];
+    const matches = firstHandPatterns.reduce((sum, re) => sum + (plainText.match(re) ? 1 : 0), 0);
+    checks.push({
+      id: 'E29', domain: 'expert_seo', severity: matches === 0 ? 'warning' : 'info',
+      pass: matches >= 1,
+      message: `First-hand experience markers: ${matches} pattern(s) found — AI Overviews favour distinctive perspective over generic summary`,
+    });
+  }
+
+  // E30: Anti-commodity template detection — generic "N Tips / N Best"
+  // listicle titles WITHOUT compensating unique data fail this check.
+  {
+    const title = (wp.title?.rendered || wp.title?.raw || '').replace(/<[^>]*>/g, '');
+    const isListicle = /^(\d+|[A-Z][a-z]+)\s+(Tips|Best|Reasons|Ways|Things|Steps|Tricks|Hacks)\b/i.test(title)
+      || /\b(ultimate|complete|definitive)\s+guide\b/i.test(title);
+    if (isListicle) {
+      // Listicles need extra unique-data density to escape commodity classification
+      const pricePoints = (plainText.match(/[£$€]\s*\d+/g) || []).length;
+      const percentages = (plainText.match(/\d+(\.\d+)?%/g) || []).length;
+      const specificMetrics = (plainText.match(/\d+\s*(court|club|venue|player|member|rating|review|star)/gi) || []).length;
+      const dataDensity = pricePoints + percentages + specificMetrics;
+      checks.push({
+        id: 'E30', domain: 'expert_seo', severity: dataDensity < 5 ? 'warning' : 'info',
+        pass: dataDensity >= 5,
+        message: `Listicle/guide title detected: needs ≥5 unique data points to avoid commodity classification (found ${dataDensity})`,
+      });
+    }
+  }
+
+  // E31: Author byline + Person schema — E-E-A-T signal for AI eligibility.
+  {
+    const schema = wp.yoast_head_json?.schema?.['@graph'] || [];
+    const hasAuthorSchema = schema.some(node => node['@type'] === 'Person' && node.name);
+    const bylineInBody = /\bby\s+[A-Z][a-z]+\s+[A-Z][a-z]+\b/.test(plainText.slice(0, 500))
+      || /\bauthor:?\s+[A-Z][a-z]+\b/i.test(plainText.slice(0, 500));
+    const hasAnyAuthorSignal = hasAuthorSchema || bylineInBody;
+    checks.push({
+      id: 'E31', domain: 'expert_seo', severity: !hasAnyAuthorSignal ? 'warning' : 'info',
+      pass: hasAnyAuthorSignal,
+      message: `Author byline / Person schema: ${hasAuthorSchema ? 'schema ✓' : 'no Person schema'} ${bylineInBody ? '· byline ✓' : '· no byline in first 500 chars'} — E-E-A-T signal for AI Search`,
+    });
+  }
+
+  // E32: Snippet eligibility — nosnippet / max-snippet:0 block AI surfaces.
+  {
+    const robotsMeta = wp.yoast_head_json?.robots || {};
+    const robotsString = JSON.stringify(robotsMeta).toLowerCase();
+    const hasNoSnippet = robotsString.includes('nosnippet')
+      || /max-snippet:\s*0(?!\d)/.test(robotsString);
+    const hasDataNoSnippet = /data-nosnippet/i.test(rawContent);
+    const blocked = hasNoSnippet || hasDataNoSnippet;
+    checks.push({
+      id: 'E32', domain: 'expert_seo', severity: blocked ? 'error' : 'info',
+      pass: !blocked,
+      message: blocked
+        ? `Snippet eligibility BLOCKED: ${hasNoSnippet ? 'robots nosnippet/max-snippet:0' : ''}${hasDataNoSnippet ? ' data-nosnippet attribute in body' : ''} — AI Overviews will not cite this page`
+        : 'Snippet eligibility: no nosnippet directives — AI-eligible',
+    });
+  }
+
+  // E33: Multimedia richness — AI surfaces favour pages with images & video.
+  {
+    const imageCount = (rawContent.match(/<img[^>]*>/gi) || []).length;
+    const hasVideo = /<video|youtube\.com\/embed|youtu\.be\//.test(rawContent);
+    const wordCount = countWords(plainText);
+    const expectedImages = Math.max(3, Math.floor(wordCount / 400));
+    const richEnough = imageCount >= expectedImages;
+    checks.push({
+      id: 'E33', domain: 'expert_seo', severity: richEnough ? 'info' : 'warning',
+      pass: richEnough,
+      message: `Multimedia richness: ${imageCount} image${imageCount === 1 ? '' : 's'}${hasVideo ? ' + video embed' : ''} for ${wordCount} words (target ≥${expectedImages})`,
+    });
+  }
+
+  // E34: Entity clarity in schema — focus entity appears in schema 'name'
+  // OR 'about' AND in H1, meta title.
+  {
+    const focusKw = wp.yoast_head_json?.['og:title']
+      || wp.title?.rendered
+      || '';
+    const focusEntity = String(focusKw).replace(/<[^>]*>/g, '').split(/[—-]/)[0].trim().toLowerCase();
+    const schema = wp.yoast_head_json?.schema?.['@graph'] || [];
+    const schemaMentionsEntity = schema.some(node => {
+      const nameField = (node.name || '').toLowerCase();
+      const aboutField = JSON.stringify(node.about || '').toLowerCase();
+      return focusEntity.length > 3 && (nameField.includes(focusEntity) || aboutField.includes(focusEntity));
+    });
+    checks.push({
+      id: 'E34', domain: 'expert_seo', severity: schemaMentionsEntity ? 'info' : 'warning',
+      pass: schemaMentionsEntity,
+      message: `Entity clarity: focus entity "${focusEntity.slice(0, 40)}" ${schemaMentionsEntity ? 'present in' : 'missing from'} schema name/about — AI relies on schema for entity grounding`,
+    });
+  }
+
   const passed = checks.filter(c => c.pass).length;
   const score = checks.length > 0 ? Math.round((passed / checks.length) * 100) : 0;
 

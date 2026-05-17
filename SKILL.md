@@ -238,7 +238,7 @@ Pulls `yoast_head_json` and `_yoast_wpseo_*` meta from WP REST API.
 | Y11 | Schema graph completeness (WebPage, Org, Breadcrumb) | Warning |
 | Y12 | Twitter card type | Info |
 
-### Layer 3: Expert SEO Checks (28 checks)
+### Layer 3: Expert SEO Checks (34 checks)
 
 Informed by Ahrefs (on-page SEO, AEO course, content audit framework), Nathan Gotch (ranking factors, content optimisation, SEO 2.0), Yoast (agentic AI discoverability, 2026), and padeli content strategy.
 
@@ -272,6 +272,18 @@ Informed by Ahrefs (on-page SEO, AEO course, content audit framework), Nathan Go
 | E26 | Published/updated date signals (schema + visible) | Yoast/AEO | Info |
 | E27 | Step-by-step format for how-to content | Yoast/AEO | Info |
 | E28 | Citation-worthy unique data points | Yoast/AEO | Warning/Info |
+| E29 | First-hand experience markers (distinctive perspective) | Google AI Guide | Warning/Info |
+| E30 | Anti-commodity template detection (listicle/guide titles need data density) | Google AI Guide | Warning/Info |
+| E31 | Author byline + Person schema (E-E-A-T) | Google AI Guide | Warning/Info |
+| E32 | Snippet eligibility (no nosnippet / max-snippet:0 / data-nosnippet) | Google AI Guide | **Error** |
+| E33 | Multimedia richness (≥1 image per 400 words) | Google AI Guide | Warning/Info |
+| E34 | Entity clarity in schema (focus entity in `name` or `about`) | Google AI Guide | Warning/Info |
+
+**E29–E34 added 2026-05-17** — direct implementation of Google's
+[AI Optimization Guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide).
+These determine eligibility for AI Overviews and AI Mode answers, not just
+classic Search rankings. E32 (snippet eligibility) is **error-grade** because
+a page that blocks snippets cannot appear in AI surfaces at all.
 
 ### Layer 4: Live Page Checks (10 checks)
 
