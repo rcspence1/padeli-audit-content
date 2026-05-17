@@ -19,7 +19,9 @@
 const { readFileSync, writeFileSync, existsSync } = require('node:fs');
 const { join } = require('node:path');
 
-const DATA_DIR = join(__dirname, '..', 'data');
+// In the audit-content satellite, lib files + data/ both live at repo root
+// (flat structure). DATA_DIR points to ./data relative to this file.
+const DATA_DIR = join(__dirname, 'data');
 const NOTION_BASE = 'https://api.notion.com/v1';
 const NOTION_VERSION = '2022-06-28';
 const SYSTEMS_PAGE_ID = '346d1b51-fb30-8096-9126-e397b0c4ca91';
@@ -865,6 +867,13 @@ async function afterAuditPipeline(auditType, results, opts = {}) {
     } catch (err) {
       console.log(`  [notion-sync] Audit row update failed (non-blocking): ${err.message}`);
     }
+
+    // 1b. Per-finding sync to Audit Findings database (non-blocking)
+    try {
+      await syncFindingsToAuditDb(result, auditType);
+    } catch (err) {
+      console.log(`  [notion-sync] Audit Findings sync failed (non-blocking): ${err.message}`);
+    }
   }
 
   // 2. Log the audit run
@@ -974,6 +983,223 @@ async function syncAuditToBlogTracker(result) {
     body: JSON.stringify({ properties: props }),
   });
   console.log(`  [notion-sync] Blog Tracker audit updated: WP ID ${wpId}, score ${result.score}`);
+}
+
+// ---------------------------------------------------------------------------
+// 7b. syncFindingsToAuditDb — per-finding audit log
+// ---------------------------------------------------------------------------
+
+const DOMAIN_LABEL = {
+  qc: 'QC',
+  yoast_seo: 'Yoast SEO',
+  expert_seo: 'Expert SEO',
+  live: 'Live Page',
+  link_validation: 'Link Validation',
+  links: 'Link Validation',
+  gsc: 'GSC Performance',
+  ga: 'GA Engagement',
+};
+
+const SEVERITY_LABEL = {
+  error: 'Error',
+  warning: 'Warning',
+  info: 'Info',
+};
+
+/**
+ * Extract a flat list of findings from an audit result object.
+ * Pulls from result.errors / result.warnings / result.yoast.checks /
+ * result.expert.checks / result.live.checks / result.links.checks /
+ * result.gsc.signals / result.ga.signals.
+ *
+ * @returns {Array<{checkId, severity, domain, message}>}
+ */
+function extractAuditFindings(result) {
+  const out = [];
+
+  for (const msg of result.errors || []) {
+    const m = String(msg).match(/^\[([A-Z]+\d+[a-z]?)\]\s*(.*)/);
+    out.push({
+      checkId: m ? m[1] : 'ERR',
+      severity: 'Error',
+      domain: 'QC',
+      message: m ? m[2] : msg,
+    });
+  }
+
+  for (const msg of result.warnings || []) {
+    const m = String(msg).match(/^\[([A-Z]+\d+[a-z]?)\]\s*(.*)/);
+    out.push({
+      checkId: m ? m[1] : 'WARN',
+      severity: 'Warning',
+      domain: 'QC',
+      message: m ? m[2] : msg,
+    });
+  }
+
+  const layerSources = [
+    [result.yoast?.checks, 'yoast_seo'],
+    [result.expert?.checks, 'expert_seo'],
+    [result.live?.checks, 'live'],
+    [result.links?.checks, 'link_validation'],
+    [result.gsc?.signals, 'gsc'],
+    [result.ga?.signals, 'ga'],
+  ];
+
+  for (const [checks, domainKey] of layerSources) {
+    if (!Array.isArray(checks)) continue;
+    for (const c of checks) {
+      if (c.pass === true) continue;
+      out.push({
+        checkId: c.id || 'CHK',
+        severity: SEVERITY_LABEL[c.severity] || 'Info',
+        domain: DOMAIN_LABEL[domainKey] || 'QC',
+        message: c.message || '',
+      });
+    }
+  }
+
+  return out;
+}
+
+let _auditFindingsDbId = null;
+function getAuditFindingsDbId() {
+  if (_auditFindingsDbId) return _auditFindingsDbId;
+  const dbFile = join(DATA_DIR, 'audit-findings-db.json');
+  if (!existsSync(dbFile)) return null;
+  try {
+    _auditFindingsDbId = JSON.parse(readFileSync(dbFile, 'utf-8')).database_id;
+    return _auditFindingsDbId;
+  } catch { return null; }
+}
+
+/**
+ * Sync findings for a single audit result into the Audit Findings database.
+ *
+ * Reconciliation logic:
+ *  - For each existing "Open" row on this WP ID:
+ *    - If the same Check ID is in the new findings, update "Found" date.
+ *    - If not present, auto-mark it Status="Fixed", Resolved=today.
+ *  - For each new finding without a matching open row, create a fresh row.
+ *
+ * @param {object} result  — audit result object
+ * @param {string} type    — 'listing' or 'post'
+ */
+async function syncFindingsToAuditDb(result, type) {
+  if (!process.env.NOTION_API_KEY) return { skipped: 'no_api_key' };
+  const dbId = getAuditFindingsDbId();
+  if (!dbId) return { skipped: 'no_db_configured' };
+
+  const wpId = result.wp_id || result.id;
+  if (!wpId) return { skipped: 'no_wp_id' };
+
+  const today = new Date().toISOString().slice(0, 10);
+  const venueName = result.name || result.title || `WP #${wpId}`;
+  const findings = extractAuditFindings(result);
+
+  // 1. Get existing Open rows for this WP ID
+  let existing;
+  try {
+    existing = await notionFetch(`/databases/${dbId}/query`, {
+      method: 'POST',
+      body: JSON.stringify({
+        filter: {
+          and: [
+            { property: 'WP ID', number: { equals: Number(wpId) } },
+            { property: 'Status', select: { equals: 'Open' } },
+          ],
+        },
+        page_size: 100,
+      }),
+    });
+  } catch (err) {
+    console.log(`  [notion-sync] Audit Findings query failed (non-blocking): ${err.message}`);
+    return { error: err.message };
+  }
+
+  // 2. Index existing by Check ID
+  const existingByCheckId = {};
+  for (const row of existing.results || []) {
+    const checkIdProp = row.properties['Check ID']?.rich_text?.[0]?.plain_text;
+    if (checkIdProp) existingByCheckId[checkIdProp] = row;
+  }
+
+  // 3. Index new findings by Check ID (collapse duplicates within one audit)
+  const findingsByCheckId = {};
+  for (const f of findings) {
+    if (!findingsByCheckId[f.checkId]) findingsByCheckId[f.checkId] = f;
+  }
+
+  let created = 0;
+  let updated = 0;
+  let resolved = 0;
+
+  // 4. Reconcile existing Open rows
+  for (const [checkId, row] of Object.entries(existingByCheckId)) {
+    if (findingsByCheckId[checkId]) {
+      // Still failing — just update Found date
+      try {
+        await notionFetch(`/pages/${row.id}`, {
+          method: 'PATCH',
+          body: JSON.stringify({
+            properties: { 'Found': { date: { start: today } } },
+          }),
+        });
+        updated++;
+      } catch (err) {
+        console.log(`  [notion-sync] Update finding ${checkId} failed: ${err.message}`);
+      }
+      delete findingsByCheckId[checkId];
+    } else {
+      // No longer failing — auto-resolve
+      try {
+        await notionFetch(`/pages/${row.id}`, {
+          method: 'PATCH',
+          body: JSON.stringify({
+            properties: {
+              'Status': { select: { name: 'Fixed' } },
+              'Resolved': { date: { start: today } },
+            },
+          }),
+        });
+        resolved++;
+      } catch (err) {
+        console.log(`  [notion-sync] Auto-resolve ${checkId} failed: ${err.message}`);
+      }
+    }
+  }
+
+  // 5. Create new rows for remaining findings
+  for (const f of Object.values(findingsByCheckId)) {
+    const props = {
+      'Name': { title: [{ text: { content: `${venueName} — [${f.checkId}] ${f.message.slice(0, 80)}` } }] },
+      'Check ID': { rich_text: [{ text: { content: f.checkId } }] },
+      'Severity': { select: { name: f.severity } },
+      'Domain': { select: { name: f.domain } },
+      'Message': { rich_text: [{ text: { content: f.message.slice(0, 1900) } }] },
+      'Status': { select: { name: 'Open' } },
+      'Type': { select: { name: type === 'post' ? 'Post' : 'Listing' } },
+      'WP ID': { number: Number(wpId) },
+      'Found': { date: { start: today } },
+    };
+    try {
+      await notionFetch('/pages', {
+        method: 'POST',
+        body: JSON.stringify({
+          parent: { database_id: dbId },
+          properties: props,
+        }),
+      });
+      created++;
+    } catch (err) {
+      console.log(`  [notion-sync] Create finding ${f.checkId} failed: ${err.message}`);
+    }
+  }
+
+  if (created || updated || resolved) {
+    console.log(`  [notion-sync] Audit Findings WP#${wpId}: ${created} new, ${updated} still-open, ${resolved} auto-resolved`);
+  }
+  return { created, updated, resolved };
 }
 
 // ---------------------------------------------------------------------------
@@ -1430,4 +1656,6 @@ module.exports = {
   afterTournamentPipeline,
   registerSkillSOP,
   updateSkillRoadmap,
+  syncFindingsToAuditDb,
+  extractAuditFindings,
 };
