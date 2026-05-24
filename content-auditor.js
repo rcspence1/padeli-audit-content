@@ -636,13 +636,19 @@ function analyseExpertSeo(wp, contentType) {
   // ── Internal & External Links (Ahrefs: "link equity distribution") ──
 
   // E08: Internal links count
+  // Calibration (2026-05-19): drafts cannot link to other drafts — they have no
+  // published peers. Downgrade severity to 'info' for draft listings so the
+  // check doesn't count against the publish-readiness bar.
   const internalLinks = (rawContent.match(/href="https?:\/\/(www\.)?padeli\.com/gi) || []).length
     + (rawContent.match(/href="\//g) || []).length;
   const internalTarget = contentType === 'listing' ? 2 : 5;
+  const isDraftListing = contentType === 'listing' && wp.status === 'draft';
+  const e08Pass = internalLinks >= internalTarget;
   checks.push({
-    id: 'E08', domain: 'expert_seo', severity: internalLinks < internalTarget ? 'warning' : 'info',
-    pass: internalLinks >= internalTarget,
-    message: `Internal links: ${internalLinks} (target ${internalTarget}+)`,
+    id: 'E08', domain: 'expert_seo',
+    severity: e08Pass ? 'info' : (isDraftListing ? 'info' : 'warning'),
+    pass: e08Pass,
+    message: `Internal links: ${internalLinks} (target ${internalTarget}+${isDraftListing ? ', deferred until publish' : ''})`,
   });
 
   // E09: External authority links (Gotch: "outbound links to authoritative sources signal trust")
@@ -657,12 +663,26 @@ function analyseExpertSeo(wp, contentType) {
   // ── Images & Alt Text (Ahrefs: "image SEO") ──
 
   // E10: Images present
+  // Calibration (2026-05-19): padeli listings use hero (featured_media) +
+  // gallery (_gallery), not inline <img> tags in body content. For listings,
+  // count hero + gallery as the image source instead of body <img>.
   const imgTags = rawContent.match(/<img\s/gi) || [];
   const imgTarget = contentType === 'listing' ? 1 : 3;
+  let e10Pass, e10Message;
+  if (contentType === 'listing') {
+    const hasHero = !!wp.featured_media && wp.featured_media !== 0;
+    const galleryObj = wp.meta?._gallery;
+    const galleryCount = galleryObj && typeof galleryObj === 'object' ? Object.keys(galleryObj).length : 0;
+    const totalImages = (hasHero ? 1 : 0) + galleryCount;
+    e10Pass = totalImages >= 1;
+    e10Message = `Listing images: hero ${hasHero ? '✓' : '✗'} + gallery ${galleryCount} = ${totalImages} (target 1+)`;
+  } else {
+    e10Pass = imgTags.length >= imgTarget;
+    e10Message = `Images in content: ${imgTags.length} (target ${imgTarget}+)`;
+  }
   checks.push({
-    id: 'E10', domain: 'expert_seo', severity: imgTags.length < imgTarget ? 'warning' : 'info',
-    pass: imgTags.length >= imgTarget,
-    message: `Images in content: ${imgTags.length} (target ${imgTarget}+)`,
+    id: 'E10', domain: 'expert_seo', severity: e10Pass ? 'info' : 'warning',
+    pass: e10Pass, message: e10Message,
   });
 
   // E11: Alt text on images — keyword in at least one alt
@@ -995,16 +1015,30 @@ function analyseExpertSeo(wp, contentType) {
   }
 
   // E33: Multimedia richness — AI surfaces favour pages with images & video.
+  // Calibration (2026-05-19): for listings, count hero + gallery instead of
+  // body <img> tags (padeli template uses hero+gallery, not inline images).
   {
-    const imageCount = (rawContent.match(/<img[^>]*>/gi) || []).length;
+    const bodyImageCount = (rawContent.match(/<img[^>]*>/gi) || []).length;
     const hasVideo = /<video|youtube\.com\/embed|youtu\.be\//.test(rawContent);
     const wordCount = countWords(plainText);
-    const expectedImages = Math.max(3, Math.floor(wordCount / 400));
+    let imageCount, expectedImages, sourceLabel;
+    if (contentType === 'listing') {
+      const hasHero = !!wp.featured_media && wp.featured_media !== 0;
+      const galleryObj = wp.meta?._gallery;
+      const galleryCount = galleryObj && typeof galleryObj === 'object' ? Object.keys(galleryObj).length : 0;
+      imageCount = (hasHero ? 1 : 0) + galleryCount;
+      expectedImages = 3;
+      sourceLabel = `hero ${hasHero ? '✓' : '✗'} + gallery ${galleryCount}`;
+    } else {
+      imageCount = bodyImageCount;
+      expectedImages = Math.max(3, Math.floor(wordCount / 400));
+      sourceLabel = `${imageCount} body image${imageCount === 1 ? '' : 's'}`;
+    }
     const richEnough = imageCount >= expectedImages;
     checks.push({
       id: 'E33', domain: 'expert_seo', severity: richEnough ? 'info' : 'warning',
       pass: richEnough,
-      message: `Multimedia richness: ${imageCount} image${imageCount === 1 ? '' : 's'}${hasVideo ? ' + video embed' : ''} for ${wordCount} words (target ≥${expectedImages})`,
+      message: `Multimedia richness: ${sourceLabel}${hasVideo ? ' + video embed' : ''} = ${imageCount} (target ≥${expectedImages})`,
     });
   }
 

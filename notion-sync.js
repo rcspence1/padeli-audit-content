@@ -944,6 +944,101 @@ async function syncAuditToClubTracker(result) {
 }
 
 /**
+ * Update a Club Tracker row when a listing transitions draft → publish.
+ * Finds by WP Listing ID, patches Status='Published', Padeli Link, Date Published.
+ *
+ * @param {{wpId: number|string, link: string, slug?: string, title?: string}} info
+ */
+async function syncPublishedToClubTracker(info) {
+  if (!process.env.NOTION_API_KEY) return { synced: false, reason: 'no_api_key' };
+  const wpId = info.wpId || info.wp_id || info.id;
+  if (!wpId) return { synced: false, reason: 'no_wp_id' };
+
+  const dbFile = join(DATA_DIR, 'unified-notion-db.json');
+  if (!existsSync(dbFile)) return { synced: false, reason: 'no_db_file' };
+
+  const dbMeta = JSON.parse(readFileSync(dbFile, 'utf-8'));
+  const databaseId = dbMeta.database_id;
+
+  const existing = await notionFetch(`/databases/${databaseId}/query`, {
+    method: 'POST',
+    body: JSON.stringify({
+      filter: { property: 'WP Listing ID', number: { equals: Number(wpId) } },
+      page_size: 1,
+    }),
+  });
+
+  if (!existing.results?.length) {
+    console.log(`  [notion-sync] No Club Tracker row for WP ID ${wpId} — skipping publish update`);
+    return { synced: false, reason: 'no_tracker_row' };
+  }
+
+  const pageId = existing.results[0].id;
+  const props = {
+    Status: { select: { name: 'Published' } },
+    'Date Published': { date: { start: new Date().toISOString().slice(0, 10) } },
+  };
+  if (info.link) props['Padeli Link'] = { url: info.link };
+
+  await notionFetch(`/pages/${pageId}`, {
+    method: 'PATCH',
+    body: JSON.stringify({ properties: props }),
+  });
+  console.log(`  [notion-sync] Club Tracker → Published: WP ID ${wpId}${info.title ? ' (' + info.title + ')' : ''}`);
+  return { synced: true, pageId };
+}
+
+/**
+ * Run Notion syncs after a publish wave (or single publish) completes.
+ * Updates Club Tracker rows + logs the run to Agent History + Operations Board.
+ *
+ * @param {object|object[]} results — single result or array of publish results
+ *        Each: { id, status:'published', title, url, slug, httpOk? }
+ * @param {object} [opts] — { batch: bool, waveLabel: string }
+ */
+async function afterPublishPipeline(results, opts = {}) {
+  console.log('\n--- Notion Sync (Publish) ---');
+  const items = Array.isArray(results) ? results : [results];
+  const successful = items.filter(r => r.status === 'published');
+  let updated = 0;
+
+  for (const r of successful) {
+    try {
+      const res = await syncPublishedToClubTracker({
+        wpId: r.id, link: r.url, slug: r.slug, title: r.title,
+      });
+      if (res.synced) updated++;
+    } catch (err) {
+      console.log(`  [notion-sync] Publish row update failed (non-blocking): ${err.message}`);
+    }
+  }
+
+  const isBatch = opts.batch || successful.length > 1;
+  const waveLabel = opts.waveLabel || 'ad-hoc';
+  const details = [
+    `Wave: ${waveLabel}`,
+    `Published: ${successful.length}/${items.length}`,
+    isBatch ? 'Batch: yes' : `WP ID: ${items[0]?.id}`,
+  ].join(' | ');
+
+  const taskTitle = isBatch
+    ? `Publish wave ${waveLabel} — ${successful.length} listings`
+    : `Publish listing: ${successful[0]?.title || 'unknown'}`;
+
+  try {
+    await logAgentRun('Padeli Audit Content', 'Published', details);
+    await incrementAgentRuns('Padeli Audit Content');
+    await logToOperationsBoard('Padeli Audit Content', taskTitle, 'Completed', details);
+  } catch (err) {
+    console.log(`  [notion-sync] Agent log failed (non-blocking): ${err.message}`);
+  }
+
+  console.log(`  [notion-sync] Publish sync done: ${updated} tracker rows → Published`);
+  console.log('--- Notion Sync Complete ---\n');
+  return { logged: true, updated };
+}
+
+/**
  * Update a Blog Tracker row with audit results.
  * Finds by WP Post ID, patches Audit Score + Last Audited.
  */
@@ -1644,6 +1739,8 @@ module.exports = {
   syncDiscoveredClubsToNotion,
   syncAuditToClubTracker,
   syncAuditToBlogTracker,
+  syncPublishedToClubTracker,
+  afterPublishPipeline,
   logAgentRun,
   incrementAgentRuns,
   resolveAgentPageId,

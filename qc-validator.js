@@ -640,6 +640,23 @@ function validateListing(listing, venueName, options = {}) {
     }
   }
 
+  // Check G70 (2026-05-19): if _place_id is set, lat/lng must also be populated
+  // — Listeo's map widget renders from these fields, not from _place_id. Without
+  // them, the listing has no map.
+  if (meta._place_id && String(meta._place_id).trim()) {
+    const lat = meta._geolocation_lat;
+    const lng = meta._geolocation_long;
+    if (!lat || !String(lat).trim() || !lng || !String(lng).trim()) {
+      errors.push('[G70] _place_id is set but _geolocation_lat/_geolocation_long are empty - Listeo map widget will not render');
+    }
+  }
+
+  // Check G71 (2026-05-19): _booking_link must be populated — drives the
+  // primary "Book a Court" CTA in Listeo. Empty = broken Book button.
+  if (!meta._booking_link || !String(meta._booking_link).trim()) {
+    errors.push('[G71] _booking_link is empty - "Book a Court" button will not work');
+  }
+
   // Check 30: _phone populated with +CC format (WARNING)
   if (meta._phone !== undefined) {
     if (!meta._phone || !String(meta._phone).trim()) {
@@ -745,17 +762,29 @@ function validateListing(listing, venueName, options = {}) {
     }
   }
 
-  // Check 41: 4 booking URL fields never collapsed (WARNING)
+  // Check 41 (2026-05-19 calibrated): flag accidental duplicates between
+  // semantically-distinct fields, NOT the expected overlaps. Listeo's "Book"
+  // modal reads `_booking_link` as the action URL; `_playtomic_url` and
+  // `_direct_booking_url` are source markers that should mirror it when that
+  // is the booking channel. So:
+  //   - `_booking_link === _playtomic_url`  : EXPECTED when Playtomic is the booking method
+  //   - `_booking_link === _direct_booking_url` : EXPECTED when direct site is the booking method
+  //   - `_booking_link === _website` : SUSPICIOUS — website is informational, booking is action
+  //   - `_playtomic_url === _direct_booking_url` : CONTRADICTION — venue is either Playtomic OR direct
+  //   - `_website === _playtomic_url` or `_website === _direct_booking_url` : SUSPICIOUS
   {
-    const bookingFields = ['_booking_link', '_playtomic_url', '_direct_booking_url', '_website'];
-    const bookingValues = bookingFields
-      .map(f => meta[f])
-      .filter(v => v && String(v).trim());
-    if (bookingValues.length >= 2) {
-      const uniqueValues = new Set(bookingValues.map(v => String(v).trim()));
-      if (uniqueValues.size === 1 && bookingValues.length >= 2) {
-        warnings.push(`[M41] Multiple booking URL fields have the same value "${bookingValues[0]}" - they should be distinct CTAs`);
-      }
+    const get = f => meta[f] && String(meta[f]).trim();
+    const link = get('_booking_link');
+    const playtomic = get('_playtomic_url');
+    const direct = get('_direct_booking_url');
+    const website = get('_website');
+    const dupes = [];
+    if (link && website && link === website) dupes.push('_booking_link === _website');
+    if (playtomic && direct && playtomic === direct) dupes.push('_playtomic_url === _direct_booking_url');
+    if (website && playtomic && website === playtomic) dupes.push('_website === _playtomic_url');
+    if (website && direct && website === direct) dupes.push('_website === _direct_booking_url');
+    if (dupes.length > 0) {
+      warnings.push(`[M41] Booking URL fields collide on semantically-distinct fields: ${dupes.join('; ')} — should be distinct CTAs`);
     }
   }
 
@@ -1238,17 +1267,29 @@ function validatePayload(wpPayload, venueName, options = {}) {
     }
   }
 
-  // Check 41: 4 booking URL fields never collapsed (WARNING)
+  // Check 41 (2026-05-19 calibrated): flag accidental duplicates between
+  // semantically-distinct fields, NOT the expected overlaps. Listeo's "Book"
+  // modal reads `_booking_link` as the action URL; `_playtomic_url` and
+  // `_direct_booking_url` are source markers that should mirror it when that
+  // is the booking channel. So:
+  //   - `_booking_link === _playtomic_url`  : EXPECTED when Playtomic is the booking method
+  //   - `_booking_link === _direct_booking_url` : EXPECTED when direct site is the booking method
+  //   - `_booking_link === _website` : SUSPICIOUS — website is informational, booking is action
+  //   - `_playtomic_url === _direct_booking_url` : CONTRADICTION — venue is either Playtomic OR direct
+  //   - `_website === _playtomic_url` or `_website === _direct_booking_url` : SUSPICIOUS
   {
-    const bookingFields = ['_booking_link', '_playtomic_url', '_direct_booking_url', '_website'];
-    const bookingValues = bookingFields
-      .map(f => meta[f])
-      .filter(v => v && String(v).trim());
-    if (bookingValues.length >= 2) {
-      const uniqueValues = new Set(bookingValues.map(v => String(v).trim()));
-      if (uniqueValues.size === 1 && bookingValues.length >= 2) {
-        warnings.push(`[M41] Multiple booking URL fields have the same value "${bookingValues[0]}" - they should be distinct CTAs`);
-      }
+    const get = f => meta[f] && String(meta[f]).trim();
+    const link = get('_booking_link');
+    const playtomic = get('_playtomic_url');
+    const direct = get('_direct_booking_url');
+    const website = get('_website');
+    const dupes = [];
+    if (link && website && link === website) dupes.push('_booking_link === _website');
+    if (playtomic && direct && playtomic === direct) dupes.push('_playtomic_url === _direct_booking_url');
+    if (website && playtomic && website === playtomic) dupes.push('_website === _playtomic_url');
+    if (website && direct && website === direct) dupes.push('_website === _direct_booking_url');
+    if (dupes.length > 0) {
+      warnings.push(`[M41] Booking URL fields collide on semantically-distinct fields: ${dupes.join('; ')} — should be distinct CTAs`);
     }
   }
 
