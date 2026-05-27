@@ -1439,11 +1439,20 @@ function validatePayload(wpPayload, venueName, options = {}) {
     }
 
     // Hero hook checks on meta._coaches_tab_short_description
-    if (heroHook) {
-      const hookResult = checkHeroHook(heroHook);
-      if (!hookResult.valid) {
-        for (const err of hookResult.errors) {
-          errors.push(`[H] Hero hook: ${err}`);
+    // Previously this was `if (heroHook) { ... }` — meaning an empty hero
+    // silently passed the gate and a draft scored >=80 with no description
+    // rendered under the title (the §4 2026-05-27 issue: 9/38 shipped empty).
+    // Now always checks. Mirrors padeli-notion/lib/qc-validator.js [M_HERO].
+    {
+      const heroStr = typeof heroHook === 'string' ? heroHook.trim() : '';
+      if (!heroStr) {
+        errors.push('[M_HERO] meta._coaches_tab_short_description is missing or empty — listing hero will render without a description');
+      } else {
+        const hookResult = checkHeroHook(heroStr);
+        if (!hookResult.valid) {
+          for (const err of hookResult.errors) {
+            errors.push(`[H] Hero hook: ${err}`);
+          }
         }
       }
     }
