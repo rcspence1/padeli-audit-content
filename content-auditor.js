@@ -20,6 +20,7 @@ const { stripHtml, countWords } = require('./utils');
 const { afterAuditPipeline } = require('./notion-sync');
 const { resolveOpeningHours } = require('./opening-hours-resolver');
 const { parseOpeningHours } = require('./wp-payload');
+const { getCourts, tenantIdFromUrl, tenantSlugFromUrl } = require('./playtomic-data');
 
 const SITE_URL = 'https://padeli.com';
 
@@ -153,8 +154,11 @@ function auditListing(wp) {
   const venueName = extractVenueName(wp);
   const city = extractCity(wp);
 
-  // validatePayload expects the raw WP object shape
-  const result = validatePayload(wp, venueName, { city });
+  // validatePayload expects the raw WP object shape. Pass liveMode=true when
+  // auditing an already-published listing so pre-publish checks (S1 status=draft,
+  // S2 _verified=0) don't false-positive, and S4 accepts 4-level GB chains.
+  const liveMode = wp.status === 'publish';
+  const result = validatePayload(wp, venueName, { city, liveMode });
 
   const totalChecks = result.errors.length + result.warnings.length;
   const score = totalChecks > 0
@@ -291,6 +295,26 @@ function auditPost(wp) {
  * @param {string} url - full URL of the page
  * @returns {Promise<object>} { url, checks: [{id, pass, message}], fetchOk }
  */
+// Module-level cache of all URLs present in padeli.com's XML sitemap.
+// Lazily built on first I04 check; ~1-2s fetch, reused across all audits.
+let _sitemapUrlsCache = null;
+async function loadSitemapUrls() {
+  if (_sitemapUrlsCache) return _sitemapUrlsCache;
+  const urls = new Set();
+  async function fetchXml(u) {
+    try { const r = await fetch(u, { headers: { 'User-Agent': 'Mozilla/5.0 (PadeliAuditor)' } }); if (!r.ok) return ''; return await r.text(); } catch { return ''; }
+  }
+  const indexXml = await fetchXml('https://padeli.com/sitemap_index.xml');
+  if (!indexXml) { _sitemapUrlsCache = urls; return urls; }
+  const subSitemaps = [...indexXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]).filter(u => u.endsWith('.xml'));
+  for (const sm of subSitemaps) {
+    const xml = await fetchXml(sm);
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) urls.add(m[1]);
+  }
+  _sitemapUrlsCache = urls;
+  return urls;
+}
+
 async function auditRenderedPage(url) {
   const checks = [];
   let html = '';
@@ -382,7 +406,28 @@ async function auditRenderedPage(url) {
   if (has404Content) checks.push({ id: 'L10', pass: false, severity: 'error', message: 'Page contains 404/Not Found text' });
   if (!has500 && !has404Content) checks.push({ id: 'L10', pass: true, severity: 'info', message: 'No error indicators on page' });
 
-  return { url, checks, fetchOk };
+  // I04 (Tier-2 add 2026-06-01): URL present in XML sitemap.
+  // Crawlers find pages via sitemap; absence = invisible to GSC discovery.
+  try {
+    const sitemapUrls = await loadSitemapUrls();
+    if (sitemapUrls.size === 0) {
+      checks.push({ id: 'I04', pass: true, severity: 'info', message: 'Sitemap check skipped (sitemap fetch failed)' });
+    } else {
+      const inSitemap = sitemapUrls.has(url) || sitemapUrls.has(url.replace(/\/$/, '')) || sitemapUrls.has(url + '/');
+      checks.push({
+        id: 'I04', pass: inSitemap, severity: 'warning',
+        message: inSitemap ? `URL present in XML sitemap (sitemap has ${sitemapUrls.size} URLs)` : `URL NOT in XML sitemap — invisible to Google discovery via sitemap (${sitemapUrls.size} URLs indexed)`,
+      });
+    }
+  } catch (err) {
+    checks.push({ id: 'I04', pass: true, severity: 'info', message: `Sitemap check skipped: ${err.message}` });
+  }
+
+  // Return the raw html alongside the checks so downstream layers (e.g. E08
+  // internal-link count) can include theme-rendered links (Listeo "Other Clubs
+  // Near Me" widget, breadcrumbs) — they only exist in the rendered HTML,
+  // not in wp.content.raw.
+  return { url, checks, fetchOk, html };
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -518,7 +563,7 @@ function analyseYoastSeo(wp) {
  * @param {string} contentType - 'listing' or 'post'
  * @returns {object} { checks: [{id, pass, severity, message, domain}], score }
  */
-function analyseExpertSeo(wp, contentType) {
+function analyseExpertSeo(wp, contentType, opts = {}) {
   const checks = [];
   const meta = wp.meta || {};
   const focusKw = (meta._yoast_wpseo_focuskw || '').toLowerCase();
@@ -639,8 +684,38 @@ function analyseExpertSeo(wp, contentType) {
   // Calibration (2026-05-19): drafts cannot link to other drafts — they have no
   // published peers. Downgrade severity to 'info' for draft listings so the
   // check doesn't count against the publish-readiness bar.
-  const internalLinks = (rawContent.match(/href="https?:\/\/(www\.)?padeli\.com/gi) || []).length
+  //
+  // Update (2026-06-01): when the rendered HTML is available (publish + live
+  // layer ran), count internal links from the RENDERED page instead of just
+  // wp.content.raw. The Listeo "Other Clubs Near Me" widget + breadcrumbs +
+  // sidebar nearby-club links all live in the theme markup, not the post body
+  // — they're real internal links Google sees, but the body-only count was
+  // mis-reporting them as 0 on every listing.
+  const bodyCount = (rawContent.match(/href="https?:\/\/(www\.)?padeli\.com/gi) || []).length
     + (rawContent.match(/href="\//g) || []).length;
+  let internalLinks = bodyCount;
+  let source = 'body';
+  if (opts.renderedHtml) {
+    // Extract anchor hrefs from rendered page; collapse to unique internal URLs
+    // (de-dupe so a widget's 3 cards aren't counted as 3 separate signals
+    // beyond their actual unique destinations).
+    const unique = new Set();
+    const re = /<a\s[^>]*href="([^"]+)"/gi;
+    let m;
+    while ((m = re.exec(opts.renderedHtml)) !== null) {
+      let href = m[1];
+      if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) continue;
+      if (href.startsWith('/')) href = 'https://padeli.com' + href;
+      if (!/^https?:\/\/(www\.)?padeli\.com/.test(href)) continue;
+      // Strip query strings + hash for de-dupe
+      href = href.split('#')[0].split('?')[0];
+      // Skip self-link (the page linking to itself via canonical/breadcrumb is noise)
+      if (wp.link && (href === wp.link || href === wp.link.replace(/\/$/, ''))) continue;
+      unique.add(href);
+    }
+    internalLinks = unique.size;
+    source = 'rendered';
+  }
   const internalTarget = contentType === 'listing' ? 2 : 5;
   const isDraftListing = contentType === 'listing' && wp.status === 'draft';
   const e08Pass = internalLinks >= internalTarget;
@@ -648,7 +723,7 @@ function analyseExpertSeo(wp, contentType) {
     id: 'E08', domain: 'expert_seo',
     severity: e08Pass ? 'info' : (isDraftListing ? 'info' : 'warning'),
     pass: e08Pass,
-    message: `Internal links: ${internalLinks} (target ${internalTarget}+${isDraftListing ? ', deferred until publish' : ''})`,
+    message: `Internal links: ${internalLinks} (target ${internalTarget}+, counted from ${source}${isDraftListing ? ', deferred until publish' : ''})`,
   });
 
   // E09: External authority links (Gotch: "outbound links to authoritative sources signal trust")
@@ -1477,6 +1552,28 @@ function extractBodyUrls(html) {
 }
 
 /**
+ * Extract padeli.com internal links from body HTML (absolute + relative).
+ * Used by I02 (Tier-2 add 2026-06-01) to validate internal links resolve 200
+ * and catch any pointing at the deprecated /listing/{slug}/ URL structure.
+ * @param {string} html
+ * @returns {string[]} unique internal URLs (absolute)
+ */
+function extractInternalBodyUrls(html) {
+  const urls = new Set();
+  const hrefRegex = /<a\s[^>]*href="([^"]+)"[^>]*>/gi;
+  let m;
+  while ((m = hrefRegex.exec(html)) !== null) {
+    let url = m[1];
+    if (url.startsWith('#') || url.startsWith('mailto:') || url.startsWith('tel:')) continue;
+    if (url.startsWith('/')) url = 'https://padeli.com' + url; // resolve relative
+    if (!url.startsWith('http')) continue;
+    if (!/^https?:\/\/(www\.)?padeli\.com/.test(url)) continue;
+    urls.add(url);
+  }
+  return [...urls];
+}
+
+/**
  * Extract meta URLs from listing/post meta fields.
  * @param {object} meta - WP meta object
  * @returns {string[]} unique meta URLs
@@ -1559,13 +1656,51 @@ async function validateLinks(wp, contentType) {
     }
   }
 
-  const total = allUrls.length;
-  const score = total > 0 ? Math.round((passed / total) * 100) : 100;
+  // I02 (Tier-2 add 2026-06-01): internal-link resolution + stale /listing/ check.
+  // - HEAD each internal link; flag 404s and redirects (chains hurt PageRank flow).
+  // - Flag any /listing/{slug}/ links — those are the pre-2026-05-20 flat URL
+  //   structure; live URLs now use /clubs/{cc}/{city}/{slug}/.
+  const internalUrls = extractInternalBodyUrls(rawContent);
+  let intPassed = 0, intFailed = 0, intWarn = 0, intStale = 0;
+  for (const url of internalUrls) {
+    const id = `I02_${String(intPassed + intFailed + intWarn + intStale + 1).padStart(2, '0')}`;
+    // Stale-/listing/ check (no HEAD needed)
+    if (/^https?:\/\/(www\.)?padeli\.com\/listing\//.test(url)) {
+      intStale++;
+      checks.push({ id, domain: 'links', pass: false, severity: 'warning', url,
+        message: `Stale /listing/ URL (should be /clubs/{cc}/{city}/{slug}/) — ${url}` });
+      continue;
+    }
+    const result = await checkUrl(url);
+    if (result.category === 'PASS') {
+      intPassed++;
+      // Note PASS but don't add a check entry for every working internal link (noise).
+    } else if (result.category === 'FAIL') {
+      intFailed++;
+      checks.push({ id, domain: 'links', pass: false, severity: 'error', url,
+        message: `Internal ${result.message} — ${url}` });
+    } else {
+      intWarn++;
+      checks.push({ id, domain: 'links', pass: false, severity: 'warning', url,
+        message: `Internal ${result.message} — ${url}` });
+    }
+    await sleep(150);
+  }
+  if (internalUrls.length > 0 && intFailed === 0 && intWarn === 0 && intStale === 0) {
+    checks.push({ id: 'I02_OK', domain: 'links', pass: true, severity: 'info', url: '',
+      message: `Internal links: ${internalUrls.length} checked, all resolve` });
+  }
+
+  const total = allUrls.length + internalUrls.length;
+  const totalPassed = passed + intPassed;
+  const totalFailed = failed + intFailed + intStale;
+  const totalWarned = warned + intWarn;
+  const score = total > 0 ? Math.round((totalPassed / total) * 100) : 100;
 
   return {
     checks,
     score,
-    summary: { total, passed, failed, warned },
+    summary: { total, passed: totalPassed, failed: totalFailed, warned: totalWarned, stale_listing_urls: intStale, internal_checked: internalUrls.length },
   };
 }
 
@@ -1583,15 +1718,18 @@ async function validateLinks(wp, contentType) {
 async function auditSingleListing(id, opts = {}) {
   console.log(`[auditor] Fetching listing ${id}...`);
   const wp = await fetchListing(id);
-  const qcResult = auditListing(wp);
-  const yoast = analyseYoastSeo(wp);
-  const expert = analyseExpertSeo(wp, 'listing');
 
+  // Live layer FIRST (when publish) so its rendered HTML can feed E08 in expert layer.
   let liveResult = null;
   if (!opts.skipLive && wp.status === 'publish' && wp.link) {
     console.log(`[auditor] Checking rendered page: ${wp.link}`);
     liveResult = await auditRenderedPage(wp.link);
   }
+  const renderedHtml = liveResult?.html || null;
+
+  const qcResult = auditListing(wp);
+  const yoast = analyseYoastSeo(wp);
+  const expert = analyseExpertSeo(wp, 'listing', { renderedHtml });
 
   const pageUrl = wp.link || '';
   const [gsc, ga, ahrefs] = await Promise.all([
@@ -1605,6 +1743,14 @@ async function auditSingleListing(id, opts = {}) {
   if (!opts.skipLinks) {
     console.log(`[auditor] Validating external links...`);
     links = await validateLinks(wp, 'listing');
+  }
+
+  // Layer 7: Playtomic drift — compares current tags + court counts against
+  // today's Playtomic API. Catches drift (clubs that added courts, flipped
+  // indoor↔outdoor) and previously-wrong data sitting confidently in the DB.
+  let playtomicDrift = null;
+  if (!opts.skipPlaytomic) {
+    playtomicDrift = await auditPlaytomicDrift(wp);
   }
 
   // Composite score: QC 40%, Yoast 30%, Expert 30%
@@ -1622,8 +1768,55 @@ async function auditSingleListing(id, opts = {}) {
     ga,
     ahrefs,
     links,
+    playtomicDrift,
     auditedAt: new Date().toISOString(),
   };
+}
+
+/**
+ * Layer 7: Playtomic drift check.
+ * For listings with a Playtomic URL, compare the current indoor/outdoor tags
+ * (355/356) and court-count meta against the live Playtomic API. Flags any
+ * mismatch as a drift error so it can't sit confidently wrong in the DB.
+ */
+async function auditPlaytomicDrift(wp) {
+  const meta = wp.meta || {};
+  const url = meta._playtomic_url || meta._booking_link || '';
+  if (!tenantIdFromUrl(url) && !tenantSlugFromUrl(url)) {
+    return { skipped: true, reason: 'no-playtomic-url', checks: [] };
+  }
+  const pt = await getCourts(url);
+  const checks = [];
+  if (!pt.ok) {
+    checks.push({ id: 'PT01', pass: false, severity: 'warning', message: `Playtomic API: ${pt.error}` });
+    return { ok: false, error: pt.error, checks };
+  }
+  if (pt.activeTotal === 0) {
+    checks.push({ id: 'PT01', pass: false, severity: 'warning', message: 'Playtomic returned no active courts' });
+    return { ok: true, indoor: 0, outdoor: 0, checks };
+  }
+  const tags = Array.isArray(wp.listing_feature) ? wp.listing_feature : [];
+  const dbHasIn = tags.includes(355), dbHasOut = tags.includes(356);
+  checks.push({
+    id: 'PT02', pass: dbHasIn === pt.hasIndoor, severity: 'error',
+    message: dbHasIn === pt.hasIndoor
+      ? `Indoor tag matches Playtomic (${pt.indoor} indoor courts)`
+      : `Indoor tag drift: DB=${dbHasIn} vs Playtomic=${pt.hasIndoor} (${pt.indoor} indoor courts)`,
+  });
+  checks.push({
+    id: 'PT03', pass: dbHasOut === pt.hasOutdoor, severity: 'error',
+    message: dbHasOut === pt.hasOutdoor
+      ? `Outdoor tag matches Playtomic (${pt.outdoor} outdoor courts)`
+      : `Outdoor tag drift: DB=${dbHasOut} vs Playtomic=${pt.hasOutdoor} (${pt.outdoor} outdoor courts)`,
+  });
+  const dbTotal = parseInt(meta._clubs_tab_total_courts, 10) || 0;
+  checks.push({
+    id: 'PT04', pass: dbTotal === pt.activeTotal, severity: 'warning',
+    message: dbTotal === pt.activeTotal
+      ? `Court count matches Playtomic (${pt.activeTotal})`
+      : `Court count drift: DB=${dbTotal} vs Playtomic=${pt.activeTotal}`,
+  });
+  return { ok: true, indoor: pt.indoor, outdoor: pt.outdoor, total: pt.activeTotal, checks };
 }
 
 /**
@@ -1636,15 +1829,18 @@ async function auditSingleListing(id, opts = {}) {
 async function auditSinglePost(idOrSlug, opts = {}) {
   console.log(`[auditor] Fetching post ${idOrSlug}...`);
   const wp = await fetchPost(idOrSlug);
-  const qcResult = auditPost(wp);
-  const yoast = analyseYoastSeo(wp);
-  const expert = analyseExpertSeo(wp, 'post');
 
+  // Live layer first (when publish) so its rendered HTML can feed E08 in expert layer.
   let liveResult = null;
   if (!opts.skipLive && wp.status === 'publish' && wp.link) {
     console.log(`[auditor] Checking rendered page: ${wp.link}`);
     liveResult = await auditRenderedPage(wp.link);
   }
+  const renderedHtml = liveResult?.html || null;
+
+  const qcResult = auditPost(wp);
+  const yoast = analyseYoastSeo(wp);
+  const expert = analyseExpertSeo(wp, 'post', { renderedHtml });
 
   const pageUrl = wp.link || '';
   const [gsc, ga, ahrefs] = await Promise.all([
@@ -1698,13 +1894,15 @@ async function auditAllListings(opts = {}) {
   const results = [];
   for (const wp of listings) {
     try {
-      const qcResult = auditListing(wp);
-      const yoast = analyseYoastSeo(wp);
-      const expert = analyseExpertSeo(wp, 'listing');
+      // Live layer first (when publish) so rendered HTML feeds E08 in expert layer.
       let liveResult = null;
       if (!opts.skipLive && wp.status === 'publish' && wp.link) {
         liveResult = await auditRenderedPage(wp.link);
       }
+      const renderedHtml = liveResult?.html || null;
+      const qcResult = auditListing(wp);
+      const yoast = analyseYoastSeo(wp);
+      const expert = analyseExpertSeo(wp, 'listing', { renderedHtml });
       const compositeScore = Math.round(
         (qcResult.score * 0.4) + (yoast.score * 0.3) + (expert.score * 0.3)
       );
@@ -1741,13 +1939,15 @@ async function auditAllPosts(opts = {}) {
   const results = [];
   for (const wp of posts) {
     try {
-      const qcResult = auditPost(wp);
-      const yoast = analyseYoastSeo(wp);
-      const expert = analyseExpertSeo(wp, 'post');
+      // Live layer first (when publish) so rendered HTML feeds E08 in expert layer.
       let liveResult = null;
       if (!opts.skipLive && wp.status === 'publish' && wp.link) {
         liveResult = await auditRenderedPage(wp.link);
       }
+      const renderedHtml = liveResult?.html || null;
+      const qcResult = auditPost(wp);
+      const yoast = analyseYoastSeo(wp);
+      const expert = analyseExpertSeo(wp, 'post', { renderedHtml });
       const liveScore = liveResult
         ? Math.round((liveResult.checks.filter(c => c.pass).length / Math.max(liveResult.checks.length, 1)) * 100)
         : 0;
