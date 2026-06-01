@@ -1,6 +1,6 @@
 ---
 name: padeli:audit-content
-description: "Audit live padeli.com content for SEO quality, Yoast compliance, expert-level ranking signals, rendered page health, link integrity, and real search performance. Runs 7-layer analysis: QC validators (67-point listing / 54-point blog), Yoast SEO (12 checks), expert SEO (22 checks), live page verification (10 checks), link validation (external URL HEAD checks), GSC performance (7 signals — clicks, impressions, CTR, position, trends, queries), GA4 engagement (3 signals — bounce, dwell, engagement rate), and Ahrefs (stubbed for Lite plan). Use when Ryan says 'audit', 'check content', 'SEO audit', 'scan listings', 'check links', or '/padeli:audit-content'."
+description: "Audit live padeli.com content for SEO quality, Yoast compliance, expert-level ranking signals, rendered page health, link integrity, real search performance, and data-source drift. Runs 8-layer analysis: QC validators (67-point listing / 54-point blog), Yoast SEO (12 checks), expert SEO (22 checks), live page verification (10 checks), link validation (external URL HEAD checks), GSC performance (7 signals — clicks, impressions, CTR, position, trends, queries), GA4 engagement (3 signals), Ahrefs (stubbed for Lite plan), and Playtomic drift (PT01–PT04 — compares listing indoor/outdoor tags + court counts against the live Playtomic API for clubs with a Playtomic link). Use when Ryan says 'audit', 'check content', 'SEO audit', 'scan listings', 'check links', or '/padeli:audit-content'."
 user-invocable: true
 ---
 
@@ -347,6 +347,19 @@ Waiting for Ahrefs Lite subscription. When available:
 - Backlink count and referring domains
 - Traffic estimate vs actual
 - Content gap analysis
+
+### Layer 9: Playtomic Drift
+
+For listings with a Playtomic link, compare the current DB state against the live Playtomic API (single source of truth for court types + counts). Catches drift over time (clubs add courts, change indoor/outdoor mix) and any wrong-but-confident data already in the DB.
+
+- **PT01** — Playtomic API responded successfully (severity: warning if fail)
+- **PT02** — Indoor tag matches Playtomic `resource_type='indoor'` count (severity: **error** on mismatch)
+- **PT03** — Outdoor tag matches Playtomic `resource_type='outdoor'` count (severity: **error** on mismatch)
+- **PT04** — `_clubs_tab_total_courts` matches Playtomic active resource count (severity: warning)
+
+Implementation: `auditPlaytomicDrift(wp)` in `content-auditor.js`, called by `auditSingleListing` after Layer 6, via the shared `playtomic-data.js` module (re-exports `padeli-notion/lib/playtomic-data.js`). Result attached to listing audit as `playtomicDrift: { ok, indoor, outdoor, total, checks }`.
+
+Skipped for listings without a Playtomic URL.
 
 ---
 
