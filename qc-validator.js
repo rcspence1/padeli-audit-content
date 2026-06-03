@@ -367,15 +367,20 @@ function validateListing(listing, venueName, options = {}) {
     }
   }
 
-  // Check 4: region array has 3 entries, none zero/null (if present)
+  // Check 4: region array has 2-4 entries (real-world geography varies),
+  // none zero/null. Accepts:
+  //   2 — country > city (UAE/Bali/AU where there's no mid-tier between
+  //       country and city/emirate)
+  //   3 — country > county/state > city (standard US/many UK)
+  //   4 — country > home-nation > county > city (UK with home-nation tier)
   if (listing.region !== undefined) {
-    if (!Array.isArray(listing.region) || listing.region.length !== 3) {
-      errors.push(`[S4] region must have exactly 3 entries [country, county, city] (got ${Array.isArray(listing.region) ? listing.region.length : 'non-array'})`);
+    const len = Array.isArray(listing.region) ? listing.region.length : -1;
+    if (len < 2 || len > 4) {
+      errors.push(`[S4] region must have 2-4 entries [country..city] (got ${len === -1 ? 'non-array' : len})`);
     } else {
       for (let i = 0; i < listing.region.length; i++) {
         if (!listing.region[i]) {
-          const labels = ['country', 'county', 'city'];
-          errors.push(`[S4] region ${labels[i]} (index ${i}) is zero or null`);
+          errors.push(`[S4] region index ${i} is zero or null`);
         }
       }
     }
@@ -1099,13 +1104,18 @@ function validatePayload(wpPayload, venueName, options = {}) {
   // STRUCTURAL CHECKS (hard fail)
   // =========================================================================
 
-  // Check 1: status=draft
-  if (wpPayload.status !== undefined && wpPayload.status !== 'draft') {
+  // liveMode = auditing an already-published listing (not a pre-publish gate).
+  // Skips checks that are only valid before publish (S1 status=draft, S2 _verified=0)
+  // and accepts 3 OR 4 region levels on S4 (GB uses 4: UK→England/Wales/NI→county→city).
+  const liveMode = !!options.liveMode;
+
+  // Check 1: status=draft — only meaningful pre-publish
+  if (!liveMode && wpPayload.status !== undefined && wpPayload.status !== 'draft') {
     errors.push(`[S1] status must be "draft" (got "${wpPayload.status}")`);
   }
 
-  // Check 2: _verified=0
-  if (meta._verified !== undefined && String(meta._verified) !== '0') {
+  // Check 2: _verified=0 — only meaningful pre-publish
+  if (!liveMode && meta._verified !== undefined && String(meta._verified) !== '0') {
     errors.push(`[S2] _verified must be "0" (got "${meta._verified}")`);
   }
 
@@ -1121,15 +1131,19 @@ function validatePayload(wpPayload, venueName, options = {}) {
     }
   }
 
-  // Check 4: region array has 3 entries, none zero/null
+  // Check 4: region chain — accepts 2-4 entries reflecting real geography.
+  //   2 — country > city (UAE, Bali, AU where there's no mid-tier)
+  //   3 — country > county/state > city (standard US/UK)
+  //   4 — country > home-nation > county > city (UK with home-nation tier)
   if (wpPayload.region !== undefined) {
-    if (!Array.isArray(wpPayload.region) || wpPayload.region.length !== 3) {
-      errors.push(`[S4] region must have exactly 3 entries [country, county, city] (got ${Array.isArray(wpPayload.region) ? wpPayload.region.length : 'non-array'})`);
+    const regArr = Array.isArray(wpPayload.region) ? wpPayload.region : null;
+    const validLen = regArr && regArr.length >= 2 && regArr.length <= 4;
+    if (!validLen) {
+      errors.push(`[S4] region must have 2-4 entries [country..city] (got ${regArr ? regArr.length : 'non-array'})`);
     } else {
-      for (let i = 0; i < wpPayload.region.length; i++) {
-        if (!wpPayload.region[i]) {
-          const labels = ['country', 'county', 'city'];
-          errors.push(`[S4] region ${labels[i]} (index ${i}) is zero or null`);
+      for (let i = 0; i < regArr.length; i++) {
+        if (!regArr[i]) {
+          errors.push(`[S4] region index ${i} is zero or null`);
         }
       }
     }
