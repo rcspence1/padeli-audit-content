@@ -20,7 +20,7 @@ const { stripHtml, countWords } = require('./utils');
 const { afterAuditPipeline } = require('./notion-sync');
 const { resolveOpeningHours } = require('./opening-hours-resolver');
 const { parseOpeningHours } = require('./wp-payload');
-const { getCourts, tenantIdFromUrl, tenantSlugFromUrl } = require('./playtomic-data');
+const { getCourts, tenantIdFromUrl, tenantSlugFromUrl, verifyTenantMatchesVenue } = require('./playtomic-data');
 
 const SITE_URL = 'https://padeli.com';
 
@@ -1816,7 +1816,18 @@ async function auditPlaytomicDrift(wp) {
       ? `Court count matches Playtomic (${pt.activeTotal})`
       : `Court count drift: DB=${dbTotal} vs Playtomic=${pt.activeTotal}`,
   });
-  return { ok: true, indoor: pt.indoor, outdoor: pt.outdoor, total: pt.activeTotal, checks };
+  // PT05 (added 2026-06-03): tenant_name vs venue title match.
+  // Catches the wrong-attribution bug — listings whose stored Playtomic URL
+  // points to a different venue's tenant. 30 listings discovered this way.
+  const venueTitle = (wp.title?.raw || wp.title?.rendered || '').trim();
+  const nameMatch = verifyTenantMatchesVenue(venueTitle, pt.tenantName, { cityHint: meta._geolocation_city });
+  checks.push({
+    id: 'PT05', pass: nameMatch.ok, severity: 'error',
+    message: nameMatch.ok
+      ? `Tenant name matches venue ("${pt.tenantName}")`
+      : `WRONG-TENANT: venue="${venueTitle}" but Playtomic URL returns tenant="${pt.tenantName}" (score ${nameMatch.score.toFixed(2)}, ${nameMatch.common}/${nameMatch.t1size} tokens). URL likely points to the wrong tenant.`,
+  });
+  return { ok: true, indoor: pt.indoor, outdoor: pt.outdoor, total: pt.activeTotal, tenantName: pt.tenantName, nameMatch, checks };
 }
 
 /**
