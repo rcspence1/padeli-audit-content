@@ -2657,6 +2657,9 @@ module.exports = {
   validateLinks,
   checkUrl,
 
+  // Layer 7: Playtomic drift
+  auditPlaytomicDrift,
+
   // Orchestrators
   auditSingleListing,
   auditSinglePost,
