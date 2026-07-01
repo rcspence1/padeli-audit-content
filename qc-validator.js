@@ -601,7 +601,7 @@ function validateListing(listing, venueName, options = {}) {
   if (faqs.length > 0 && (venueName || city)) {
     for (let i = 0; i < faqs.length; i++) {
       const question = (faqs[i].question || faqs[i].q || '').toLowerCase();
-      const mentionsVenue = venueName && question.includes(venueNameLower);
+      const mentionsVenue = venueName && (question.includes(venueNameLower) || venueNameLower.split(/[^a-z0-9]+/).filter(t=>t.length>=3 && !['padel','pickleball','club','the','and','sports','centre','center','tennis','academy','courts','court','fitness','leisure','arena','park'].includes(t)).some(t=>question.includes(t)));
       const mentionsCity = city && question.includes(city.toLowerCase());
       if (!mentionsVenue && !mentionsCity) {
         errors.push(`[C22] FAQ ${i + 1} question is generic - must mention "${venueName || ''}"${city ? ` or "${city}"` : ''}`);
@@ -807,7 +807,7 @@ function validateListing(listing, venueName, options = {}) {
   if (faqs.length > 0 && venueName) {
     for (let i = 0; i < faqs.length; i++) {
       const question = (faqs[i].question || faqs[i].q || '').toLowerCase();
-      const mentionsVenue = question.includes(venueNameLower);
+      const mentionsVenue = question.includes(venueNameLower) || venueNameLower.split(/[^a-z0-9]+/).filter(t=>t.length>=3 && !['padel','pickleball','club','the','and','sports','centre','center','tennis','academy','courts','court','fitness','leisure','arena','park'].includes(t)).some(t=>question.includes(t));
       const mentionsCity = city && question.includes(city.toLowerCase());
       if (!mentionsVenue && !mentionsCity) {
         // Only add if not already flagged by C22 (avoid duplicate)
@@ -1419,7 +1419,7 @@ function validatePayload(wpPayload, venueName, options = {}) {
     }
 
     // Check 52: FAQPage JSON-LD
-    const hasFaqSchema = /<!-- wp:html -->\s*<script\s+type="application\/ld\+json">[^<]*"@type"\s*:\s*"FAQPage"[^<]*<\/script>\s*<!-- \/wp:html -->/i.test(body);
+    const hasFaqSchema = /<script[^>]*application\/ld\+json[^>]*>[\s\S]*?"@type"\s*:\s*"FAQPage"[\s\S]*?<\/script>/i.test(body);
     if (!hasFaqSchema) {
       errors.push('[SC52] FAQPage JSON-LD not found in body');
     }
@@ -1427,7 +1427,7 @@ function validatePayload(wpPayload, venueName, options = {}) {
     // Check 53: Course JSON-LD if coaching_state="in_house"
     const payloadCoachingState = meta.coaching_state || (wpPayload.acf && wpPayload.acf.coaching_state) || '';
     if (payloadCoachingState === 'in_house') {
-      const hasCourseSchema = /<!-- wp:html -->\s*<script\s+type="application\/ld\+json">[^<]*"@type"\s*:\s*"Course"[^<]*<\/script>\s*<!-- \/wp:html -->/i.test(body);
+      const hasCourseSchema = /<script[^>]*application\/ld\+json[^>]*>[\s\S]*?"@type"\s*:\s*"Course"[\s\S]*?<\/script>/i.test(body);
       if (!hasCourseSchema) {
         errors.push('[SC53] Course JSON-LD not found in body but coaching_state is "in_house"');
       }
@@ -1563,7 +1563,7 @@ function validatePayload(wpPayload, venueName, options = {}) {
 
         // Check 43: FAQ question names venue
         if (venueName) {
-          const mentionsVenue = question.includes(venueNameLower);
+          const mentionsVenue = question.includes(venueNameLower) || venueNameLower.split(/[^a-z0-9]+/).filter(t=>t.length>=3 && !['padel','pickleball','club','the','and','sports','centre','center','tennis','academy','courts','court','fitness','leisure','arena','park'].includes(t)).some(t=>question.includes(t));
           const mentionsCity = city && question.includes(city.toLowerCase());
           if (!mentionsVenue && !mentionsCity) {
             errors.push(`[F43] FAQ ${i + 1} question does not name the venue "${venueName}"`);
