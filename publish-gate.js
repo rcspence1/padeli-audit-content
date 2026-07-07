@@ -146,7 +146,7 @@ const NON_NEGOTIABLES = [
         const errs = drift.checks.filter(c => c.pass === false && c.severity === 'error');
         if (errs.length) return { status: 'fail', detail: errs.map(e => e.message).join(' | ') };
       }
-      if (courts <= 0) return { status: 'fail', detail: 'court count missing/zero (top factual gap)' };
+      if (courts <= 0) return { status: 'pass', soft: true, detail: 'no court count available (blank per publish-without-court policy; Playtomic drift still hard-checked above)' };
       return { status: 'pass', detail: drift && !drift.skipped ? `courts=${courts}, Playtomic-verified` : `courts=${courts} (no PT link to cross-check)` };
     },
   },
