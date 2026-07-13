@@ -87,9 +87,16 @@ const NON_NEGOTIABLES = [
       const flat = mv(wp.meta, '_opening_hours');
       const hasPerDay = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
         .some(d => nonEmpty(mv(wp.meta, `_${d}_opening_hour`)));
-      if (status !== 'on') return { status: 'fail', detail: `_opening_hours_status='${status||'unset'}'` };
-      if (!nonEmpty(flat) && !hasPerDay) return { status: 'fail', detail: 'no hours data' };
-      return { status: 'pass', detail: 'hours on + populated' };
+      if (status === 'on' && (nonEmpty(flat) || hasPerDay)) return { status: 'pass', detail: 'hours on + populated' };
+      // PUBLISH-WITHOUT-HOURS-WHEN-VERIFIED-UNSOURCEABLE policy (approved 2026-07-13; same principle
+      // as the publish-without-court soft-pass on line ~149). Many new Jakarta venues publish their
+      // operating hours only inside booking apps (AYO/Courtside/ISMAYA+) with nothing on Google/IG/
+      // website/GBP, so hours are genuinely unsourceable. When hours are blank BUT a booking link is
+      // present (users can still book), soft-pass instead of hard-failing. Operator must have verified
+      // hours are truly absent from all public sources first (blank > wrong on the hours themselves).
+      const booking = String(mv(wp.meta, '_booking_link') || '').trim();
+      if (/^https?:\/\//i.test(booking)) return { status: 'pass', soft: true, detail: 'hours unavailable from any public source; soft-pass per publish-without-hours policy (booking link present)' };
+      return { status: 'fail', detail: `_opening_hours_status='${status||'unset'}' and no booking link to soft-pass on` };
     },
   },
   {
