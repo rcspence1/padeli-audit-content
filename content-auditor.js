@@ -1463,7 +1463,7 @@ const http = require('http');
  * @param {number} [redirectsLeft=5]
  * @returns {Promise<{url: string, status: number|null, ok: boolean, category: string, message: string}>}
  */
-function checkUrl(url, redirectsLeft = 5) {
+function checkUrl(url, redirectsLeft = 5, method = 'HEAD') {
   return new Promise((resolve) => {
     if (redirectsLeft <= 0) {
       resolve({ url, status: null, ok: false, category: 'FAIL', message: 'Too many redirects (>5)' });
@@ -1480,7 +1480,7 @@ function checkUrl(url, redirectsLeft = 5) {
 
     const transport = parsed.protocol === 'https:' ? https : http;
     const opts = {
-      method: 'HEAD',
+      method,
       hostname: parsed.hostname,
       port: parsed.port || (parsed.protocol === 'https:' ? 443 : 80),
       path: parsed.pathname + parsed.search,
@@ -1489,6 +1489,7 @@ function checkUrl(url, redirectsLeft = 5) {
     };
 
     const req = transport.request(opts, (res) => {
+      res.resume(); // drain any body (GET fallback) so sockets free promptly
       // Follow redirects
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         let redirectUrl = res.headers.location;
@@ -1503,7 +1504,14 @@ function checkUrl(url, redirectsLeft = 5) {
       if (status >= 200 && status < 400) {
         resolve({ url, status, ok: true, category: 'PASS', message: `HTTP ${status}` });
       } else if (status === 404 || status === 410) {
-        resolve({ url, status, ok: false, category: 'FAIL', message: `HTTP ${status} — link is dead` });
+        // Some servers 404 HEAD but 200 GET (e.g. LTA ClubSpark) — a dead
+        // verdict must be GET-confirmed before it can block a publish.
+        if (method === 'HEAD') {
+          res.resume();
+          resolve(checkUrl(url, redirectsLeft, 'GET'));
+          return;
+        }
+        resolve({ url, status, ok: false, category: 'FAIL', message: `HTTP ${status} — link is dead (GET-confirmed)` });
       } else if (status >= 500) {
         resolve({ url, status, ok: false, category: 'WARN', message: `HTTP ${status} — server error (may be temporary)` });
       } else if (status === 403 || status === 405 || status === 429) {
