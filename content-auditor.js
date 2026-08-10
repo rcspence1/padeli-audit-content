@@ -1484,7 +1484,7 @@ function checkUrl(url, redirectsLeft = 5) {
       hostname: parsed.hostname,
       port: parsed.port || (parsed.protocol === 'https:' ? 443 : 80),
       path: parsed.pathname + parsed.search,
-      headers: { 'User-Agent': 'Mozilla/5.0 (PadeliLinkChecker)' },
+      headers: { 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36' },
       timeout: 5000,
     };
 
@@ -1506,9 +1506,10 @@ function checkUrl(url, redirectsLeft = 5) {
         resolve({ url, status, ok: false, category: 'FAIL', message: `HTTP ${status} — link is dead` });
       } else if (status >= 500) {
         resolve({ url, status, ok: false, category: 'WARN', message: `HTTP ${status} — server error (may be temporary)` });
-      } else if (status === 403) {
-        // Many sites block HEAD requests — treat as WARN not FAIL
-        resolve({ url, status, ok: false, category: 'WARN', message: `HTTP ${status} — access denied (may block bots)` });
+      } else if (status === 403 || status === 405 || status === 429) {
+        // Bot-block / HEAD-rejected / rate-limited — site is LIVE, just refusing
+        // automated requests (e.g. LTA clubspark 403s every bot). Reachable = PASS.
+        resolve({ url, status, ok: true, category: 'PASS', message: `HTTP ${status} — bot-blocked but reachable` });
       } else {
         resolve({ url, status, ok: false, category: 'WARN', message: `HTTP ${status}` });
       }
