@@ -783,13 +783,29 @@ function validateListing(listing, venueName, options = {}) {
     const playtomic = get('_playtomic_url');
     const direct = get('_direct_booking_url');
     const website = get('_website');
-    const dupes = [];
-    if (link && website && link === website) dupes.push('_booking_link === _website');
-    if (playtomic && direct && playtomic === direct) dupes.push('_playtomic_url === _direct_booking_url');
-    if (website && playtomic && website === playtomic) dupes.push('_website === _playtomic_url');
-    if (website && direct && website === direct) dupes.push('_website === _direct_booking_url');
-    if (dupes.length > 0) {
-      warnings.push(`[M41] Booking URL fields collide on semantically-distinct fields: ${dupes.join('; ')} — should be distinct CTAs`);
+    // Severity split (2026-09-05): _website-anchored collisions are the real
+    // defect (create-listing.js copied venue.website into _direct_booking_url)
+    // and are now ERRORS. _playtomic_url === _direct_booking_url is NOT a
+    // contradiction as the comment above assumed — wp-payload.js routes one
+    // Playtomic URL to all three booking fields deliberately, so it stays a
+    // warning.
+    // ERROR — the create-listing.js:821-823 signature: venue.website copied into
+    // a booking-SOURCE marker. Never legitimate.
+    const websiteDupes = [];
+    if (website && playtomic && website === playtomic) websiteDupes.push('_website === _playtomic_url');
+    if (website && direct && website === direct) websiteDupes.push('_website === _direct_booking_url');
+    const mirrorDupes = [];
+    if (playtomic && direct && playtomic === direct) mirrorDupes.push('_playtomic_url === _direct_booking_url');
+    // WARNING — `_booking_link === _website` alone is ambiguous, not a defect.
+    // Venues whose only web presence IS a booking page (ayo.co.id, linktr.ee)
+    // legitimately have both fields equal. 7 Jakarta listings are in this state,
+    // none with a Playtomic URL. Blocking them would be a false positive.
+    if (link && website && link === website) mirrorDupes.push('_booking_link === _website');
+    if (websiteDupes.length > 0) {
+      errors.push(`[M41] _website copied into a booking field: ${websiteDupes.join('; ')} — _website is informational, booking fields are actions`);
+    }
+    if (mirrorDupes.length > 0) {
+      warnings.push(`[M41] Booking source markers mirror each other: ${mirrorDupes.join('; ')} — expected when one URL routes to all booking fields`);
     }
   }
 
@@ -1297,13 +1313,29 @@ function validatePayload(wpPayload, venueName, options = {}) {
     const playtomic = get('_playtomic_url');
     const direct = get('_direct_booking_url');
     const website = get('_website');
-    const dupes = [];
-    if (link && website && link === website) dupes.push('_booking_link === _website');
-    if (playtomic && direct && playtomic === direct) dupes.push('_playtomic_url === _direct_booking_url');
-    if (website && playtomic && website === playtomic) dupes.push('_website === _playtomic_url');
-    if (website && direct && website === direct) dupes.push('_website === _direct_booking_url');
-    if (dupes.length > 0) {
-      warnings.push(`[M41] Booking URL fields collide on semantically-distinct fields: ${dupes.join('; ')} — should be distinct CTAs`);
+    // Severity split (2026-09-05): _website-anchored collisions are the real
+    // defect (create-listing.js copied venue.website into _direct_booking_url)
+    // and are now ERRORS. _playtomic_url === _direct_booking_url is NOT a
+    // contradiction as the comment above assumed — wp-payload.js routes one
+    // Playtomic URL to all three booking fields deliberately, so it stays a
+    // warning.
+    // ERROR — the create-listing.js:821-823 signature: venue.website copied into
+    // a booking-SOURCE marker. Never legitimate.
+    const websiteDupes = [];
+    if (website && playtomic && website === playtomic) websiteDupes.push('_website === _playtomic_url');
+    if (website && direct && website === direct) websiteDupes.push('_website === _direct_booking_url');
+    const mirrorDupes = [];
+    if (playtomic && direct && playtomic === direct) mirrorDupes.push('_playtomic_url === _direct_booking_url');
+    // WARNING — `_booking_link === _website` alone is ambiguous, not a defect.
+    // Venues whose only web presence IS a booking page (ayo.co.id, linktr.ee)
+    // legitimately have both fields equal. 7 Jakarta listings are in this state,
+    // none with a Playtomic URL. Blocking them would be a false positive.
+    if (link && website && link === website) mirrorDupes.push('_booking_link === _website');
+    if (websiteDupes.length > 0) {
+      errors.push(`[M41] _website copied into a booking field: ${websiteDupes.join('; ')} — _website is informational, booking fields are actions`);
+    }
+    if (mirrorDupes.length > 0) {
+      warnings.push(`[M41] Booking source markers mirror each other: ${mirrorDupes.join('; ')} — expected when one URL routes to all booking fields`);
     }
   }
 
