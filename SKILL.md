@@ -95,7 +95,9 @@ Sun 07:00-21:00") AND the 14 Listeo per-day fields (`_monday_opening_hour`,
 
 Use `--dry-run` to preview the patch without writing. Use `--country` to scope
 to a specific country (`AU`, `AE`, `GB`, etc., or substring match on address).
-This is the **only write-mode** in the auditor — all other modes are read-only.
+This is the only mode that writes to **WordPress** — all other modes leave WP
+untouched. It is NOT the only mode that writes anywhere: every audit mode also
+syncs results to Notion unless `--skip-notion` is passed (see Safety Rules).
 
 ---
 
@@ -443,16 +445,37 @@ node content-auditor.js listing 10097 --json
 
 # Skip link validation during full audits
 node content-auditor.js listing 10097 --skip-links
+
+# Suppress the Notion sync — use for verification runs and smoke tests
+node content-auditor.js listing 10097 --skip-notion
+node content-auditor.js listings --limit 50 --skip-live --skip-notion
 ```
 
 ---
 
 ## Safety Rules
 
-- **Read-only.** This skill never modifies any content. It only reads from WP REST API and fetches rendered pages.
+- **Read-only against WordPress.** No audit mode modifies WP content. It reads from
+  the WP REST API and fetches rendered pages. `fix-hours` is the sole exception.
+- **Writes to Notion by design.** Every audit calls `afterAuditPipeline()`
+  (`content-auditor.js:2428`), updating Club Tracker, Audit Findings, Agent History,
+  Agent Registry and the Operations Board. This is deliberate — production pipelines
+  depend on it, so the default is not going to change.
+  Pass **`--skip-notion`** to suppress it for verification runs, smoke tests, or any
+  audit whose results should not enter shared state:
+
+  ```bash
+  node content-auditor.js listing 24019 --skip-notion
+  ```
+
+  The flag applies to every audit mode (listing, post, listings, posts, site).
+  Note it is a **CLI-only** flag: calling `auditSingleListing()` as a library
+  function never syncs, because the Notion call lives in the CLI handler.
 - **Rate limited.** 200ms delay between live page fetches to avoid hammering the server.
 - **No credentials exposed.** Uses env vars (PADELI_WP_USER, PADELI_WP_APP_PASSWORD) via wp-client.js.
-- **GSC/GA blocked.** Layer 5 returns stubs until Mark provides service account credentials.
+- **GSC/GA4 are live**, not stubbed. Layer 5 reads the OAuth token at
+  `~/.config/gcloud/padeli-oauth-token.json`; Layer 7 reads GA4 property
+  `properties/530686060`. Only **Layer 8 (Ahrefs)** is still a stub.
 
 ---
 
