@@ -1,0 +1,10 @@
+{
+  "name": "padeli-site-health",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright E2E crawler — walks padeli.com listings, verifies pages render, buttons work, and every booking/website/internal link resolves.",
+  "type": "commonjs",
+  "bin": { "site-health": "crawl.js" },
+  "scripts": { "crawl": "node crawl.js", "smoke": "node crawl.js --limit 5" },
+  "dependencies": { "playwright": "^1.62.0" }
+}

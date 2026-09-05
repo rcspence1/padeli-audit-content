@@ -1,0 +1,1802 @@
+[
+  {
+    "id": 19422,
+    "country": "US",
+    "title": "Ultra Padel Miami Magic City",
+    "score": 93,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 18701,
+    "country": "GB",
+    "title": "UK Padel Stoke Poges",
+    "score": 93,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17907,
+    "country": "GB",
+    "title": "Casa Del Padel Malton",
+    "score": 93,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17345,
+    "country": "GB",
+    "title": "Slazenger Padel Swindon",
+    "score": 93,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17322,
+    "country": "GB",
+    "title": "Padel Maidenhead",
+    "score": 93,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19978,
+    "country": "US",
+    "title": "Park Padel West Sacramento",
+    "score": 91,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19735,
+    "country": "US",
+    "title": "Ultra Padel Aventura",
+    "score": 91,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19047,
+    "country": "GB",
+    "title": "Utopia Padel Ipswich",
+    "score": 91,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17946,
+    "country": "GB",
+    "title": "WePlay Padel Kirkbymoorside",
+    "score": 91,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17175,
+    "country": "GB",
+    "title": "Surge Padel Harrogate",
+    "score": 91,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16823,
+    "country": "GB",
+    "title": "The Hive London",
+    "score": 91,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17945,
+    "country": "GB",
+    "title": "Let's Go Padel Omagh",
+    "score": 91,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17712,
+    "country": "GB",
+    "title": "VIP Padel Newton-le-Willows",
+    "score": 91,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20368,
+    "country": "US",
+    "title": "Xcel Padel Westlake",
+    "score": 90,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20091,
+    "country": "US",
+    "title": "Wynwood Arena",
+    "score": 90,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 18729,
+    "country": "GB",
+    "title": "Let's Go Padel Carryduff",
+    "score": 90,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17546,
+    "country": "GB",
+    "title": "Padel Project UK - Lowther Gardens",
+    "score": 90,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17177,
+    "country": "GB",
+    "title": "Galgorm Castle",
+    "score": 90,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16996,
+    "country": "GB",
+    "title": "Padel at Battersea Park",
+    "score": 90,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20209,
+    "country": "US",
+    "title": "SB Padel Houston",
+    "score": 90,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18727,
+    "country": "GB",
+    "title": "Smash Padel Whitstable",
+    "score": 90,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18294,
+    "country": "GB",
+    "title": "Peak Padel Holmfirth",
+    "score": 90,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 14562,
+    "country": "AE",
+    "title": "Padelista Sheikha Fatima Park",
+    "score": 90,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19555,
+    "country": "US",
+    "title": "Real Padel Miami",
+    "score": 90,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17681,
+    "country": "GB",
+    "title": "This is Padel Dronfield",
+    "score": 90,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19661,
+    "country": "US",
+    "title": "Taktika Padel San Diego",
+    "score": 89,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20783,
+    "country": "US",
+    "title": "PADELHUB Boston",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20758,
+    "country": "US",
+    "title": "Padel United Sports Club",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20420,
+    "country": "US",
+    "title": "Slice Padel Co",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20232,
+    "country": "US",
+    "title": "SLC Padel Club",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20185,
+    "country": "US",
+    "title": "Laredo Padel Club",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20034,
+    "country": "US",
+    "title": "Racket Social Club Willowbrook",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19995,
+    "country": "US",
+    "title": "AREA Centre",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19659,
+    "country": "US",
+    "title": "Point Padel Club",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19595,
+    "country": "US",
+    "title": "PADEL MKE",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 18774,
+    "country": "GB",
+    "title": "Barnton Cricket Club",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 18648,
+    "country": "GB",
+    "title": "Withdean Sports Complex",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17769,
+    "country": "GB",
+    "title": "Padel Project UK Darlington",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17131,
+    "country": "GB",
+    "title": "PADELHUB Slough",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17046,
+    "country": "GB",
+    "title": "The Northern",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16997,
+    "country": "GB",
+    "title": "Akebar Park",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16952,
+    "country": "GB",
+    "title": "S3 Bristol Filton Park",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16893,
+    "country": "GB",
+    "title": "Padel at the Coed",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16830,
+    "country": "GB",
+    "title": "Powerleague Mill Hill",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16057,
+    "country": "AE",
+    "title": "CF Padel Academy",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 14200,
+    "country": "AE",
+    "title": "ISM Padel Sama International school",
+    "score": 88,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17238,
+    "country": "GB",
+    "title": "Castle Padel Club",
+    "score": 88,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18960,
+    "country": "GB",
+    "title": "Park Sports Regent's Park",
+    "score": 88,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18496,
+    "country": "GB",
+    "title": "Mickleover Padel Club",
+    "score": 88,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18405,
+    "country": "GB",
+    "title": "Let's Go Padel Lurgan",
+    "score": 88,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 14401,
+    "country": "AE",
+    "title": "Padel Plus Academy",
+    "score": 88,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20920,
+    "country": "US",
+    "title": "PATL Louisville Waterfront Park",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20369,
+    "country": "US",
+    "title": "Padel Club Palm Beach",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20296,
+    "country": "US",
+    "title": "Padel + Pickle Club",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20151,
+    "country": "US",
+    "title": "Serve El Paso",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19830,
+    "country": "US",
+    "title": "Austin Padel Center Pop-Up",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19723,
+    "country": "US",
+    "title": "CUBE PADEL CHICAGO",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19551,
+    "country": "US",
+    "title": "Padel Pals Club East Valley",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 18366,
+    "country": "GB",
+    "title": "Wressle Grange Padel Club",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17501,
+    "country": "GB",
+    "title": "Destination Padel Northwich",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17400,
+    "country": "GB",
+    "title": "Louth Padel Co",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17176,
+    "country": "GB",
+    "title": "Bridge of Allan Sports Club",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17081,
+    "country": "GB",
+    "title": "Wigan Sports Club",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16970,
+    "country": "GB",
+    "title": "Cheshire Padel - Crewe Vagrants",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16929,
+    "country": "GB",
+    "title": "Powerleague Watford",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16886,
+    "country": "GB",
+    "title": "Padel at Hartford Golf",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 16609,
+    "country": "AU",
+    "title": "The Padel Lounge",
+    "score": 87,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20631,
+    "country": "US",
+    "title": "Padel N9NE",
+    "score": 87,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20602,
+    "country": "US",
+    "title": "Conquer Padel Phoenix",
+    "score": 87,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20341,
+    "country": "US",
+    "title": "VIVA Padel & Pickleball",
+    "score": 87,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19662,
+    "country": "US",
+    "title": "Padel Garten by Glassbox",
+    "score": 87,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18332,
+    "country": "GB",
+    "title": "Spa Padel",
+    "score": 87,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17531,
+    "country": "GB",
+    "title": "Widnes Padel Club",
+    "score": 87,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19936,
+    "country": "US",
+    "title": "BMorePadel",
+    "score": 87,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18237,
+    "country": "GB",
+    "title": "The Ranch Padel",
+    "score": 87,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17949,
+    "country": "GB",
+    "title": "Vida Del Padel - Guisborough",
+    "score": 86,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20591,
+    "country": "US",
+    "title": "U-Padel Club",
+    "score": 85,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19681,
+    "country": "US",
+    "title": "Glendale Lyceum",
+    "score": 85,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17811,
+    "country": "GB",
+    "title": "ATC Padel Andover",
+    "score": 85,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20947,
+    "country": "US",
+    "title": "Mouratoglou Tennis Center Noblesville",
+    "score": 85,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17529,
+    "country": "GB",
+    "title": "Padel and Coffee",
+    "score": 85,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 19726,
+    "country": "US",
+    "title": "Paddles Up Pickleball & Padel",
+    "score": 84,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20810,
+    "country": "US",
+    "title": "Sensa Padel",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20257,
+    "country": "US",
+    "title": "Emilio Sanchez Academy Florida",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20103,
+    "country": "US",
+    "title": "BAY PADEL Treasure Island",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19420,
+    "country": "US",
+    "title": "Caribe Royale Orlando Sport Court",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19008,
+    "country": "GB",
+    "title": "MPC Tennis and Fitness",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18189,
+    "country": "GB",
+    "title": "Tilsworth Padel Club",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17624,
+    "country": "GB",
+    "title": "Padel Elite Sheffield",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 16887,
+    "country": "GB",
+    "title": "The Padel Club Gloucester Quays",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 16843,
+    "country": "GB",
+    "title": "The Padel Club at The Mount Golf and Country Club",
+    "score": 84,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18456,
+    "country": "GB",
+    "title": "The Padel Shed Selby",
+    "score": 84,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17287,
+    "country": "GB",
+    "title": "CPASE Health Club",
+    "score": 84,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17103,
+    "country": "GB",
+    "title": "Wakefield Sports & Padel Club",
+    "score": 84,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 19966,
+    "country": "US",
+    "title": "Padel California - Oceanside",
+    "score": 83,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 17661,
+    "country": "GB",
+    "title": "That Padel Club Newark",
+    "score": 83,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 20881,
+    "country": "US",
+    "title": "Padel Haus Denver",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20719,
+    "country": "US",
+    "title": "Reserve Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20681,
+    "country": "US",
+    "title": "Platinum Padel Club",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20565,
+    "country": "US",
+    "title": "Wynwood Padel Club",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19887,
+    "country": "US",
+    "title": "Padel Square USA",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19085,
+    "country": "GB",
+    "title": "Powerleague Padel Sighthill",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19046,
+    "country": "GB",
+    "title": "Barnt Green Sports Club",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18974,
+    "country": "GB",
+    "title": "Pace Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18728,
+    "country": "GB",
+    "title": "Hazelwood Sports Club",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17530,
+    "country": "GB",
+    "title": "Ribble Valley Padel Hub",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17469,
+    "country": "GB",
+    "title": "Padel United Maldon",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17470,
+    "country": "GB",
+    "title": "Cross Court Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17399,
+    "country": "GB",
+    "title": "Padel Club at Mytton",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17290,
+    "country": "GB",
+    "title": "Padel at Denham Grove",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17219,
+    "country": "GB",
+    "title": "The Atrium Health Club",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17155,
+    "country": "GB",
+    "title": "The Leisure Box",
+    "score": 83,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20757,
+    "country": "US",
+    "title": "Alma Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19993,
+    "country": "US",
+    "title": "Regency Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19932,
+    "country": "US",
+    "title": "Padel Highway",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19883,
+    "country": "US",
+    "title": "Padel Club EP",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19485,
+    "country": "US",
+    "title": "Padel39 East Austin",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19483,
+    "country": "US",
+    "title": "Zmash Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19110,
+    "country": "GB",
+    "title": "Future Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19075,
+    "country": "GB",
+    "title": "Crystal Palace Padel Courts",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18099,
+    "country": "GB",
+    "title": "Stay Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20961,
+    "country": "US",
+    "title": "Revolution Padel Courts",
+    "score": 83,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 18249,
+    "country": "GB",
+    "title": "Let's Go Padel Newry",
+    "score": 83,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 17818,
+    "country": "GB",
+    "title": "Destino Padel",
+    "score": 83,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 14128,
+    "country": "AE",
+    "title": "Fantasy Padel",
+    "score": 83,
+    "errors": 1,
+    "warnings": 4,
+    "status": "audited"
+  },
+  {
+    "id": 14396,
+    "country": "AE",
+    "title": "Padel Port",
+    "score": 83,
+    "errors": 1,
+    "warnings": 5,
+    "status": "audited"
+  },
+  {
+    "id": 14883,
+    "country": "AE",
+    "title": "Padel Spot",
+    "score": 82,
+    "errors": 1,
+    "warnings": 4,
+    "status": "audited"
+  },
+  {
+    "id": 14155,
+    "country": "AE",
+    "title": "Hidd Al Saadiyat Padel",
+    "score": 82,
+    "errors": 1,
+    "warnings": 4,
+    "status": "audited"
+  },
+  {
+    "id": 12245,
+    "country": "AE",
+    "title": "Elevon Sports Complex",
+    "score": 82,
+    "errors": 1,
+    "warnings": 4,
+    "status": "audited"
+  },
+  {
+    "id": 14649,
+    "country": "AE",
+    "title": "Smash Padel",
+    "score": 82,
+    "errors": 1,
+    "warnings": 5,
+    "status": "audited"
+  },
+  {
+    "id": 20919,
+    "country": "US",
+    "title": "ESL Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20718,
+    "country": "US",
+    "title": "Padel Up - Culver City",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20664,
+    "country": "US",
+    "title": "Icon Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20618,
+    "country": "US",
+    "title": "St. Pete Athletic",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20440,
+    "country": "US",
+    "title": "Casas Padel Club Aventura",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20443,
+    "country": "US",
+    "title": "Padel39 (North Austin)",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20147,
+    "country": "US",
+    "title": "The King of Padel SA",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20105,
+    "country": "US",
+    "title": "IMGN Park",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20032,
+    "country": "US",
+    "title": "40Forty Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20035,
+    "country": "US",
+    "title": "Padel Paso",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19933,
+    "country": "US",
+    "title": "Pick and Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19901,
+    "country": "US",
+    "title": "Padel 9 - El Paso",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19882,
+    "country": "US",
+    "title": "Sodo Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19829,
+    "country": "US",
+    "title": "Dallas Padel Club by Padel39",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19831,
+    "country": "US",
+    "title": "Phantom Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19790,
+    "country": "US",
+    "title": "NorthPoint Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19594,
+    "country": "US",
+    "title": "Mesa Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19598,
+    "country": "US",
+    "title": "Ola Padel Club by Nox",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19550,
+    "country": "US",
+    "title": "RGV Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19487,
+    "country": "US",
+    "title": "Palm Beach Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19486,
+    "country": "US",
+    "title": "Padel Country Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19484,
+    "country": "US",
+    "title": "Pulse Padel Hub",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18871,
+    "country": "GB",
+    "title": "Padelheim",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18808,
+    "country": "GB",
+    "title": "Podington Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18769,
+    "country": "GB",
+    "title": "Belfast Boat Club Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18235,
+    "country": "GB",
+    "title": "Tennis England Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18101,
+    "country": "GB",
+    "title": "Padel Project UK South Shields",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18059,
+    "country": "GB",
+    "title": "Padel World UK",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 18036,
+    "country": "GB",
+    "title": "Purple Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17991,
+    "country": "GB",
+    "title": "Eat Sleep Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17938,
+    "country": "GB",
+    "title": "Padel People Sedlescombe",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17832,
+    "country": "GB",
+    "title": "Matchbox Pickleball",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17749,
+    "country": "GB",
+    "title": "Padel at Cotswolds Hotel & Spa",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17660,
+    "country": "GB",
+    "title": "Barnsgrove",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17613,
+    "country": "GB",
+    "title": "Padel United Chelmsford",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 17124,
+    "country": "GB",
+    "title": "The Padel Inn",
+    "score": 81,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 20900,
+    "country": "US",
+    "title": "Reserve Padel UES Manhattan",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20859,
+    "country": "US",
+    "title": "Club Pickle & Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20845,
+    "country": "US",
+    "title": "The Houstonian Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20467,
+    "country": "US",
+    "title": "Brickell Soccer & Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20466,
+    "country": "US",
+    "title": "Mouratoglou Academy Zephyrhills",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20297,
+    "country": "US",
+    "title": "Orlando Padel Club Indoor",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20216,
+    "country": "US",
+    "title": "Padel Plant",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19614,
+    "country": "US",
+    "title": "Park Padel Oyster Point",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19596,
+    "country": "US",
+    "title": "Smart Padel House",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19104,
+    "country": "AU",
+    "title": "Birkdale Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 19034,
+    "country": "GB",
+    "title": "Racquet Garden",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18374,
+    "country": "GB",
+    "title": "Alsager Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18325,
+    "country": "GB",
+    "title": "Quik Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18140,
+    "country": "GB",
+    "title": "Eastbourne Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 18034,
+    "country": "GB",
+    "title": "Destination Padel Cheadle",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17996,
+    "country": "GB",
+    "title": "Padel People Boston",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17990,
+    "country": "GB",
+    "title": "Frodsham Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 17986,
+    "country": "GB",
+    "title": "GSM Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 2,
+    "status": "audited"
+  },
+  {
+    "id": 20948,
+    "country": "US",
+    "title": "M PADEL BOSTON",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 20707,
+    "country": "US",
+    "title": "Padel Den",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 19417,
+    "country": "US",
+    "title": "Kingdom of Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 18391,
+    "country": "GB",
+    "title": "Chiltern Padel Club",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 18305,
+    "country": "GB",
+    "title": "The Northern Padel House",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 18172,
+    "country": "GB",
+    "title": "Glossop Padel",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 18037,
+    "country": "GB",
+    "title": "The Shed Chidham",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 17768,
+    "country": "GB",
+    "title": "Hascombe Farm",
+    "score": 81,
+    "errors": 0,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 14613,
+    "country": "AE",
+    "title": "Sky mark GT Padel",
+    "score": 81,
+    "errors": 1,
+    "warnings": 3,
+    "status": "audited"
+  },
+  {
+    "id": 19115,
+    "country": "GB",
+    "title": "Padel at Floodbridge Farm",
+    "score": 81,
+    "errors": 0,
+    "warnings": 4,
+    "status": "audited"
+  },
+  {
+    "id": 16291,
+    "country": "AE",
+    "title": "Bin Salman Padel Court",
+    "score": 81,
+    "errors": 1,
+    "warnings": 5,
+    "status": "audited"
+  },
+  {
+    "id": 12501,
+    "country": "AE",
+    "title": "Business Bay Padel Courts",
+    "score": 81,
+    "errors": 1,
+    "warnings": 5,
+    "status": "audited"
+  },
+  {
+    "id": 12244,
+    "country": "AE",
+    "title": "Fluxion Padel Park Arena Hub",
+    "score": 81,
+    "errors": 1,
+    "warnings": 5,
+    "status": "audited"
+  },
+  {
+    "id": 17237,
+    "country": "GB",
+    "title": "Chalk Padel",
+    "score": 80,
+    "errors": 0,
+    "warnings": 0,
+    "status": "audited"
+  },
+  {
+    "id": 19889,
+    "country": "US",
+    "title": "Padel& Syosset",
+    "score": 80,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  },
+  {
+    "id": 19854,
+    "country": "US",
+    "title": "THE SET Padel & Pickleball",
+    "score": 80,
+    "errors": 0,
+    "warnings": 1,
+    "status": "audited"
+  }
+]

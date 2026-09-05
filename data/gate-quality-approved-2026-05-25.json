@@ -1,0 +1,267 @@
+[
+  {
+    "country": "GB",
+    "id": 17238,
+    "title": "Castle Padel Club",
+    "score": 88,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "US",
+    "id": 20758,
+    "title": "Padel United Sports Club",
+    "score": 88,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "US",
+    "id": 20034,
+    "title": "Racket Social Club Willowbrook",
+    "score": 88,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17769,
+    "title": "Padel Project UK Darlington",
+    "score": 88,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17046,
+    "title": "The Northern",
+    "score": 88,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 18665,
+    "title": "Padel Studios",
+    "score": 85,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "US",
+    "id": 20810,
+    "title": "Sensa Padel",
+    "score": 84,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17624,
+    "title": "Padel Elite Sheffield",
+    "score": 84,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17103,
+    "title": "Wakefield Sports & Padel Club",
+    "score": 84,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 16873,
+    "title": "Brampton Heath Golf and Padel",
+    "score": 84,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "AE",
+    "id": 14155,
+    "title": "Hidd Al Saadiyat Padel",
+    "score": 83,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "AE",
+    "id": 14396,
+    "title": "Padel Port",
+    "score": 83,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "US",
+    "id": 19993,
+    "title": "Regency Padel",
+    "score": 83,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17470,
+    "title": "Cross Court Padel",
+    "score": 83,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17219,
+    "title": "The Atrium Health Club",
+    "score": 83,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "AE",
+    "id": 12245,
+    "title": "Elevon Sports Complex",
+    "score": 82,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "AE",
+    "id": 12501,
+    "title": "Business Bay Padel Courts",
+    "score": 81,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "AE",
+    "id": 14128,
+    "title": "Fantasy Padel",
+    "score": 81,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "AE",
+    "id": 14613,
+    "title": "Sky mark GT Padel",
+    "score": 81,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "AE",
+    "id": 14649,
+    "title": "Smash Padel",
+    "score": 81,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "AE",
+    "id": 16291,
+    "title": "Bin Salman Padel Court",
+    "score": 81,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "GB",
+    "id": 18305,
+    "title": "The Northern Padel House",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 18140,
+    "title": "Eastbourne Padel Club",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17124,
+    "title": "The Padel Inn",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17991,
+    "title": "Eat Sleep Padel",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 18235,
+    "title": "Tennis England Club",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "US",
+    "id": 20664,
+    "title": "Icon Padel Club",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "US",
+    "id": 20440,
+    "title": "Casas Padel Club Aventura",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 18838,
+    "title": "Padel Boutique",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 18769,
+    "title": "Belfast Boat Club Padel",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17679,
+    "title": "Padel Master Doncaster",
+    "score": 81,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "AE",
+    "id": 12244,
+    "title": "Fluxion Padel Park Arena Hub",
+    "score": 80,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "AE",
+    "id": 14883,
+    "title": "Padel Spot",
+    "score": 80,
+    "mechanicalFixes": [
+      "S4"
+    ]
+  },
+  {
+    "country": "US",
+    "id": 20214,
+    "title": "Casa de Padel HTX",
+    "score": 80,
+    "mechanicalFixes": []
+  },
+  {
+    "country": "GB",
+    "id": 17272,
+    "title": "Padel Power",
+    "score": 80,
+    "mechanicalFixes": []
+  }
+]

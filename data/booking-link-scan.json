@@ -1,0 +1,23 @@
+{
+  "empty": [
+    19555,
+    18960
+  ],
+  "fixable": [
+    {
+      "id": 18960,
+      "country": "GB",
+      "title": "Park Sports Regent&#8217;s Park",
+      "promote": "https://parksports.co.uk/activities/pay-and-play-padel/regents-park",
+      "fromField": "_direct_booking_url"
+    }
+  ],
+  "unfixable": [
+    {
+      "id": 19555,
+      "country": "US",
+      "title": "Real Padel Miami",
+      "website": "https://www.realpadelmiami.com/"
+    }
+  ]
+}

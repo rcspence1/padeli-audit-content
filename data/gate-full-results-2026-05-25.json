@@ -1,0 +1,9363 @@
+{
+  "results": [
+    {
+      "id": 21023,
+      "country": "GB",
+      "title": "Dan White",
+      "score": 40,
+      "yoastScore": 75,
+      "expertScore": 33,
+      "contentScore": 54,
+      "errors": 18,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21020,
+      "country": "GB",
+      "title": "Maria Herrera",
+      "score": 42,
+      "yoastScore": 83,
+      "expertScore": 33,
+      "contentScore": 58,
+      "errors": 19,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21043,
+      "country": "GB",
+      "title": "Toby Bawden",
+      "score": 42,
+      "yoastScore": 75,
+      "expertScore": 38,
+      "contentScore": 57,
+      "errors": 19,
+      "warnings": 5,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21032,
+      "country": "GB",
+      "title": "Scott Pearmain",
+      "score": 38,
+      "yoastScore": 67,
+      "expertScore": 38,
+      "contentScore": 53,
+      "errors": 19,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21014,
+      "country": "GB",
+      "title": "Chris Salisbury",
+      "score": 40,
+      "yoastScore": 67,
+      "expertScore": 38,
+      "contentScore": 53,
+      "errors": 19,
+      "warnings": 5,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20970,
+      "country": "GB",
+      "title": "Matt Mistri",
+      "score": 34,
+      "yoastScore": 67,
+      "expertScore": 29,
+      "contentScore": 48,
+      "errors": 19,
+      "warnings": 3,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12012,
+      "country": "AE",
+      "title": "Ahdaaf Dragon Mart 2",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12130,
+      "country": "AE",
+      "title": "Ballers By Gaby Reca",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12129,
+      "country": "AE",
+      "title": "Bajada Padel \"Pro Padel\" - Nad Al Sheba Branch",
+      "score": 47,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 8,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "C6",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12004,
+      "country": "AE",
+      "title": "90 Minutes – Padel & Football Dubai",
+      "score": 53,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 3,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "C6",
+        "C11"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12127,
+      "country": "AE",
+      "title": "CENTRAL PADEL DUBAI - Dubai Marina",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12016,
+      "country": "AE",
+      "title": "BAJADA - Jumeirah Branch, Ittihad school",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12189,
+      "country": "AE",
+      "title": "Don Padel",
+      "score": 47,
+      "yoastScore": 92,
+      "expertScore": 65,
+      "contentScore": 79,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12187,
+      "country": "AE",
+      "title": "Club Padel Dubai",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12135,
+      "country": "AE",
+      "title": "Casa Padel",
+      "score": 47,
+      "yoastScore": 92,
+      "expertScore": 65,
+      "contentScore": 79,
+      "errors": 2,
+      "warnings": 0,
+      "errorCodes": [
+        "S4",
+        "SC52"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12186,
+      "country": "AE",
+      "title": "Champs Sports Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12192,
+      "country": "AE",
+      "title": "El Partido",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12244,
+      "country": "AE",
+      "title": "Fluxion Padel Park Arena Hub",
+      "score": 80,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12243,
+      "country": "AE",
+      "title": "FM Padel Academy (Playce)",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12242,
+      "country": "AE",
+      "title": "Fauget Padel Court",
+      "score": 75,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12246,
+      "country": "AE",
+      "title": "Fit & Padel",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12245,
+      "country": "AE",
+      "title": "Elevon Sports Complex",
+      "score": 82,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12413,
+      "country": "AE",
+      "title": "365 - clubhouse",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12412,
+      "country": "AE",
+      "title": "365 - Indoor Courts",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12411,
+      "country": "AE",
+      "title": "ACTIV8ME",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12474,
+      "country": "AE",
+      "title": "Ballers",
+      "score": 46,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12501,
+      "country": "AE",
+      "title": "Business Bay Padel Courts",
+      "score": 81,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 5,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12538,
+      "country": "AE",
+      "title": "CF Padel Academy - Aviation Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12518,
+      "country": "AE",
+      "title": "Champs Sports and Fitness Club Festival Plaza",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12498,
+      "country": "AE",
+      "title": "Ariis",
+      "score": 46,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12481,
+      "country": "AE",
+      "title": "Belremaitha Padel",
+      "score": 51,
+      "yoastScore": 100,
+      "expertScore": 70,
+      "contentScore": 85,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12607,
+      "country": "AE",
+      "title": "Gaby Reca Padel Academy Downtown Dubai",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12606,
+      "country": "AE",
+      "title": "Green Zone Football/ Padel Mirdif",
+      "score": 44,
+      "yoastScore": 100,
+      "expertScore": 45,
+      "contentScore": 73,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12517,
+      "country": "AE",
+      "title": "Cf Padel Academy - Polo Club",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12569,
+      "country": "AE",
+      "title": "E611 Sports",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12637,
+      "country": "AE",
+      "title": "Head Arena - Al Quoz",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12688,
+      "country": "AE",
+      "title": "ISM Sports @Kings School Al Barsha",
+      "score": 67,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12638,
+      "country": "AE",
+      "title": "Homebrew Padel Club",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12701,
+      "country": "AE",
+      "title": "ISD Padel",
+      "score": 44,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12636,
+      "country": "AE",
+      "title": "IPADEL AE SPORTS AND AMUSEMENT TRACKS",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12683,
+      "country": "AE",
+      "title": "Ism Padel The Manor By Ja",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12680,
+      "country": "AE",
+      "title": "Ism Padel Al Habtoor",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12730,
+      "country": "AE",
+      "title": "Ja Ocean View Hotel Padel Tennis Court",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12722,
+      "country": "AE",
+      "title": "Just Padel - Kite Beach",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12741,
+      "country": "AE",
+      "title": "Just Padel - Arab Unity School",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12778,
+      "country": "AE",
+      "title": "Magic Padel Sport Academy",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12777,
+      "country": "AE",
+      "title": "Just Padel - Mina Rashid",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12748,
+      "country": "AE",
+      "title": "Just Padel - Kent College",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12787,
+      "country": "AE",
+      "title": "La Cantine Sports Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12843,
+      "country": "AE",
+      "title": "Mantra Padel Concept Sports",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12842,
+      "country": "AE",
+      "title": "Match Point Padel",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12783,
+      "country": "AE",
+      "title": "Just Padel - Ripe Market",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12844,
+      "country": "AE",
+      "title": "Matcha Club Al Quoz | Padel & Movement",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12892,
+      "country": "AE",
+      "title": "Oxygen Padel Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13435,
+      "country": "AE",
+      "title": "Padel Tennis",
+      "score": 75,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13431,
+      "country": "AE",
+      "title": "Al Hamra Padel Beach",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12894,
+      "country": "AE",
+      "title": "Padel @ Precision Football",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13522,
+      "country": "AE",
+      "title": "321 SPORTS",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13828,
+      "country": "AE",
+      "title": "Active Al Maryah",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13827,
+      "country": "AE",
+      "title": "AbuDhabi Indoor Padel Club",
+      "score": 79,
+      "yoastScore": 92,
+      "expertScore": 65,
+      "contentScore": 79,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13825,
+      "country": "AE",
+      "title": "Abu Dhabi Padel Hub",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13771,
+      "country": "AE",
+      "title": "Abu Dhabi Country Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13914,
+      "country": "AE",
+      "title": "Al Khawaneej Padel District",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13780,
+      "country": "AE",
+      "title": "A PADEL - Yas Plaza",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13520,
+      "country": "AE",
+      "title": "A PADEL - Al Fahid Beach Club",
+      "score": 72,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13523,
+      "country": "AE",
+      "title": "A PADEL - Park Hyatt Saadiyat",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13912,
+      "country": "AE",
+      "title": "Al Forsan Padel Tennis",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14041,
+      "country": "AE",
+      "title": "Beach Rotana Hotel",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14006,
+      "country": "AE",
+      "title": "Amigos Padel",
+      "score": 63,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "C6"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13915,
+      "country": "AE",
+      "title": "Al Jazira District Padel Courts and Football Pitch",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14004,
+      "country": "AE",
+      "title": "Al ZEINA padel court",
+      "score": 78,
+      "yoastScore": 100,
+      "expertScore": 70,
+      "contentScore": 85,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14002,
+      "country": "AE",
+      "title": "Al Wahda Sports Cultural Club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14059,
+      "country": "AE",
+      "title": "Emirates Padel Center The Ritz-Carlton",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14057,
+      "country": "AE",
+      "title": "ESS Padel Indoor",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14056,
+      "country": "AE",
+      "title": "ESS Padel Corniche",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14128,
+      "country": "AE",
+      "title": "Fantasy Padel",
+      "score": 81,
+      "yoastScore": 100,
+      "expertScore": 70,
+      "contentScore": 85,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14054,
+      "country": "AE",
+      "title": "Eastern Mangroves",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14198,
+      "country": "AE",
+      "title": "Leisure Grounds",
+      "score": 68,
+      "yoastScore": 92,
+      "expertScore": 45,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14157,
+      "country": "AE",
+      "title": "Gulf Star Sports",
+      "score": 78,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14153,
+      "country": "AE",
+      "title": "Home of Padel - Saadiyat Rotana Resort & Villas",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14155,
+      "country": "AE",
+      "title": "Hidd Al Saadiyat Padel",
+      "score": 83,
+      "yoastScore": 100,
+      "expertScore": 75,
+      "contentScore": 88,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14127,
+      "country": "AE",
+      "title": "Forza Padel",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14296,
+      "country": "AE",
+      "title": "Marina Padel",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14207,
+      "country": "AE",
+      "title": "Just Padel - Marina Mall",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14206,
+      "country": "AE",
+      "title": "i Padel club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14292,
+      "country": "AE",
+      "title": "Metropolitan Al Mafraq Hotel Padel Courts",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14200,
+      "country": "AE",
+      "title": "ISM Padel Sama International school",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14396,
+      "country": "AE",
+      "title": "Padel Port",
+      "score": 83,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 5,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14354,
+      "country": "AE",
+      "title": "Padel Kingdom Abu Dhabi",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14294,
+      "country": "AE",
+      "title": "Padel 8 (Indoor) 2.0",
+      "score": 78,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14357,
+      "country": "AE",
+      "title": "PADEL BEAST x SSC",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14434,
+      "country": "AE",
+      "title": "Padelista Makers District",
+      "score": 69,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14567,
+      "country": "AE",
+      "title": "Padelmania Abu Dhabi",
+      "score": 76,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14447,
+      "country": "AE",
+      "title": "Padelista - Al Rawdhat",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14420,
+      "country": "AE",
+      "title": "Padelae Abu Dhabi - Musaffah",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14580,
+      "country": "AE",
+      "title": "Padelmania",
+      "score": 61,
+      "yoastScore": 75,
+      "expertScore": 45,
+      "contentScore": 60,
+      "errors": 3,
+      "warnings": 5,
+      "errorCodes": [
+        "S4",
+        "M32",
+        "C8"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14422,
+      "country": "AE",
+      "title": "Padeled",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14615,
+      "country": "AE",
+      "title": "Pro Padel Academy",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14613,
+      "country": "AE",
+      "title": "Sky mark GT Padel",
+      "score": 81,
+      "yoastScore": 100,
+      "expertScore": 70,
+      "contentScore": 85,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14589,
+      "country": "AE",
+      "title": "Prime HUB",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14649,
+      "country": "AE",
+      "title": "Smash Padel",
+      "score": 81,
+      "yoastScore": 92,
+      "expertScore": 70,
+      "contentScore": 81,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14617,
+      "country": "AE",
+      "title": "RDK Compound",
+      "score": 76,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14705,
+      "country": "AE",
+      "title": "Viya Padel at Yas Acres",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14719,
+      "country": "AE",
+      "title": "World Padel Academy Abu Dhabi",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14674,
+      "country": "AE",
+      "title": "Home of Padel Saadiyat Rotana",
+      "score": 75,
+      "yoastScore": 92,
+      "expertScore": 70,
+      "contentScore": 81,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14672,
+      "country": "AE",
+      "title": "The Padel Project",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14681,
+      "country": "AE",
+      "title": "Sport Support Club - Padel Academy",
+      "score": 63,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14786,
+      "country": "AE",
+      "title": "PADEL HUB",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14770,
+      "country": "AE",
+      "title": "Yas Beach Padel",
+      "score": 73,
+      "yoastScore": 100,
+      "expertScore": 75,
+      "contentScore": 88,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14765,
+      "country": "AE",
+      "title": "Yalla Padel",
+      "score": 65,
+      "yoastScore": 83,
+      "expertScore": 28,
+      "contentScore": 56,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14790,
+      "country": "AE",
+      "title": "Go Padel Ajman",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14767,
+      "country": "AE",
+      "title": "Zayed Sports City Padel Tennis Courts",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14793,
+      "country": "AE",
+      "title": "Padel Hit",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 45,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14842,
+      "country": "AE",
+      "title": "Padel Pin",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 45,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14838,
+      "country": "AE",
+      "title": "Padel Loco",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14788,
+      "country": "AE",
+      "title": "Go Padel Abu Dhabi",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14840,
+      "country": "AE",
+      "title": "X Padel",
+      "score": 77,
+      "yoastScore": 92,
+      "expertScore": 65,
+      "contentScore": 79,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14883,
+      "country": "AE",
+      "title": "Padel Spot",
+      "score": 80,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14852,
+      "country": "AE",
+      "title": "The Padel Corner Ajman",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14881,
+      "country": "AE",
+      "title": "Padel Square",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14939,
+      "country": "AE",
+      "title": "Padel Addict",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14937,
+      "country": "AE",
+      "title": "Padel 360",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14951,
+      "country": "AE",
+      "title": "Padel 26",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14895,
+      "country": "AE",
+      "title": "A PADEL - Al Ain",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14894,
+      "country": "AE",
+      "title": "Emirates Padel Center HBZ",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15299,
+      "country": "AE",
+      "title": "ESS Padel Indoor",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15291,
+      "country": "AE",
+      "title": "ACTIVE Al Maryah Island Sports & Recreation",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14953,
+      "country": "AE",
+      "title": "Padel Art",
+      "score": 69,
+      "yoastScore": 92,
+      "expertScore": 70,
+      "contentScore": 81,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15305,
+      "country": "AE",
+      "title": "Gaby Reca Padel Academy Abu Dhabi",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15268,
+      "country": "AE",
+      "title": "321Sports I Padel",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15372,
+      "country": "AE",
+      "title": "Sharjah Beach Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15359,
+      "country": "AE",
+      "title": "OnPeak Padel Courts Jumeirah",
+      "score": 72,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15373,
+      "country": "AE",
+      "title": "Padel Zone Fujairah",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15345,
+      "country": "AE",
+      "title": "Let's Padel Ruwais",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15330,
+      "country": "AE",
+      "title": "Amigos Padel Club",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15452,
+      "country": "AE",
+      "title": "Padel Point Al Quoz",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15390,
+      "country": "AE",
+      "title": "ZY Padel and Fitness Hub",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15442,
+      "country": "AE",
+      "title": "WPA - World Padel Academy - Al Rahmaniya, Sharjah",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15402,
+      "country": "AE",
+      "title": "Top Padel - Wafi Mall (Pharaohs Club)",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15396,
+      "country": "AE",
+      "title": "Fahid Beach Club by Barbossa",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15487,
+      "country": "AE",
+      "title": "Xpark Padel Academy Middle East",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15486,
+      "country": "AE",
+      "title": "SAB Padel",
+      "score": 44,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15493,
+      "country": "AE",
+      "title": "Padel Patch",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15470,
+      "country": "AE",
+      "title": "Bodylines Beach Rotana hotel",
+      "score": 60,
+      "yoastScore": 92,
+      "expertScore": 40,
+      "contentScore": 66,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15469,
+      "country": "AE",
+      "title": "Al Jazira Entertainment Hub",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15551,
+      "country": "AE",
+      "title": "Padel One - Indoor Padel Club",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13777,
+      "country": "AE",
+      "title": "A PADEL - Rebound",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15583,
+      "country": "AE",
+      "title": "365 Open Sports",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15552,
+      "country": "AE",
+      "title": "Padel Islands Dubai",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15550,
+      "country": "AE",
+      "title": "Play Padel Dubai",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15600,
+      "country": "AE",
+      "title": "Fit & Padel",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15682,
+      "country": "AE",
+      "title": "TopSpin Sports Centre",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15634,
+      "country": "AE",
+      "title": "Padel Park Dubai",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15619,
+      "country": "AE",
+      "title": "Padel Zone Al Ain",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15685,
+      "country": "AE",
+      "title": "Viya Padel",
+      "score": 43,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 2,
+      "warnings": 0,
+      "errorCodes": [
+        "S4",
+        "SC52"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15735,
+      "country": "AE",
+      "title": "Padel Premier Academy",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15689,
+      "country": "AE",
+      "title": "Rally Padel Club",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15753,
+      "country": "AE",
+      "title": "Padel Line Club",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15734,
+      "country": "AE",
+      "title": "Padel Edition",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15683,
+      "country": "AE",
+      "title": "Redline Padel Club - Al Barsha",
+      "score": 44,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15768,
+      "country": "AE",
+      "title": "Premier Padel 2.0",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15748,
+      "country": "AE",
+      "title": "The Lob Dubai",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15800,
+      "country": "AE",
+      "title": "Sanddune Padel Club Dubai",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15799,
+      "country": "AE",
+      "title": "Smash Padel Al Furjan",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15808,
+      "country": "AE",
+      "title": "Sky Padel",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15919,
+      "country": "AE",
+      "title": "Quick Turf Sports",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15838,
+      "country": "AE",
+      "title": "Padelae 2.0",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15890,
+      "country": "AE",
+      "title": "Padel Pavilion",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15853,
+      "country": "AE",
+      "title": "UAEJJ Fitness Al Nahda",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15852,
+      "country": "AE",
+      "title": "Club Padel Dubai",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15889,
+      "country": "AE",
+      "title": "Padel Town",
+      "score": 44,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15954,
+      "country": "AE",
+      "title": "Top Padel Me'aisem",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15910,
+      "country": "AE",
+      "title": "Prosportsuae Majaz",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 2,
+      "warnings": 0,
+      "errorCodes": [
+        "S4",
+        "C6"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15901,
+      "country": "AE",
+      "title": "Padel Hub Dubai",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16023,
+      "country": "AE",
+      "title": "Champions Padel",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15993,
+      "country": "AE",
+      "title": "Top Padel DIP",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15992,
+      "country": "AE",
+      "title": "Padel Shot",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15953,
+      "country": "AE",
+      "title": "X Padel",
+      "score": 44,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16007,
+      "country": "AE",
+      "title": "iPadel Club Dubai",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16056,
+      "country": "AE",
+      "title": "CSC Play",
+      "score": 46,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16000,
+      "country": "AE",
+      "title": "Pro Padel Jumeirah",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16092,
+      "country": "AE",
+      "title": "Padel Lab",
+      "score": 64,
+      "yoastScore": 83,
+      "expertScore": 40,
+      "contentScore": 62,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16064,
+      "country": "AE",
+      "title": "Pure Play DXB",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16133,
+      "country": "AE",
+      "title": "Aljoker Playgrounds Sharjah",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16118,
+      "country": "AE",
+      "title": "Padel Arena",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16109,
+      "country": "AE",
+      "title": "RDK Padel Court",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16132,
+      "country": "AE",
+      "title": "The Padel Corner Fujairah",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16116,
+      "country": "AE",
+      "title": "Rebound (UAQ)",
+      "score": 70,
+      "yoastScore": 92,
+      "expertScore": 40,
+      "contentScore": 66,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16194,
+      "country": "AE",
+      "title": "Xlite Padel Academy Middle East",
+      "score": 73,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16193,
+      "country": "AE",
+      "title": "Together Sport Services",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16179,
+      "country": "AE",
+      "title": "Padel Space",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16163,
+      "country": "AE",
+      "title": "The Padel Club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16149,
+      "country": "AE",
+      "title": "Padel Port",
+      "score": 75,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16257,
+      "country": "AE",
+      "title": "ESS Padel Saadiyat",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16221,
+      "country": "AE",
+      "title": "X O Padel",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16291,
+      "country": "AE",
+      "title": "Bin Salman Padel Court",
+      "score": 81,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 5,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16256,
+      "country": "AE",
+      "title": "Padel Life Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16228,
+      "country": "AE",
+      "title": "Wolvex Padel Academy Middle East",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16352,
+      "country": "AE",
+      "title": "Padel Pro Al Quoz",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16318,
+      "country": "AE",
+      "title": "Sheraton Dubai Creek Hotel & Towers",
+      "score": 41,
+      "yoastScore": 92,
+      "expertScore": 45,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16304,
+      "country": "AE",
+      "title": "The Els Club Padel",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16360,
+      "country": "AE",
+      "title": "WPA Dubai",
+      "score": 46,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16302,
+      "country": "AE",
+      "title": "TIME Oak Hotel & Suites",
+      "score": 44,
+      "yoastScore": 100,
+      "expertScore": 45,
+      "contentScore": 73,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16430,
+      "country": "AE",
+      "title": "Le Padel",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16415,
+      "country": "AE",
+      "title": "Greenzone Padel",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16379,
+      "country": "AE",
+      "title": "S7 Padel",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16429,
+      "country": "AE",
+      "title": "FPA Football and Padel Academy",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16378,
+      "country": "AE",
+      "title": "Paus Club",
+      "score": 46,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16455,
+      "country": "AE",
+      "title": "Padel Ground Dubai",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16508,
+      "country": "AE",
+      "title": "Robro Padel Academy",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16490,
+      "country": "AE",
+      "title": "Padel Stars",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16502,
+      "country": "AE",
+      "title": "Pro Padel Academy Nad Al Sheba",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16468,
+      "country": "AE",
+      "title": "WPA Khor Fakkan",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16542,
+      "country": "AE",
+      "title": "WPA Abu Dhabi",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16537,
+      "country": "AE",
+      "title": "Padel Time",
+      "score": 79,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16528,
+      "country": "AE",
+      "title": "We Are Padel Al Ain",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16563,
+      "country": "AE",
+      "title": "Activ8 ME Padel",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16521,
+      "country": "AE",
+      "title": "Pure Play TAJ JLT",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16597,
+      "country": "AE",
+      "title": "FM Padel Academy (Padelae Sharjah)",
+      "score": 60,
+      "yoastScore": 92,
+      "expertScore": 40,
+      "contentScore": 66,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16585,
+      "country": "AE",
+      "title": "The Padel Corner Falaj Al Mualla",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16582,
+      "country": "AE",
+      "title": "Padel Profis",
+      "score": 75,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16572,
+      "country": "AE",
+      "title": "Padel Hit",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16579,
+      "country": "AE",
+      "title": "SKMC Padel Courts",
+      "score": 74,
+      "yoastScore": 92,
+      "expertScore": 45,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 5,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16470,
+      "country": "AE",
+      "title": "Padel Ranch",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16404,
+      "country": "AE",
+      "title": "Redline Padel Club - Zabeel House",
+      "score": 38,
+      "yoastScore": 70,
+      "expertScore": 56,
+      "contentScore": 63,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16242,
+      "country": "AE",
+      "title": "Padel Collective",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15851,
+      "country": "AE",
+      "title": "Padel Kingdom",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15651,
+      "country": "AE",
+      "title": "Wellfit Madar",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15654,
+      "country": "AE",
+      "title": "Altitude Padel",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15499,
+      "country": "AE",
+      "title": "Rise Padel Club",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15409,
+      "country": "AE",
+      "title": "Let's Padel Academy Sports",
+      "score": 44,
+      "yoastScore": 100,
+      "expertScore": 45,
+      "contentScore": 73,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 15485,
+      "country": "AE",
+      "title": "Padel Pro One Central",
+      "score": 62,
+      "yoastScore": 70,
+      "expertScore": 69,
+      "contentScore": 70,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14707,
+      "country": "AE",
+      "title": "UAEJJ Fitness MBZ",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14210,
+      "country": "AE",
+      "title": "Lets Padel Outdoor",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13437,
+      "country": "AE",
+      "title": "Lets Padel Academy / Ruwais Family Park Outdoor",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 45,
+      "contentScore": 73,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12541,
+      "country": "AE",
+      "title": "CF Padel Academy - Jumeira Baccalaureate School",
+      "score": 67,
+      "yoastScore": 92,
+      "expertScore": 65,
+      "contentScore": 79,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12571,
+      "country": "AE",
+      "title": "ElPadel DSO Courts",
+      "score": 56,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 8,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "C6",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12605,
+      "country": "AE",
+      "title": "FM Padel Academy (Padelae)",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 14401,
+      "country": "AE",
+      "title": "Padel Plus Academy",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12128,
+      "country": "AE",
+      "title": "CENTRAL PADEL DUBAI - Flagship Center",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12010,
+      "country": "AE",
+      "title": "Ahdaaf Sports Club",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16057,
+      "country": "AE",
+      "title": "CF Padel Academy",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 12003,
+      "country": "AE",
+      "title": "700 Padel & Fitness Hub",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18960,
+      "country": "GB",
+      "title": "Park Sports Regent's Park",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19485,
+      "country": "US",
+      "title": "Padel39 East Austin",
+      "score": 69,
+      "yoastScore": 83,
+      "expertScore": 57,
+      "contentScore": 70,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17681,
+      "country": "GB",
+      "title": "This is Padel Dronfield",
+      "score": 76,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19115,
+      "country": "GB",
+      "title": "Padel at Floodbridge Farm",
+      "score": 71,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19854,
+      "country": "US",
+      "title": "THE SET Padel & Pickleball",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18305,
+      "country": "GB",
+      "title": "The Northern Padel House",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 3,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17237,
+      "country": "GB",
+      "title": "Chalk Padel",
+      "score": 60,
+      "yoastScore": 73,
+      "expertScore": 60,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18037,
+      "country": "GB",
+      "title": "The Shed Chidham",
+      "score": 71,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17768,
+      "country": "GB",
+      "title": "Hascombe Farm",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20707,
+      "country": "US",
+      "title": "Padel Den",
+      "score": 71,
+      "yoastScore": 75,
+      "expertScore": 60,
+      "contentScore": 68,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19417,
+      "country": "US",
+      "title": "Kingdom of Padel",
+      "score": 73,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18391,
+      "country": "GB",
+      "title": "Chiltern Padel Club",
+      "score": 71,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17996,
+      "country": "GB",
+      "title": "Padel People Boston",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17986,
+      "country": "GB",
+      "title": "GSM Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18140,
+      "country": "GB",
+      "title": "Eastbourne Padel Club",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 2,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 19596,
+      "country": "US",
+      "title": "Smart Padel House",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18374,
+      "country": "GB",
+      "title": "Alsager Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18034,
+      "country": "GB",
+      "title": "Destination Padel Cheadle",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20216,
+      "country": "US",
+      "title": "Padel Plant",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20859,
+      "country": "US",
+      "title": "Club Pickle & Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20466,
+      "country": "US",
+      "title": "Mouratoglou Academy Zephyrhills",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19104,
+      "country": "AU",
+      "title": "Birkdale Padel Club",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18325,
+      "country": "GB",
+      "title": "Quik Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17938,
+      "country": "GB",
+      "title": "Padel People Sedlescombe",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17124,
+      "country": "GB",
+      "title": "The Padel Inn",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20900,
+      "country": "US",
+      "title": "Reserve Padel UES Manhattan",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19486,
+      "country": "US",
+      "title": "Padel Country Club",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19484,
+      "country": "US",
+      "title": "Pulse Padel Hub",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17991,
+      "country": "GB",
+      "title": "Eat Sleep Padel",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 19882,
+      "country": "US",
+      "title": "Sodo Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19790,
+      "country": "US",
+      "title": "NorthPoint Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19487,
+      "country": "US",
+      "title": "Palm Beach Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18808,
+      "country": "GB",
+      "title": "Podington Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19829,
+      "country": "US",
+      "title": "Dallas Padel Club by Padel39",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20718,
+      "country": "US",
+      "title": "Padel Up - Culver City",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20443,
+      "country": "US",
+      "title": "Padel39 (North Austin)",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20105,
+      "country": "US",
+      "title": "IMGN Park",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19550,
+      "country": "US",
+      "title": "RGV Padel Club",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19594,
+      "country": "US",
+      "title": "Mesa Padel Club",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20961,
+      "country": "US",
+      "title": "Revolution Padel Courts",
+      "score": 73,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20919,
+      "country": "US",
+      "title": "ESL Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19932,
+      "country": "US",
+      "title": "Padel Highway",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18099,
+      "country": "GB",
+      "title": "Stay Padel",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17818,
+      "country": "GB",
+      "title": "Destino Padel",
+      "score": 75,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20681,
+      "country": "US",
+      "title": "Platinum Padel Club",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17661,
+      "country": "GB",
+      "title": "That Padel Club Newark",
+      "score": 43,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17155,
+      "country": "GB",
+      "title": "The Leisure Box",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18974,
+      "country": "GB",
+      "title": "Pace Padel",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20103,
+      "country": "US",
+      "title": "BAY PADEL Treasure Island",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19726,
+      "country": "US",
+      "title": "Paddles Up Pickleball & Padel",
+      "score": 44,
+      "yoastScore": 100,
+      "expertScore": 45,
+      "contentScore": 73,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19681,
+      "country": "US",
+      "title": "Glendale Lyceum",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19008,
+      "country": "GB",
+      "title": "MPC Tennis and Fitness",
+      "score": 64,
+      "yoastScore": 83,
+      "expertScore": 65,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16887,
+      "country": "GB",
+      "title": "The Padel Club Gloucester Quays",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18332,
+      "country": "GB",
+      "title": "Spa Padel",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18237,
+      "country": "GB",
+      "title": "The Ranch Padel",
+      "score": 73,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16609,
+      "country": "AU",
+      "title": "The Padel Lounge",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17949,
+      "country": "GB",
+      "title": "Vida Del Padel - Guisborough",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17811,
+      "country": "GB",
+      "title": "ATC Padel Andover",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20369,
+      "country": "US",
+      "title": "Padel Club Palm Beach",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19723,
+      "country": "US",
+      "title": "CUBE PADEL CHICAGO",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17176,
+      "country": "GB",
+      "title": "Bridge of Allan Sports Club",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16970,
+      "country": "GB",
+      "title": "Cheshire Padel - Crewe Vagrants",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16886,
+      "country": "GB",
+      "title": "Padel at Hartford Golf",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19595,
+      "country": "US",
+      "title": "PADEL MKE",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16997,
+      "country": "GB",
+      "title": "Akebar Park",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16893,
+      "country": "GB",
+      "title": "Padel at the Coed",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16952,
+      "country": "GB",
+      "title": "S3 Bristol Filton Park",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20420,
+      "country": "US",
+      "title": "Slice Padel Co",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20232,
+      "country": "US",
+      "title": "SLC Padel Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19995,
+      "country": "US",
+      "title": "AREA Centre",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19661,
+      "country": "US",
+      "title": "Taktika Padel San Diego",
+      "score": 75,
+      "yoastScore": 92,
+      "expertScore": 70,
+      "contentScore": 81,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18235,
+      "country": "GB",
+      "title": "Tennis England Club",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 52,
+      "contentScore": 68,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 18366,
+      "country": "GB",
+      "title": "Wressle Grange Padel Club",
+      "score": 46,
+      "yoastScore": 100,
+      "expertScore": 52,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17081,
+      "country": "GB",
+      "title": "Wigan Sports Club",
+      "score": 46,
+      "yoastScore": 100,
+      "expertScore": 52,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21038,
+      "country": "GB",
+      "title": "Nick Williams",
+      "score": 42,
+      "yoastScore": 75,
+      "expertScore": 38,
+      "contentScore": 57,
+      "errors": 19,
+      "warnings": 5,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21035,
+      "country": "GB",
+      "title": "Jo Ward",
+      "score": 40,
+      "yoastScore": 75,
+      "expertScore": 38,
+      "contentScore": 57,
+      "errors": 19,
+      "warnings": 3,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21029,
+      "country": "GB",
+      "title": "Javi Serrats",
+      "score": 38,
+      "yoastScore": 75,
+      "expertScore": 33,
+      "contentScore": 54,
+      "errors": 18,
+      "warnings": 3,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21026,
+      "country": "GB",
+      "title": "Nicky Horn",
+      "score": 45,
+      "yoastScore": 83,
+      "expertScore": 38,
+      "contentScore": 61,
+      "errors": 19,
+      "warnings": 5,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21017,
+      "country": "GB",
+      "title": "Oliver Newsome",
+      "score": 42,
+      "yoastScore": 83,
+      "expertScore": 33,
+      "contentScore": 58,
+      "errors": 19,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21011,
+      "country": "GB",
+      "title": "Robin Engelbertink",
+      "score": 42,
+      "yoastScore": 75,
+      "expertScore": 38,
+      "contentScore": 57,
+      "errors": 19,
+      "warnings": 5,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21008,
+      "country": "GB",
+      "title": "Dan Troy",
+      "score": 40,
+      "yoastScore": 67,
+      "expertScore": 38,
+      "contentScore": 53,
+      "errors": 19,
+      "warnings": 5,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 21005,
+      "country": "GB",
+      "title": "Joan Sendra",
+      "score": 39,
+      "yoastScore": 75,
+      "expertScore": 33,
+      "contentScore": 54,
+      "errors": 19,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S3",
+        "S3",
+        "S4",
+        "S5",
+        "C6",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "C11",
+        "C12",
+        "SC52",
+        "F42",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19936,
+      "country": "US",
+      "title": "BMorePadel",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18496,
+      "country": "GB",
+      "title": "Mickleover Padel Club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17531,
+      "country": "GB",
+      "title": "Widnes Padel Club",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17238,
+      "country": "GB",
+      "title": "Castle Padel Club",
+      "score": 88,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 0,
+      "warnings": 0,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20947,
+      "country": "US",
+      "title": "Mouratoglou Tennis Center Noblesville",
+      "score": 72,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20948,
+      "country": "US",
+      "title": "M PADEL BOSTON",
+      "score": 71,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20920,
+      "country": "US",
+      "title": "PATL Louisville Waterfront Park",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20906,
+      "country": "US",
+      "title": "Cincinnati Open Sporting Club",
+      "score": 67,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20881,
+      "country": "US",
+      "title": "Padel Haus Denver",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20887,
+      "country": "US",
+      "title": "Pepper Padel Miami",
+      "score": 67,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20882,
+      "country": "US",
+      "title": "Padel M",
+      "score": 74,
+      "yoastScore": 67,
+      "expertScore": 45,
+      "contentScore": 56,
+      "errors": 0,
+      "warnings": 3,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20845,
+      "country": "US",
+      "title": "The Houstonian Club",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20823,
+      "country": "US",
+      "title": "Padel AZ",
+      "score": 68,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20829,
+      "country": "US",
+      "title": "Portres Sports Club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20824,
+      "country": "US",
+      "title": "Houston Padel Indoor",
+      "score": 63,
+      "yoastScore": 75,
+      "expertScore": 45,
+      "contentScore": 60,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20810,
+      "country": "US",
+      "title": "Sensa Padel",
+      "score": 84,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20797,
+      "country": "US",
+      "title": "Padel Plus Indoor Racquet Club",
+      "score": 68,
+      "yoastScore": 75,
+      "expertScore": 50,
+      "contentScore": 63,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20783,
+      "country": "US",
+      "title": "PADELHUB Boston",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20758,
+      "country": "US",
+      "title": "Padel United Sports Club",
+      "score": 88,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 0,
+      "warnings": 0,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20757,
+      "country": "US",
+      "title": "Alma Padel",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20744,
+      "country": "US",
+      "title": "Matt's Pickle and Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20719,
+      "country": "US",
+      "title": "Reserve Padel",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20694,
+      "country": "US",
+      "title": "Proximo Padel",
+      "score": 66,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20664,
+      "country": "US",
+      "title": "Icon Padel Club",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20655,
+      "country": "US",
+      "title": "Canas Racket Padel",
+      "score": 46,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20632,
+      "country": "US",
+      "title": "Racket Social Club Katy",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20631,
+      "country": "US",
+      "title": "Padel N9NE",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20618,
+      "country": "US",
+      "title": "St. Pete Athletic",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20602,
+      "country": "US",
+      "title": "Conquer Padel Phoenix",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20591,
+      "country": "US",
+      "title": "U-Padel Club",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20566,
+      "country": "US",
+      "title": "Padel Boston",
+      "score": 58,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20565,
+      "country": "US",
+      "title": "Wynwood Padel Club",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20467,
+      "country": "US",
+      "title": "Brickell Soccer & Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20440,
+      "country": "US",
+      "title": "Casas Padel Club Aventura",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20419,
+      "country": "US",
+      "title": "The Pad Sarasota",
+      "score": 62,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20370,
+      "country": "US",
+      "title": "The Pad Tucson",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20367,
+      "country": "US",
+      "title": "Kraken Padel Club",
+      "score": 67,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20341,
+      "country": "US",
+      "title": "VIVA Padel & Pickleball",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20353,
+      "country": "US",
+      "title": "New Canaan Field Club",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20297,
+      "country": "US",
+      "title": "Orlando Padel Club Indoor",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20311,
+      "country": "US",
+      "title": "The Sports Haus",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20296,
+      "country": "US",
+      "title": "Padel + Pickle Club",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20305,
+      "country": "US",
+      "title": "The Bay (AFA International Center)",
+      "score": 60,
+      "yoastScore": 75,
+      "expertScore": 35,
+      "contentScore": 55,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20284,
+      "country": "US",
+      "title": "One Padel Indoor Club",
+      "score": 66,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20270,
+      "country": "US",
+      "title": "Racket Social Club - Denver",
+      "score": 59,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20257,
+      "country": "US",
+      "title": "Emilio Sanchez Academy Florida",
+      "score": 64,
+      "yoastScore": 83,
+      "expertScore": 65,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20214,
+      "country": "US",
+      "title": "Casa de Padel HTX",
+      "score": 80,
+      "yoastScore": 92,
+      "expertScore": 40,
+      "contentScore": 66,
+      "errors": 0,
+      "warnings": 2,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20185,
+      "country": "US",
+      "title": "Laredo Padel Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20148,
+      "country": "US",
+      "title": "Park Padel",
+      "score": 62,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20147,
+      "country": "US",
+      "title": "The King of Padel SA",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20151,
+      "country": "US",
+      "title": "Serve El Paso",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20113,
+      "country": "US",
+      "title": "Taktika Padel Shadow Mountain Resort",
+      "score": 65,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20092,
+      "country": "US",
+      "title": "Oh Padel",
+      "score": 59,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20041,
+      "country": "US",
+      "title": "Padel Clube USA",
+      "score": 65,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20034,
+      "country": "US",
+      "title": "Racket Social Club Willowbrook",
+      "score": 88,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 0,
+      "warnings": 0,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 20032,
+      "country": "US",
+      "title": "40Forty Padel Club",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20035,
+      "country": "US",
+      "title": "Padel Paso",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 20033,
+      "country": "US",
+      "title": "TERRA Padel",
+      "score": 66,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19993,
+      "country": "US",
+      "title": "Regency Padel",
+      "score": 83,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 0,
+      "warnings": 2,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 19994,
+      "country": "US",
+      "title": "Access Padel",
+      "score": 67,
+      "yoastScore": 75,
+      "expertScore": 60,
+      "contentScore": 68,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19933,
+      "country": "US",
+      "title": "Pick and Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19966,
+      "country": "US",
+      "title": "Padel California - Oceanside",
+      "score": 43,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19883,
+      "country": "US",
+      "title": "Padel Club EP",
+      "score": 73,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19887,
+      "country": "US",
+      "title": "Padel Square USA",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19889,
+      "country": "US",
+      "title": "Padel& Syosset",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19901,
+      "country": "US",
+      "title": "Padel 9 - El Paso",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19831,
+      "country": "US",
+      "title": "Phantom Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19830,
+      "country": "US",
+      "title": "Austin Padel Center Pop-Up",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19833,
+      "country": "US",
+      "title": "Mondo Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19796,
+      "country": "US",
+      "title": "Xcel Padel - West Palm Beach",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19799,
+      "country": "US",
+      "title": "Woodcourt Padel and Pickleball",
+      "score": 64,
+      "yoastScore": 75,
+      "expertScore": 50,
+      "contentScore": 63,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19788,
+      "country": "US",
+      "title": "Foundry Padel",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19742,
+      "country": "US",
+      "title": "Charlotte Padel Club - Matthews",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19722,
+      "country": "AU",
+      "title": "RGV Padel & Pickleball Club",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19659,
+      "country": "US",
+      "title": "Point Padel Club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19662,
+      "country": "US",
+      "title": "Padel Garten by Glassbox",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19660,
+      "country": "US",
+      "title": "Pura Padel LA",
+      "score": 58,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19614,
+      "country": "US",
+      "title": "Park Padel Oyster Point",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19598,
+      "country": "US",
+      "title": "Ola Padel Club by Nox",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19551,
+      "country": "US",
+      "title": "Padel Pals Club East Valley",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19549,
+      "country": "US",
+      "title": "PadelAZ at Maracana",
+      "score": 70,
+      "yoastScore": 73,
+      "expertScore": 60,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19483,
+      "country": "US",
+      "title": "Zmash Padel",
+      "score": 73,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19419,
+      "country": "US",
+      "title": "TEMPO Padel & Pickleball Club",
+      "score": 48,
+      "yoastScore": 75,
+      "expertScore": 45,
+      "contentScore": 60,
+      "errors": 5,
+      "warnings": 2,
+      "errorCodes": [
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19420,
+      "country": "US",
+      "title": "Caribe Royale Orlando Sport Court",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19418,
+      "country": "US",
+      "title": "Padel X Miami",
+      "score": 58,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19353,
+      "country": "US",
+      "title": "Padel Alley",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19354,
+      "country": "US",
+      "title": "Open Padel by Lasaigues",
+      "score": 56,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "C11"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19355,
+      "country": "US",
+      "title": "Giammalva Racquet Club & Elite Academy",
+      "score": 45,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19352,
+      "country": "US",
+      "title": "Incredibowl Pickle & Padel",
+      "score": 61,
+      "yoastScore": 73,
+      "expertScore": 50,
+      "contentScore": 62,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19356,
+      "country": "US",
+      "title": "Point Miami Beach",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19110,
+      "country": "GB",
+      "title": "Future Padel",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19092,
+      "country": "GB",
+      "title": "All Star Padel King George's Park",
+      "score": 62,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19085,
+      "country": "GB",
+      "title": "Powerleague Padel Sighthill",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19067,
+      "country": "GB",
+      "title": "Rocks Lane Chiswick Padel Tennis",
+      "score": 35,
+      "yoastScore": 73,
+      "expertScore": 45,
+      "contentScore": 59,
+      "errors": 2,
+      "warnings": 0,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19075,
+      "country": "GB",
+      "title": "Crystal Palace Padel Courts",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19046,
+      "country": "GB",
+      "title": "Barnt Green Sports Club",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19039,
+      "country": "GB",
+      "title": "Stafford Padel Club",
+      "score": 61,
+      "yoastScore": 73,
+      "expertScore": 50,
+      "contentScore": 62,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19034,
+      "country": "GB",
+      "title": "Racquet Garden",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 19009,
+      "country": "GB",
+      "title": "Padel Affair Tower Hill",
+      "score": 65,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18976,
+      "country": "GB",
+      "title": "The Heron Padel Club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18980,
+      "country": "GB",
+      "title": "Manchester Tennis & Racquets Club",
+      "score": 66,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18948,
+      "country": "GB",
+      "title": "Roehampton Club",
+      "score": 52,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18923,
+      "country": "GB",
+      "title": "Blazing Padels",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18881,
+      "country": "GB",
+      "title": "Advantage Padel Kingsley",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18838,
+      "country": "GB",
+      "title": "Padel Boutique",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 18836,
+      "country": "GB",
+      "title": "Park Sports Lammas Park",
+      "score": 65,
+      "yoastScore": 73,
+      "expertScore": 45,
+      "contentScore": 59,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18871,
+      "country": "GB",
+      "title": "Padelheim",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18819,
+      "country": "GB",
+      "title": "Padel Pod",
+      "score": 53,
+      "yoastScore": 73,
+      "expertScore": 60,
+      "contentScore": 67,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18771,
+      "country": "GB",
+      "title": "Oxshott Village Sports Club",
+      "score": 69,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18774,
+      "country": "GB",
+      "title": "Barnton Cricket Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18769,
+      "country": "GB",
+      "title": "Belfast Boat Club Padel",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 18728,
+      "country": "GB",
+      "title": "Hazelwood Sports Club",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18713,
+      "country": "GB",
+      "title": "UK Padel Newquay",
+      "score": 67,
+      "yoastScore": 82,
+      "expertScore": 75,
+      "contentScore": 79,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18665,
+      "country": "GB",
+      "title": "Padel Studios",
+      "score": 85,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 0,
+      "warnings": 0,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 18683,
+      "country": "GB",
+      "title": "UK Padel at Holmer Green",
+      "score": 55,
+      "yoastScore": 73,
+      "expertScore": 45,
+      "contentScore": 59,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18648,
+      "country": "GB",
+      "title": "Withdean Sports Complex",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18640,
+      "country": "GB",
+      "title": "Headlands Farm Padel Club",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18603,
+      "country": "GB",
+      "title": "Equinox Padel",
+      "score": 65,
+      "yoastScore": 75,
+      "expertScore": 40,
+      "contentScore": 58,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18583,
+      "country": "GB",
+      "title": "Overstone Padel",
+      "score": 61,
+      "yoastScore": 73,
+      "expertScore": 50,
+      "contentScore": 62,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18590,
+      "country": "GB",
+      "title": "Tour Padel Avery Hill",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18551,
+      "country": "GB",
+      "title": "The Padel Barn at Round Meadows Farm",
+      "score": 46,
+      "yoastScore": 100,
+      "expertScore": 52,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18543,
+      "country": "GB",
+      "title": "Pearce Padel at Mad Swans",
+      "score": 58,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18549,
+      "country": "GB",
+      "title": "Sandbach Padel Club",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18541,
+      "country": "GB",
+      "title": "Dillington Padel",
+      "score": 61,
+      "yoastScore": 64,
+      "expertScore": 40,
+      "contentScore": 52,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18508,
+      "country": "GB",
+      "title": "Padel Tree Brentford",
+      "score": 65,
+      "yoastScore": 75,
+      "expertScore": 35,
+      "contentScore": 55,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18500,
+      "country": "GB",
+      "title": "Ace Padel Club Weston Rhyn",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18510,
+      "country": "GB",
+      "title": "Rulo Clubs",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18434,
+      "country": "GB",
+      "title": "Soul Padel Braehead",
+      "score": 52,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18456,
+      "country": "GB",
+      "title": "The Padel Shed Selby",
+      "score": 70,
+      "yoastScore": 100,
+      "expertScore": 45,
+      "contentScore": 73,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18404,
+      "country": "GB",
+      "title": "Wold Padel",
+      "score": 52,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18405,
+      "country": "GB",
+      "title": "Let's Go Padel Lurgan",
+      "score": 78,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18394,
+      "country": "GB",
+      "title": "Skegness Padel",
+      "score": 59,
+      "yoastScore": 83,
+      "expertScore": 48,
+      "contentScore": 66,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18392,
+      "country": "GB",
+      "title": "The Padel Barn Leeming Bar",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18363,
+      "country": "GB",
+      "title": "PadAll Haverhill",
+      "score": 66,
+      "yoastScore": 75,
+      "expertScore": 45,
+      "contentScore": 60,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18362,
+      "country": "GB",
+      "title": "Ace Padel Milton",
+      "score": 75,
+      "yoastScore": 73,
+      "expertScore": 45,
+      "contentScore": 59,
+      "errors": 0,
+      "warnings": 2,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 18367,
+      "country": "GB",
+      "title": "Padel Shed Thirsk",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18334,
+      "country": "GB",
+      "title": "Padel United Stansted",
+      "score": 55,
+      "yoastScore": 73,
+      "expertScore": 45,
+      "contentScore": 59,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18324,
+      "country": "GB",
+      "title": "Manor Padel Club",
+      "score": 65,
+      "yoastScore": 75,
+      "expertScore": 40,
+      "contentScore": 58,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18282,
+      "country": "GB",
+      "title": "Vida Del Padel Eston",
+      "score": 70,
+      "yoastScore": 82,
+      "expertScore": 70,
+      "contentScore": 76,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18291,
+      "country": "GB",
+      "title": "The Rally Hub",
+      "score": 65,
+      "yoastScore": 83,
+      "expertScore": 45,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18283,
+      "country": "GB",
+      "title": "Driffield Padel Court",
+      "score": 60,
+      "yoastScore": 75,
+      "expertScore": 35,
+      "contentScore": 55,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18236,
+      "country": "GB",
+      "title": "Rhosneigr Sports Club",
+      "score": 68,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18250,
+      "country": "GB",
+      "title": "Selby Padel Club",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18249,
+      "country": "GB",
+      "title": "Let's Go Padel Newry",
+      "score": 73,
+      "yoastScore": 92,
+      "expertScore": 50,
+      "contentScore": 71,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18224,
+      "country": "GB",
+      "title": "Racquet Club 24",
+      "score": 65,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18193,
+      "country": "GB",
+      "title": "Hamptworth Padel and Pickleball Club",
+      "score": 72,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 2,
+      "warnings": 4,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18204,
+      "country": "GB",
+      "title": "Fr Padel",
+      "score": 60,
+      "yoastScore": 73,
+      "expertScore": 60,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18190,
+      "country": "GB",
+      "title": "That Padel Club Tuxford",
+      "score": 57,
+      "yoastScore": 64,
+      "expertScore": 35,
+      "contentScore": 50,
+      "errors": 2,
+      "warnings": 4,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18189,
+      "country": "GB",
+      "title": "Tilsworth Padel Club",
+      "score": 64,
+      "yoastScore": 83,
+      "expertScore": 65,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18172,
+      "country": "GB",
+      "title": "Glossop Padel",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18141,
+      "country": "GB",
+      "title": "Lacey Green & Loosley Row Padel & Tennis",
+      "score": 55,
+      "yoastScore": 73,
+      "expertScore": 45,
+      "contentScore": 59,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18152,
+      "country": "AU",
+      "title": "Play Padel Club Deal",
+      "score": 50,
+      "yoastScore": 64,
+      "expertScore": 35,
+      "contentScore": 50,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18146,
+      "country": "GB",
+      "title": "Courts Padel at The Retreat Elcot Park",
+      "score": 57,
+      "yoastScore": 73,
+      "expertScore": 50,
+      "contentScore": 62,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18101,
+      "country": "GB",
+      "title": "Padel Project UK South Shields",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18088,
+      "country": "GB",
+      "title": "Glass Padel Club",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18094,
+      "country": "GB",
+      "title": "Square One Sittingbourne",
+      "score": 71,
+      "yoastScore": 75,
+      "expertScore": 60,
+      "contentScore": 68,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18059,
+      "country": "GB",
+      "title": "Padel World UK",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18036,
+      "country": "GB",
+      "title": "Purple Padel Club",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 18035,
+      "country": "GB",
+      "title": "Notleys Padel Club",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17997,
+      "country": "GB",
+      "title": "Powerhouse Padel Coleraine",
+      "score": 69,
+      "yoastScore": 92,
+      "expertScore": 70,
+      "contentScore": 81,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17990,
+      "country": "GB",
+      "title": "Frodsham Padel Club",
+      "score": 71,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17947,
+      "country": "GB",
+      "title": "Let's Go Padel Derry",
+      "score": 65,
+      "yoastScore": 83,
+      "expertScore": 45,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17945,
+      "country": "GB",
+      "title": "Let's Go Padel Omagh",
+      "score": 71,
+      "yoastScore": 100,
+      "expertScore": 70,
+      "contentScore": 85,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17906,
+      "country": "GB",
+      "title": "Padel + Play Stratford-upon-Avon",
+      "score": 71,
+      "yoastScore": 75,
+      "expertScore": 60,
+      "contentScore": 68,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17894,
+      "country": "GB",
+      "title": "The Padel Hangar",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17897,
+      "country": "GB",
+      "title": "Skill School HQ",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17850,
+      "country": "GB",
+      "title": "Eixo Padel",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17851,
+      "country": "GB",
+      "title": "Centre Court Padel",
+      "score": 67,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17832,
+      "country": "GB",
+      "title": "Matchbox Pickleball",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17812,
+      "country": "GB",
+      "title": "Padel 4 Everyone Harold Hill",
+      "score": 68,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17769,
+      "country": "GB",
+      "title": "Padel Project UK Darlington",
+      "score": 88,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 0,
+      "warnings": 0,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17770,
+      "country": "GB",
+      "title": "The Hook Club at Mottram Hall",
+      "score": 65,
+      "yoastScore": 73,
+      "expertScore": 55,
+      "contentScore": 64,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17765,
+      "country": "GB",
+      "title": "Padel Central Partington",
+      "score": 64,
+      "yoastScore": 73,
+      "expertScore": 50,
+      "contentScore": 62,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17749,
+      "country": "GB",
+      "title": "Padel at Cotswolds Hotel & Spa",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17709,
+      "country": "GB",
+      "title": "Brakepoint Padel Club",
+      "score": 65,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17718,
+      "country": "GB",
+      "title": "Tour Padel Medway",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17672,
+      "country": "GB",
+      "title": "Padel People - Shepton Mallet",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17679,
+      "country": "GB",
+      "title": "Padel Master Doncaster",
+      "score": 81,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17660,
+      "country": "GB",
+      "title": "Barnsgrove",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17624,
+      "country": "GB",
+      "title": "Padel Elite Sheffield",
+      "score": 84,
+      "yoastScore": 83,
+      "expertScore": 65,
+      "contentScore": 74,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17612,
+      "country": "GB",
+      "title": "Prested Padel Club",
+      "score": 73,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17631,
+      "country": "GB",
+      "title": "Cholmondeley Padel Pavilion",
+      "score": 53,
+      "yoastScore": 73,
+      "expertScore": 60,
+      "contentScore": 67,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17635,
+      "country": "GB",
+      "title": "Padel United Colchester",
+      "score": 67,
+      "yoastScore": 75,
+      "expertScore": 60,
+      "contentScore": 68,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17613,
+      "country": "GB",
+      "title": "Padel United Chelmsford",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17581,
+      "country": "GB",
+      "title": "Your Padel",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17576,
+      "country": "GB",
+      "title": "Northampton County Lawn Tennis & Padel Club",
+      "score": 78,
+      "yoastScore": 75,
+      "expertScore": 50,
+      "contentScore": 63,
+      "errors": 0,
+      "warnings": 2,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17575,
+      "country": "GB",
+      "title": "Skipton Tennis & Padel Centre",
+      "score": 63,
+      "yoastScore": 75,
+      "expertScore": 45,
+      "contentScore": 60,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17529,
+      "country": "GB",
+      "title": "Padel and Coffee",
+      "score": 77,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17530,
+      "country": "GB",
+      "title": "Ribble Valley Padel Hub",
+      "score": 70,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17501,
+      "country": "GB",
+      "title": "Destination Padel Northwich",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17469,
+      "country": "GB",
+      "title": "Padel United Maldon",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17470,
+      "country": "GB",
+      "title": "Cross Court Padel",
+      "score": 83,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17453,
+      "country": "GB",
+      "title": "Pigs Padel",
+      "score": 57,
+      "yoastScore": 73,
+      "expertScore": 50,
+      "contentScore": 62,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17400,
+      "country": "GB",
+      "title": "Louth Padel Co",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17399,
+      "country": "GB",
+      "title": "Padel Club at Mytton",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17343,
+      "country": "GB",
+      "title": "Barons Fitness",
+      "score": 71,
+      "yoastScore": 75,
+      "expertScore": 55,
+      "contentScore": 65,
+      "errors": 1,
+      "warnings": 4,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17341,
+      "country": "GB",
+      "title": "BOUNC",
+      "score": 78,
+      "yoastScore": 75,
+      "expertScore": 50,
+      "contentScore": 63,
+      "errors": 0,
+      "warnings": 2,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17342,
+      "country": "GB",
+      "title": "PADELHUB Crawley",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17344,
+      "country": "GB",
+      "title": "Picklepad Christchurch",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17287,
+      "country": "GB",
+      "title": "CPASE Health Club",
+      "score": 74,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17290,
+      "country": "GB",
+      "title": "Padel at Denham Grove",
+      "score": 63,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17272,
+      "country": "GB",
+      "title": "Padel Power",
+      "score": 80,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17219,
+      "country": "GB",
+      "title": "The Atrium Health Club",
+      "score": 83,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17178,
+      "country": "GB",
+      "title": "The Padel Club Cheltenham",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11526,
+      "country": "AU",
+      "title": "Padel Point",
+      "score": 61,
+      "yoastScore": 75,
+      "expertScore": 60,
+      "contentScore": 68,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "C8"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11640,
+      "country": "OTHER",
+      "title": "[TEST] Jungle Padel Pererenan - Pipeline Test",
+      "score": 46,
+      "yoastScore": 83,
+      "expertScore": 45,
+      "contentScore": 64,
+      "errors": 9,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "M28",
+        "C6",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11643,
+      "country": "AU",
+      "title": "Padel Point Bankstown",
+      "score": 71,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 1,
+      "warnings": 3,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11653,
+      "country": "AU",
+      "title": "Recess Padel Club",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11666,
+      "country": "AU",
+      "title": "Game4Padel Richmond",
+      "score": 64,
+      "yoastScore": 75,
+      "expertScore": 50,
+      "contentScore": 63,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11804,
+      "country": "AU",
+      "title": "Padel 360 Cockburn",
+      "score": 42,
+      "yoastScore": 70,
+      "expertScore": 69,
+      "contentScore": 70,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11774,
+      "country": "AU",
+      "title": "iPadel",
+      "score": 40,
+      "yoastScore": 70,
+      "expertScore": 63,
+      "contentScore": 67,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11824,
+      "country": "AU",
+      "title": "Padel Brisbane - The Gap",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11735,
+      "country": "AU",
+      "title": "Nordic Padel Tullamarine",
+      "score": 66,
+      "yoastScore": 92,
+      "expertScore": 60,
+      "contentScore": 76,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11523,
+      "country": "AU",
+      "title": "Padel Club Australia",
+      "score": 61,
+      "yoastScore": 83,
+      "expertScore": 55,
+      "contentScore": 69,
+      "errors": 2,
+      "warnings": 2,
+      "errorCodes": [
+        "S4",
+        "C8"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11667,
+      "country": "AU",
+      "title": "Game4Padel Docklands",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11481,
+      "country": "ID",
+      "title": "[PIPELINE TEST] Bali Padel Academy",
+      "score": 54,
+      "yoastScore": 83,
+      "expertScore": 45,
+      "contentScore": 64,
+      "errors": 9,
+      "warnings": 6,
+      "errorCodes": [
+        "S4",
+        "C6",
+        "C8",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11664,
+      "country": "AU",
+      "title": "Canberra Racquet Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9785,
+      "country": "GB",
+      "title": "Pendle Padel Club",
+      "score": 47,
+      "yoastScore": 60,
+      "expertScore": 38,
+      "contentScore": 49,
+      "errors": 6,
+      "warnings": 5,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C6",
+        "C8",
+        "SC52",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9787,
+      "country": "GB",
+      "title": "Square One Padel Ashford",
+      "score": 41,
+      "yoastScore": 60,
+      "expertScore": 38,
+      "contentScore": 49,
+      "errors": 7,
+      "warnings": 3,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C6",
+        "C7",
+        "C8",
+        "SC52",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9781,
+      "country": "GB",
+      "title": "Let's Go Padel - Ballyclare",
+      "score": 42,
+      "yoastScore": 70,
+      "expertScore": 44,
+      "contentScore": 57,
+      "errors": 13,
+      "warnings": 3,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C6",
+        "C7",
+        "C8",
+        "SC52",
+        "SC55",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9782,
+      "country": "GB",
+      "title": "Padel Social House Northampton",
+      "score": 50,
+      "yoastScore": 70,
+      "expertScore": 50,
+      "contentScore": 60,
+      "errors": 7,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C6",
+        "C7",
+        "C8",
+        "SC52",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9778,
+      "country": "GB",
+      "title": "Carbon Padel Club",
+      "score": 47,
+      "yoastScore": 70,
+      "expertScore": 63,
+      "contentScore": 67,
+      "errors": 10,
+      "warnings": 2,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C6",
+        "C8",
+        "C12",
+        "C12",
+        "C12",
+        "C12",
+        "SC52",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9783,
+      "country": "GB",
+      "title": "Cardiff City House of Sport (Padelspeed)",
+      "score": 41,
+      "yoastScore": 60,
+      "expertScore": 44,
+      "contentScore": 52,
+      "errors": 12,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C6",
+        "C8",
+        "C12",
+        "SC52",
+        "SC55",
+        "F43",
+        "F43",
+        "F43",
+        "F43",
+        "F43"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9786,
+      "country": "GB",
+      "title": "Slazenger Padel Clubs - Blackburn",
+      "score": 50,
+      "yoastScore": 70,
+      "expertScore": 50,
+      "contentScore": 60,
+      "errors": 7,
+      "warnings": 4,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C6",
+        "C8",
+        "C12",
+        "SC52",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11028,
+      "country": "GB",
+      "title": "Game4Padel | Grappenhall Village LTC",
+      "score": 54,
+      "yoastScore": 58,
+      "expertScore": 33,
+      "contentScore": 46,
+      "errors": 2,
+      "warnings": 4,
+      "errorCodes": [
+        "C8",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16658,
+      "country": "AU",
+      "title": "Padel Perth Reabold",
+      "score": 55,
+      "yoastScore": 70,
+      "expertScore": 69,
+      "contentScore": 70,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16731,
+      "country": "AU",
+      "title": "West Coast Padel",
+      "score": 64,
+      "yoastScore": 70,
+      "expertScore": 63,
+      "contentScore": 67,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17131,
+      "country": "GB",
+      "title": "PADELHUB Slough",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16786,
+      "country": "AU",
+      "title": "Colosso Padel & Social Club Southland",
+      "score": 47,
+      "yoastScore": 70,
+      "expertScore": 44,
+      "contentScore": 57,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "S5"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17103,
+      "country": "GB",
+      "title": "Wakefield Sports & Padel Club",
+      "score": 84,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 0,
+      "warnings": 4,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17035,
+      "country": "GB",
+      "title": "Manton Sports Club",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 17046,
+      "country": "GB",
+      "title": "The Northern",
+      "score": 88,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 0,
+      "warnings": 0,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 17006,
+      "country": "GB",
+      "title": "Everybody Padel - The Barony",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16919,
+      "country": "GB",
+      "title": "The Padel Club Wilmslow",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16929,
+      "country": "GB",
+      "title": "Powerleague Watford",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16873,
+      "country": "GB",
+      "title": "Brampton Heath Golf and Padel",
+      "score": 84,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 0,
+      "warnings": 1,
+      "errorCodes": [],
+      "status": "audited"
+    },
+    {
+      "id": 16830,
+      "country": "GB",
+      "title": "Powerleague Mill Hill",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16843,
+      "country": "GB",
+      "title": "The Padel Club at The Mount Golf and Country Club",
+      "score": 64,
+      "yoastScore": 92,
+      "expertScore": 55,
+      "contentScore": 74,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16821,
+      "country": "GB",
+      "title": "Velocity Padel Widnes",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16806,
+      "country": "AU",
+      "title": "Padel Kennedy Bay",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16794,
+      "country": "AU",
+      "title": "Padel Spot Minto",
+      "score": 75,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16780,
+      "country": "AU",
+      "title": "The Racquet Collective",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16761,
+      "country": "AU",
+      "title": "Tribe Padel and Wellness",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16771,
+      "country": "AU",
+      "title": "Padelwest",
+      "score": 51,
+      "yoastScore": 100,
+      "expertScore": 70,
+      "contentScore": 85,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16747,
+      "country": "AU",
+      "title": "South East Padel",
+      "score": 67,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16730,
+      "country": "AU",
+      "title": "iPadel Melbourne",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16697,
+      "country": "AU",
+      "title": "Padel Gold Coast",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16699,
+      "country": "AU",
+      "title": "The Town Padel",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16693,
+      "country": "AU",
+      "title": "Padel Fit",
+      "score": 48,
+      "yoastScore": 100,
+      "expertScore": 60,
+      "contentScore": 80,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16627,
+      "country": "AU",
+      "title": "La Palma Padel Club",
+      "score": 65,
+      "yoastScore": 100,
+      "expertScore": 50,
+      "contentScore": 75,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 16610,
+      "country": "AU",
+      "title": "Padel Crush Wembley",
+      "score": 47,
+      "yoastScore": 100,
+      "expertScore": 55,
+      "contentScore": 78,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 13529,
+      "country": "AE",
+      "title": "Vamos Padel",
+      "score": 70,
+      "yoastScore": 92,
+      "expertScore": 75,
+      "contentScore": 84,
+      "errors": 1,
+      "warnings": 1,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11522,
+      "country": "AU",
+      "title": "Indoor Padel Northern Beaches",
+      "score": 50,
+      "yoastScore": 100,
+      "expertScore": 65,
+      "contentScore": 83,
+      "errors": 1,
+      "warnings": 0,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11520,
+      "country": "AU",
+      "title": "Indoor Padel Australia - Sydney",
+      "score": 64,
+      "yoastScore": 75,
+      "expertScore": 50,
+      "contentScore": 63,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "S4"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11625,
+      "country": "AU",
+      "title": "Sydney Racquet Club",
+      "score": 64,
+      "yoastScore": 83,
+      "expertScore": 50,
+      "contentScore": 67,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "S4",
+        "C8"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 11528,
+      "country": "AU",
+      "title": "Padel Sydney North",
+      "score": 56,
+      "yoastScore": 83,
+      "expertScore": 60,
+      "contentScore": 72,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "S4",
+        "C8"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 10271,
+      "country": "US",
+      "title": "Golden Point Padel Club",
+      "score": 60,
+      "yoastScore": 83,
+      "expertScore": 38,
+      "contentScore": 61,
+      "errors": 2,
+      "warnings": 3,
+      "errorCodes": [
+        "C8",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 10256,
+      "country": "US",
+      "title": "SPORTIME Padel",
+      "score": 50,
+      "yoastScore": 75,
+      "expertScore": 48,
+      "contentScore": 62,
+      "errors": 2,
+      "warnings": 1,
+      "errorCodes": [
+        "C8",
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 10185,
+      "country": "GB",
+      "title": "Thistle Padel | Game4Padel",
+      "score": 46,
+      "yoastScore": 75,
+      "expertScore": 43,
+      "contentScore": 59,
+      "errors": 8,
+      "warnings": 3,
+      "errorCodes": [
+        "C8",
+        "C12",
+        "C12",
+        "C12",
+        "C12",
+        "C12",
+        "SC55",
+        "H"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 10178,
+      "country": "GB",
+      "title": "Game4Padel | Barnton Park Padel",
+      "score": 50,
+      "yoastScore": 75,
+      "expertScore": 43,
+      "contentScore": 59,
+      "errors": 7,
+      "warnings": 4,
+      "errorCodes": [
+        "C8",
+        "C12",
+        "C12",
+        "C12",
+        "SC55",
+        "H",
+        "H"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 10097,
+      "country": "GB",
+      "title": "Pure Padel Darlington",
+      "score": 78,
+      "yoastScore": 100,
+      "expertScore": 71,
+      "contentScore": 86,
+      "errors": 1,
+      "warnings": 2,
+      "errorCodes": [
+        "SC55"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 10022,
+      "country": "GB",
+      "title": "Equinox paddle sport club",
+      "score": 52,
+      "yoastScore": 83,
+      "expertScore": 33,
+      "contentScore": 58,
+      "errors": 7,
+      "warnings": 5,
+      "errorCodes": [
+        "S4",
+        "C8",
+        "C9",
+        "C12",
+        "SC52",
+        "SC55",
+        "H"
+      ],
+      "status": "audited"
+    },
+    {
+      "id": 9792,
+      "country": "GB",
+      "title": "Powerleague padel Manchester",
+      "score": 41,
+      "yoastScore": 60,
+      "expertScore": 44,
+      "contentScore": 52,
+      "errors": 9,
+      "warnings": 3,
+      "errorCodes": [
+        "S2",
+        "S4",
+        "C7",
+        "C7",
+        "C7",
+        "C7",
+        "C8",
+        "SC52",
+        "SC55"
+      ],
+      "status": "audited"
+    }
+  ],
+  "excluded": [
+    {
+      "id": 12453,
+      "country": "AE",
+      "title": "YalaSports Padel Club",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 12589,
+      "country": "AE",
+      "title": "Dubai South Sport Complex",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 12757,
+      "country": "AE",
+      "title": "Just Padel - Dubai Ladies Club",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 12916,
+      "country": "AE",
+      "title": "Modern Padel &#038; Tennis",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 13879,
+      "country": "AE",
+      "title": "Adu Falco Padel",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 14891,
+      "country": "AE",
+      "title": "Danat Al Ain Resort Padel Court",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 14896,
+      "country": "AE",
+      "title": "Active Padel",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 15955,
+      "country": "AE",
+      "title": "Top Padel Al Mamzar Beach",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 16097,
+      "country": "AE",
+      "title": "Blue Padel",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 20613,
+      "country": "US",
+      "title": "DUS Padel",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 19822,
+      "country": "US",
+      "title": "Punto Azul Padel Club",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 18660,
+      "country": "GB",
+      "title": "Border Padel Co.",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 18639,
+      "country": "OTHER",
+      "title": "The Sports Warehouse Flint",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 18545,
+      "country": "GB",
+      "title": "Oxygen Padel",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 18463,
+      "country": "GB",
+      "title": "Court De Padel Hull",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 18439,
+      "country": "GB",
+      "title": "Encourt Padel &#038; Wellness",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 18331,
+      "country": "GB",
+      "title": "Padel Tree Chobham",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 17865,
+      "country": "GB",
+      "title": "Wadswick Padel",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 17862,
+      "country": "GB",
+      "title": "GotPadelClub",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 17595,
+      "country": "GB",
+      "title": "Padel Powerhouse Burnham",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 17311,
+      "country": "GB",
+      "title": "Ignite Padel Hunts Cross",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 17130,
+      "country": "GB",
+      "title": "Forever Padel Maidstone",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 17056,
+      "country": "GB",
+      "title": "Wombourne Padel",
+      "reason": "no _place_id"
+    },
+    {
+      "id": 16671,
+      "country": "AU",
+      "title": "Racqueteer",
+      "reason": "no _place_id"
+    }
+  ],
+  "perCountry": {
+    "GB": {
+      "audited": 192,
+      "avgScore": 61,
+      "publishReady": 18,
+      "bpa": 4
+    },
+    "AE": {
+      "audited": 238,
+      "avgScore": 60,
+      "publishReady": 0,
+      "bpa": 0
+    },
+    "US": {
+      "audited": 122,
+      "avgScore": 62,
+      "publishReady": 7,
+      "bpa": 2
+    },
+    "AU": {
+      "audited": 34,
+      "avgScore": 56,
+      "publishReady": 0,
+      "bpa": 0
+    },
+    "OTHER": {
+      "audited": 1,
+      "avgScore": 46,
+      "publishReady": 0,
+      "bpa": 0
+    },
+    "ID": {
+      "audited": 1,
+      "avgScore": 54,
+      "publishReady": 0,
+      "bpa": 0
+    }
+  }
+}

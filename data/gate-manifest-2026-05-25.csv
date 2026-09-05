@@ -1,0 +1,26 @@
+country,wp_id,title,score,errors,warnings
+GB,17238,"Castle Padel Club",88,0,0
+US,20758,"Padel United Sports Club",88,0,0
+US,20034,"Racket Social Club Willowbrook",88,0,0
+GB,17769,"Padel Project UK Darlington",88,0,0
+GB,17046,"The Northern",88,0,0
+GB,18665,"Padel Studios",85,0,0
+US,20810,"Sensa Padel",84,0,1
+GB,17624,"Padel Elite Sheffield",84,0,1
+GB,17103,"Wakefield Sports & Padel Club",84,0,4
+GB,16873,"Brampton Heath Golf and Padel",84,0,1
+US,19993,"Regency Padel",83,0,2
+GB,17470,"Cross Court Padel",83,0,1
+GB,17219,"The Atrium Health Club",83,0,1
+GB,18305,"The Northern Padel House",81,0,3
+GB,18140,"Eastbourne Padel Club",81,0,2
+GB,17124,"The Padel Inn",81,0,1
+GB,17991,"Eat Sleep Padel",81,0,1
+GB,18235,"Tennis England Club",81,0,1
+US,20664,"Icon Padel Club",81,0,1
+US,20440,"Casas Padel Club Aventura",81,0,1
+GB,18838,"Padel Boutique",81,0,1
+GB,18769,"Belfast Boat Club Padel",81,0,1
+GB,17679,"Padel Master Doncaster",81,0,1
+US,20214,"Casa de Padel HTX",80,0,2
+GB,17272,"Padel Power",80,0,1

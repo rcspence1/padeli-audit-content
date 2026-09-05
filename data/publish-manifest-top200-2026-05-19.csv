@@ -1,0 +1,201 @@
+country,wp_id,title,score,errors,warnings
+US,19422,"Ultra Padel Miami Magic City",93,0,0
+GB,18701,"UK Padel Stoke Poges",93,0,0
+GB,17907,"Casa Del Padel Malton",93,0,0
+GB,17345,"Slazenger Padel Swindon",93,0,0
+GB,17322,"Padel Maidenhead",93,0,0
+US,19978,"Park Padel West Sacramento",91,0,0
+US,19735,"Ultra Padel Aventura",91,0,0
+GB,19047,"Utopia Padel Ipswich",91,0,0
+GB,17946,"WePlay Padel Kirkbymoorside",91,0,0
+GB,17175,"Surge Padel Harrogate",91,0,0
+GB,16823,"The Hive London",91,0,0
+GB,17945,"Let's Go Padel Omagh",91,0,1
+GB,17712,"VIP Padel Newton-le-Willows",91,0,1
+US,20368,"Xcel Padel Westlake",90,0,0
+US,20091,"Wynwood Arena",90,0,0
+GB,18729,"Let's Go Padel Carryduff",90,0,0
+GB,17546,"Padel Project UK - Lowther Gardens",90,0,0
+GB,17177,"Galgorm Castle",90,0,0
+GB,16996,"Padel at Battersea Park",90,0,0
+US,20209,"SB Padel Houston",90,0,1
+GB,18727,"Smash Padel Whitstable",90,0,1
+GB,18294,"Peak Padel Holmfirth",90,0,1
+AE,14562,"Padelista Sheikha Fatima Park",90,0,1
+US,19555,"Real Padel Miami",90,0,2
+GB,17681,"This is Padel Dronfield",90,0,2
+US,19661,"Taktika Padel San Diego",89,0,2
+US,20783,"PADELHUB Boston",88,0,0
+US,20758,"Padel United Sports Club",88,0,0
+US,20420,"Slice Padel Co",88,0,0
+US,20232,"SLC Padel Club",88,0,0
+US,20185,"Laredo Padel Club",88,0,0
+US,20034,"Racket Social Club Willowbrook",88,0,0
+US,19995,"AREA Centre",88,0,0
+US,19659,"Point Padel Club",88,0,0
+US,19595,"PADEL MKE",88,0,0
+GB,18774,"Barnton Cricket Club",88,0,0
+GB,18648,"Withdean Sports Complex",88,0,0
+GB,17769,"Padel Project UK Darlington",88,0,0
+GB,17131,"PADELHUB Slough",88,0,0
+GB,17046,"The Northern",88,0,0
+GB,16997,"Akebar Park",88,0,0
+GB,16952,"S3 Bristol Filton Park",88,0,0
+GB,16893,"Padel at the Coed",88,0,0
+GB,16830,"Powerleague Mill Hill",88,0,0
+AE,16057,"CF Padel Academy",88,0,0
+AE,14200,"ISM Padel Sama International school",88,0,0
+GB,17238,"Castle Padel Club",88,0,1
+GB,18960,"Park Sports Regent's Park",88,0,2
+GB,18496,"Mickleover Padel Club",88,0,2
+GB,18405,"Let's Go Padel Lurgan",88,0,2
+AE,14401,"Padel Plus Academy",88,0,2
+US,20920,"PATL Louisville Waterfront Park",87,0,0
+US,20369,"Padel Club Palm Beach",87,0,0
+US,20296,"Padel + Pickle Club",87,0,0
+US,20151,"Serve El Paso",87,0,0
+US,19830,"Austin Padel Center Pop-Up",87,0,0
+US,19723,"CUBE PADEL CHICAGO",87,0,0
+US,19551,"Padel Pals Club East Valley",87,0,0
+GB,18366,"Wressle Grange Padel Club",87,0,0
+GB,17501,"Destination Padel Northwich",87,0,0
+GB,17400,"Louth Padel Co",87,0,0
+GB,17176,"Bridge of Allan Sports Club",87,0,0
+GB,17081,"Wigan Sports Club",87,0,0
+GB,16970,"Cheshire Padel - Crewe Vagrants",87,0,0
+GB,16929,"Powerleague Watford",87,0,0
+GB,16886,"Padel at Hartford Golf",87,0,0
+AU,16609,"The Padel Lounge",87,0,0
+US,20631,"Padel N9NE",87,0,1
+US,20602,"Conquer Padel Phoenix",87,0,1
+US,20341,"VIVA Padel & Pickleball",87,0,1
+US,19662,"Padel Garten by Glassbox",87,0,1
+GB,18332,"Spa Padel",87,0,1
+GB,17531,"Widnes Padel Club",87,0,1
+US,19936,"BMorePadel",87,0,2
+GB,18237,"The Ranch Padel",87,0,2
+GB,17949,"Vida Del Padel - Guisborough",86,0,2
+US,20591,"U-Padel Club",85,0,0
+US,19681,"Glendale Lyceum",85,0,0
+GB,17811,"ATC Padel Andover",85,0,1
+US,20947,"Mouratoglou Tennis Center Noblesville",85,0,2
+GB,17529,"Padel and Coffee",85,0,3
+US,19726,"Paddles Up Pickleball & Padel",84,0,0
+US,20810,"Sensa Padel",84,0,1
+US,20257,"Emilio Sanchez Academy Florida",84,0,1
+US,20103,"BAY PADEL Treasure Island",84,0,1
+US,19420,"Caribe Royale Orlando Sport Court",84,0,1
+GB,19008,"MPC Tennis and Fitness",84,0,1
+GB,18189,"Tilsworth Padel Club",84,0,1
+GB,17624,"Padel Elite Sheffield",84,0,1
+GB,16887,"The Padel Club Gloucester Quays",84,0,1
+GB,16843,"The Padel Club at The Mount Golf and Country Club",84,0,1
+GB,18456,"The Padel Shed Selby",84,0,2
+GB,17287,"CPASE Health Club",84,0,2
+GB,17103,"Wakefield Sports & Padel Club",84,0,3
+US,19966,"Padel California - Oceanside",83,0,0
+GB,17661,"That Padel Club Newark",83,0,0
+US,20881,"Padel Haus Denver",83,0,1
+US,20719,"Reserve Padel",83,0,1
+US,20681,"Platinum Padel Club",83,0,1
+US,20565,"Wynwood Padel Club",83,0,1
+US,19887,"Padel Square USA",83,0,1
+GB,19085,"Powerleague Padel Sighthill",83,0,1
+GB,19046,"Barnt Green Sports Club",83,0,1
+GB,18974,"Pace Padel",83,0,1
+GB,18728,"Hazelwood Sports Club",83,0,1
+GB,17530,"Ribble Valley Padel Hub",83,0,1
+GB,17469,"Padel United Maldon",83,0,1
+GB,17470,"Cross Court Padel",83,0,1
+GB,17399,"Padel Club at Mytton",83,0,1
+GB,17290,"Padel at Denham Grove",83,0,1
+GB,17219,"The Atrium Health Club",83,0,1
+GB,17155,"The Leisure Box",83,0,1
+US,20757,"Alma Padel",83,0,2
+US,19993,"Regency Padel",83,0,2
+US,19932,"Padel Highway",83,0,2
+US,19883,"Padel Club EP",83,0,2
+US,19485,"Padel39 East Austin",83,0,2
+US,19483,"Zmash Padel",83,0,2
+GB,19110,"Future Padel",83,0,2
+GB,19075,"Crystal Palace Padel Courts",83,0,2
+GB,18099,"Stay Padel",83,0,2
+US,20961,"Revolution Padel Courts",83,0,3
+GB,18249,"Let's Go Padel Newry",83,0,3
+GB,17818,"Destino Padel",83,0,3
+AE,14128,"Fantasy Padel",83,1,4
+AE,14396,"Padel Port",83,1,5
+AE,14883,"Padel Spot",82,1,4
+AE,14155,"Hidd Al Saadiyat Padel",82,1,4
+AE,12245,"Elevon Sports Complex",82,1,4
+AE,14649,"Smash Padel",82,1,5
+US,20919,"ESL Padel",81,0,1
+US,20718,"Padel Up - Culver City",81,0,1
+US,20664,"Icon Padel Club",81,0,1
+US,20618,"St. Pete Athletic",81,0,1
+US,20440,"Casas Padel Club Aventura",81,0,1
+US,20443,"Padel39 (North Austin)",81,0,1
+US,20147,"The King of Padel SA",81,0,1
+US,20105,"IMGN Park",81,0,1
+US,20032,"40Forty Padel Club",81,0,1
+US,20035,"Padel Paso",81,0,1
+US,19933,"Pick and Padel",81,0,1
+US,19901,"Padel 9 - El Paso",81,0,1
+US,19882,"Sodo Padel",81,0,1
+US,19829,"Dallas Padel Club by Padel39",81,0,1
+US,19831,"Phantom Padel",81,0,1
+US,19790,"NorthPoint Padel",81,0,1
+US,19594,"Mesa Padel Club",81,0,1
+US,19598,"Ola Padel Club by Nox",81,0,1
+US,19550,"RGV Padel Club",81,0,1
+US,19487,"Palm Beach Padel",81,0,1
+US,19486,"Padel Country Club",81,0,1
+US,19484,"Pulse Padel Hub",81,0,1
+GB,18871,"Padelheim",81,0,1
+GB,18808,"Podington Padel",81,0,1
+GB,18769,"Belfast Boat Club Padel",81,0,1
+GB,18235,"Tennis England Club",81,0,1
+GB,18101,"Padel Project UK South Shields",81,0,1
+GB,18059,"Padel World UK",81,0,1
+GB,18036,"Purple Padel Club",81,0,1
+GB,17991,"Eat Sleep Padel",81,0,1
+GB,17938,"Padel People Sedlescombe",81,0,1
+GB,17832,"Matchbox Pickleball",81,0,1
+GB,17749,"Padel at Cotswolds Hotel & Spa",81,0,1
+GB,17660,"Barnsgrove",81,0,1
+GB,17613,"Padel United Chelmsford",81,0,1
+GB,17124,"The Padel Inn",81,0,1
+US,20900,"Reserve Padel UES Manhattan",81,0,2
+US,20859,"Club Pickle & Padel",81,0,2
+US,20845,"The Houstonian Club",81,0,2
+US,20467,"Brickell Soccer & Padel",81,0,2
+US,20466,"Mouratoglou Academy Zephyrhills",81,0,2
+US,20297,"Orlando Padel Club Indoor",81,0,2
+US,20216,"Padel Plant",81,0,2
+US,19614,"Park Padel Oyster Point",81,0,2
+US,19596,"Smart Padel House",81,0,2
+AU,19104,"Birkdale Padel Club",81,0,2
+GB,19034,"Racquet Garden",81,0,2
+GB,18374,"Alsager Padel",81,0,2
+GB,18325,"Quik Padel",81,0,2
+GB,18140,"Eastbourne Padel Club",81,0,2
+GB,18034,"Destination Padel Cheadle",81,0,2
+GB,17996,"Padel People Boston",81,0,2
+GB,17990,"Frodsham Padel Club",81,0,2
+GB,17986,"GSM Padel",81,0,2
+US,20948,"M PADEL BOSTON",81,0,3
+US,20707,"Padel Den",81,0,3
+US,19417,"Kingdom of Padel",81,0,3
+GB,18391,"Chiltern Padel Club",81,0,3
+GB,18305,"The Northern Padel House",81,0,3
+GB,18172,"Glossop Padel",81,0,3
+GB,18037,"The Shed Chidham",81,0,3
+GB,17768,"Hascombe Farm",81,0,3
+AE,14613,"Sky mark GT Padel",81,1,3
+GB,19115,"Padel at Floodbridge Farm",81,0,4
+AE,16291,"Bin Salman Padel Court",81,1,5
+AE,12501,"Business Bay Padel Courts",81,1,5
+AE,12244,"Fluxion Padel Park Arena Hub",81,1,5
+GB,17237,"Chalk Padel",80,0,0
+US,19889,"Padel& Syosset",80,0,1
+US,19854,"THE SET Padel & Pickleball",80,0,1

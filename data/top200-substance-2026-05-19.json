@@ -1,0 +1,5660 @@
+{
+  "byCategory": [
+    {
+      "category": "seo_dates",
+      "count": 75,
+      "errors": 0,
+      "warnings": 75,
+      "sampleCodes": [
+        "E26"
+      ],
+      "listings": 75
+    },
+    {
+      "category": "seo_voice",
+      "count": 75,
+      "errors": 0,
+      "warnings": 75,
+      "sampleCodes": [
+        "E29"
+      ],
+      "listings": 75
+    },
+    {
+      "category": "seo_keyword",
+      "count": 228,
+      "errors": 0,
+      "warnings": 228,
+      "sampleCodes": [
+        "E01",
+        "E02",
+        "E03",
+        "E07"
+      ],
+      "listings": 73
+    },
+    {
+      "category": "seo_internal_links",
+      "count": 63,
+      "errors": 0,
+      "warnings": 63,
+      "sampleCodes": [
+        "E08"
+      ],
+      "listings": 63
+    },
+    {
+      "category": "seo_author",
+      "count": 61,
+      "errors": 0,
+      "warnings": 61,
+      "sampleCodes": [
+        "E31"
+      ],
+      "listings": 61
+    },
+    {
+      "category": "seo_word_count",
+      "count": 52,
+      "errors": 0,
+      "warnings": 52,
+      "sampleCodes": [
+        "E05"
+      ],
+      "listings": 52
+    },
+    {
+      "category": "seo_brevity",
+      "count": 16,
+      "errors": 0,
+      "warnings": 16,
+      "sampleCodes": [
+        "E18"
+      ],
+      "listings": 16
+    },
+    {
+      "category": "contact_phone",
+      "count": 13,
+      "errors": 0,
+      "warnings": 13,
+      "sampleCodes": [
+        "M30"
+      ],
+      "listings": 13
+    },
+    {
+      "category": "other",
+      "count": 7,
+      "errors": 0,
+      "warnings": 7,
+      "sampleCodes": [
+        "UNCODED",
+        "Y48"
+      ],
+      "listings": 6
+    },
+    {
+      "category": "seo_entity",
+      "count": 5,
+      "errors": 0,
+      "warnings": 5,
+      "sampleCodes": [
+        "E34"
+      ],
+      "listings": 5
+    },
+    {
+      "category": "opening_hours",
+      "count": 5,
+      "errors": 0,
+      "warnings": 5,
+      "sampleCodes": [
+        "M35"
+      ],
+      "listings": 5
+    },
+    {
+      "category": "booking_urls",
+      "count": 3,
+      "errors": 0,
+      "warnings": 3,
+      "sampleCodes": [
+        "M41"
+      ],
+      "listings": 3
+    },
+    {
+      "category": "seo_images",
+      "count": 2,
+      "errors": 0,
+      "warnings": 2,
+      "sampleCodes": [
+        "E33"
+      ],
+      "listings": 2
+    },
+    {
+      "category": "seo_title",
+      "count": 2,
+      "errors": 0,
+      "warnings": 2,
+      "sampleCodes": [
+        "Y02"
+      ],
+      "listings": 2
+    },
+    {
+      "category": "website",
+      "count": 2,
+      "errors": 0,
+      "warnings": 2,
+      "sampleCodes": [
+        "M31"
+      ],
+      "listings": 2
+    },
+    {
+      "category": "surface_lighting",
+      "count": 1,
+      "errors": 0,
+      "warnings": 1,
+      "sampleCodes": [
+        "M33"
+      ],
+      "listings": 1
+    }
+  ],
+  "rawFindings": [
+    {
+      "country": "GB",
+      "id": 17345,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17345,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 1 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17345,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17345,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17345,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17907,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1075 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17907,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17907,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17907,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17907,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18701,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18701,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 1 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18701,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18701,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18701,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17322,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17322,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17322,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17322,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17322,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19422,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1044 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19422,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19422,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19422,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19422,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17946,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 935 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17946,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17946,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17946,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17946,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17946,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19735,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 961 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19735,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19735,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19735,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19735,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19735,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 19047,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 981 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 19047,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 19047,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 19047,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 19047,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 19047,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19978,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 912 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19978,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19978,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19978,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19978,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19978,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17175,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1023 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17175,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17175,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 1 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17175,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17175,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17175,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20368,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"xcel padel westlake padel\" not in WP title (theme H1): \"xcel padel westlake\""
+    },
+    {
+      "country": "US",
+      "id": 20368,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 885 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20368,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20368,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20368,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20368,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20368,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17945,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 17945,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 908 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17945,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17945,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17945,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17945,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17945,
+      "severity": "warning",
+      "code": "E34",
+      "layer": "expert",
+      "category": "seo_entity",
+      "message": "Entity clarity: focus entity \"let&#8217;s go padel omagh\" missing from schema name/about — AI relies on schema for entity grounding"
+    },
+    {
+      "country": "GB",
+      "id": 17712,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 17712,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 950 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17712,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17712,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17712,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17712,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17712,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16823,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"the hive london padel\" not in WP title (theme H1): \"the hive london\""
+    },
+    {
+      "country": "GB",
+      "id": 16823,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 892 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16823,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16823,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16823,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 16823,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20091,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"wynwood arena padel\" not in WP title (theme H1): \"wynwood arena\""
+    },
+    {
+      "country": "US",
+      "id": 20091,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 885 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20091,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20091,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 51% under 20 words (23/45 — target 75%+)"
+    },
+    {
+      "country": "US",
+      "id": 20091,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20091,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20091,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16996,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel at battersea park padel\" not in WP title (theme H1): \"padel at battersea park\""
+    },
+    {
+      "country": "GB",
+      "id": 16996,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 16996,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 937 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16996,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 937 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 16996,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16996,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16996,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17177,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"galgorm castle padel\" not in WP title (theme H1): \"galgorm castle\""
+    },
+    {
+      "country": "GB",
+      "id": 17177,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17177,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17177,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17177,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17177,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17177,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17546,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel project uk - lowther gardens padel\" not in WP title (theme H1): \"padel project uk - lowther gardens\""
+    },
+    {
+      "country": "GB",
+      "id": 17546,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17546,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 958 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17546,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 958 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17546,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17546,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17546,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "warning",
+      "code": "M33",
+      "layer": "qc",
+      "category": "surface_lighting",
+      "message": "_surface_type exceeds 25 chars (26): \"Turf, indoor &amp; outdoor\""
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1058 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20209,
+      "severity": "warning",
+      "code": "E33",
+      "layer": "expert",
+      "category": "seo_images",
+      "message": "Multimedia richness: hero ✓ + gallery 1 = 2 (target ≥3)"
+    },
+    {
+      "country": "GB",
+      "id": 18729,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 987 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 18729,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18729,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 57% under 20 words (31/54 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 18729,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18729,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18729,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18729,
+      "severity": "warning",
+      "code": "E34",
+      "layer": "expert",
+      "category": "seo_entity",
+      "message": "Entity clarity: focus entity \"let&#8217;s go padel carryduff\" missing from schema name/about — AI relies on schema for entity grounding"
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone should start with + followed by country code (got \"(305) 615-9731\")"
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "warning",
+      "code": "M35",
+      "layer": "qc",
+      "category": "opening_hours",
+      "message": "_opening_hours missing day(s): Mon, Tue, Wed, Thu, Fri, Sat, Sun — got \"{\"monday\":{\"times\":\"07:00 AM - 11:30 PM\",\"status\":\"open\"},\"tuesday\":{\"times\":\"07:00 AM - 11:30 PM\",\"status\":\"open\"},\"wednesday\":{\"times\":\"07:00 AM - 11:30 PM\",\"status\":\"open\"},\"thursday\":{\"times\":\"07:00 AM - 11:30 PM\",\"status\":\"open\"},\"friday\":{\"times\":\"07:00 AM - 11:30 PM\",\"status\":\"open\"},\"saturday\":{\"times\":\"07:00 AM - 11:00 PM\",\"status\":\"open\"},\"sunday\":{\"times\":\"07:00 AM - 11:30 PM\",\"status\":\"open\"}}\""
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"real padel miami padel\" not in WP title (theme H1): \"real padel miami\""
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 890 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19555,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "warning",
+      "code": "M41",
+      "layer": "qc",
+      "category": "booking_urls",
+      "message": "Multiple booking URL fields have the same value \"https://playtomic.io/tenant/b4f46e3d-5415-4bb8-8c42-a0825cb5365c\" - they should be distinct CTAs"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1044 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 59% under 20 words (34/58 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17681,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 934 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 55% under 20 words (28/51 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18294,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "AE",
+      "id": 14562,
+      "severity": "warning",
+      "code": "Y48",
+      "layer": "qc",
+      "category": "other",
+      "message": "Yoast title is 72 chars (target 40-65)"
+    },
+    {
+      "country": "AE",
+      "id": 14562,
+      "severity": "warning",
+      "code": "Y02",
+      "layer": "yoast",
+      "category": "seo_title",
+      "message": "Yoast title: 72 chars (target 50-65)"
+    },
+    {
+      "country": "AE",
+      "id": 14562,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padelista sheikha fatima park padel\" not in WP title (theme H1): \"padelista sheikha fatima park\""
+    },
+    {
+      "country": "AE",
+      "id": 14562,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 875 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "AE",
+      "id": 14562,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "AE",
+      "id": 14562,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "AE",
+      "id": 14562,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "warning",
+      "code": "M41",
+      "layer": "qc",
+      "category": "booking_urls",
+      "message": "Multiple booking URL fields have the same value \"https://smashpadel.co/whitstable/\" - they should be distinct CTAs"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 963 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 58% under 20 words (31/53 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18727,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padelhub boston padel\" not in WP title (theme H1): \"padelhub boston\""
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.10% (1 occurrences in 956 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 956 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20783,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel united sports club padel\" not in WP title (theme H1): \"padel united sports club\""
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 962 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 962 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20758,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"slice padel co padel\" not in WP title (theme H1): \"slice padel co\""
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.10% (1 occurrences in 1007 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1007 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20420,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "warning",
+      "code": "UNCODED",
+      "layer": "qc",
+      "category": "other",
+      "message": "[C7b] Body shows per-person pricing but no per-court pricing - include both where venue charges per court"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "warning",
+      "code": "Y48",
+      "layer": "qc",
+      "category": "other",
+      "message": "Yoast title is 66 chars (target 40-65)"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "warning",
+      "code": "Y02",
+      "layer": "yoast",
+      "category": "seo_title",
+      "message": "Yoast title: 66 chars (target 50-65)"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 928 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19661,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"slc padel club padel\" not in WP title (theme H1): \"slc padel club\""
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 950 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 950 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20232,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"racket social club willowbrook padel\" not in WP title (theme H1): \"racket social club willowbrook\""
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 897 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20034,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"area centre padel\" not in WP title (theme H1): \"area centre\""
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 939 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 939 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19995,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"point padel club padel\" not in WP title (theme H1): \"point padel club\""
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 861 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19659,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel mke padel\" not in WP title (theme H1): \"padel mke\""
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 950 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 950 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19595,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"laredo padel club padel\" not in WP title (theme H1): \"laredo padel club\""
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 850 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20185,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"withdean sports complex padel\" not in WP title (theme H1): \"withdean sports complex\""
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 880 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18648,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"the northern padel\" not in WP title (theme H1): \"the northern\""
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 912 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 912 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17046,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"barnton cricket club padel\" not in WP title (theme H1): \"barnton cricket club\""
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 897 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18774,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padelhub slough padel\" not in WP title (theme H1): \"padelhub slough\""
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.10% (1 occurrences in 954 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 954 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "warning",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 48% under 20 words (24/50 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17131,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel project uk darlington padel\" not in WP title (theme H1): \"padel project uk darlington\""
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 938 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 938 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17769,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"powerleague mill hill padel\" not in WP title (theme H1): \"powerleague mill hill\""
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 882 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 16830,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel at the coed padel\" not in WP title (theme H1): \"padel at the coed\""
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 897 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 16893,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"s3 bristol filton park padel\" not in WP title (theme H1): \"s3 bristol filton park\""
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 930 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 930 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16952,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"cf padel academy padel\" not in WP title (theme H1): \"cf padel academy\""
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 944 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 944 (target 600-900)"
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "AE",
+      "id": 16057,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"akebar park padel\" not in WP title (theme H1): \"akebar park\""
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 902 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 902 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 16997,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone should start with + followed by country code (got \"07517 803572\")"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "warning",
+      "code": "M35",
+      "layer": "qc",
+      "category": "opening_hours",
+      "message": "_opening_hours missing day(s): Sat, Sun — got \"Mon-Fri 07:00-22:30; Sat-Sun 08:00-21:00\""
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"mickleover padel club padel\" not in WP title (theme H1): \"mickleover padel club\""
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 870 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 58% under 20 words (29/50 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18496,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone should start with + followed by country code (got \"020 7224 1625\")"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "warning",
+      "code": "M35",
+      "layer": "qc",
+      "category": "opening_hours",
+      "message": "_opening_hours is missing or empty — opening times table will not render"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"park sports regent's park padel\" not in WP title (theme H1): \"park sports regent's park\""
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 944 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 944 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18960,
+      "severity": "warning",
+      "code": "E34",
+      "layer": "expert",
+      "category": "seo_entity",
+      "message": "Entity clarity: focus entity \"park sports regent&#8217;s park\" missing from schema name/about — AI relies on schema for entity grounding"
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"ism padel sama international school padel\" not in WP title (theme H1): \"ism padel sama international school\""
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.11% (1 occurrences in 913 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 913 (target 600-900)"
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "AE",
+      "id": 14200,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "warning",
+      "code": "UNCODED",
+      "layer": "qc",
+      "category": "other",
+      "message": "[C7b] Body shows per-person pricing but no per-court pricing - include both where venue charges per court"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 990 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 57% under 20 words (33/58 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "warning",
+      "code": "E33",
+      "layer": "expert",
+      "category": "seo_images",
+      "message": "Multimedia richness: hero ✓ + gallery 1 = 2 (target ≥3)"
+    },
+    {
+      "country": "GB",
+      "id": 18405,
+      "severity": "warning",
+      "code": "E34",
+      "layer": "expert",
+      "category": "seo_entity",
+      "message": "Entity clarity: focus entity \"let&#8217;s go padel lurgan\" missing from schema name/about — AI relies on schema for entity grounding"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"castle padel club padel\" not in WP title (theme H1): \"castle padel club\""
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 890 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 1 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 56% under 20 words (27/48 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17238,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "warning",
+      "code": "M31",
+      "layer": "qc",
+      "category": "website",
+      "message": "_website is empty"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "warning",
+      "code": "M41",
+      "layer": "qc",
+      "category": "booking_urls",
+      "message": "Multiple booking URL fields have the same value \"https://playtomic.io/tenant/9c122d93-7c54-4069-8b3f-ed646dc601d3\" - they should be distinct CTAs"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel plus academy abu dhabi\" not in WP title (theme H1): \"padel plus academy\""
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 808 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "AE",
+      "id": 14401,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel + pickle club padel\" not in WP title (theme H1): \"padel + pickle club\""
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 975 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 975 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20296,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"patl louisville waterfront park padel\" not in WP title (theme H1): \"patl louisville waterfront park\""
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 902 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 902 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20920,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"serve el paso padel\" not in WP title (theme H1): \"serve el paso\""
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 962 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 962 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20151,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel club palm beach padel\" not in WP title (theme H1): \"padel club palm beach\""
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 907 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 907 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20369,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"cube padel chicago padel\" not in WP title (theme H1): \"cube padel chicago\""
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 943 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 943 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19723,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"austin padel center pop-up padel\" not in WP title (theme H1): \"austin padel center pop-up\""
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 907 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 907 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19830,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel pals club east valley padel\" not in WP title (theme H1): \"padel pals club east valley\""
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 929 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 929 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19551,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"wressle grange padel club padel\" not in WP title (theme H1): \"wressle grange padel club\""
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 920 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 920 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18366,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"destination padel northwich padel\" not in WP title (theme H1): \"destination padel northwich\""
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 1045 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1045 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17501,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"wigan sports club padel\" not in WP title (theme H1): \"wigan sports club\""
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 905 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 905 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 1 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17081,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"powerleague watford padel\" not in WP title (theme H1): \"powerleague watford\""
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.21% (2 occurrences in 957 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 957 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 16929,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"louth padel co padel\" not in WP title (theme H1): \"louth padel co\""
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 911 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 911 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17400,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"bridge of allan sports club padel\" not in WP title (theme H1): \"bridge of allan sports club\""
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 912 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 912 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17176,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"cheshire padel - crewe vagrants padel\" not in WP title (theme H1): \"cheshire padel - crewe vagrants\""
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 1064 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1064 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 57% under 20 words (33/58 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16970,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "warning",
+      "code": "UNCODED",
+      "layer": "qc",
+      "category": "other",
+      "message": "[C7b] Body shows per-person pricing but no per-court pricing - include both where venue charges per court"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel n9ne padel\" not in WP title (theme H1): \"padel n9ne\""
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 1027 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1027 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 54% under 20 words (32/59 — target 75%+)"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20631,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"the padel lounge padel\" not in WP title (theme H1): \"the padel lounge\""
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.10% (1 occurrences in 1023 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1023 (target 600-900)"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 59% under 20 words (35/59 — target 75%+)"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "AU",
+      "id": 16609,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel at hartford golf padel\" not in WP title (theme H1): \"padel at hartford golf\""
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 1056 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1056 (target 600-900)"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 16886,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "warning",
+      "code": "UNCODED",
+      "layer": "qc",
+      "category": "other",
+      "message": "[C7b] Body shows per-person pricing but no per-court pricing - include both where venue charges per court"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"viva padel & pickleball padel\" not in WP title (theme H1): \"viva padel & pickleball\""
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 964 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 964 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20341,
+      "severity": "warning",
+      "code": "E34",
+      "layer": "expert",
+      "category": "seo_entity",
+      "message": "Entity clarity: focus entity \"viva padel &#038; pickleball\" missing from schema name/about — AI relies on schema for entity grounding"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "warning",
+      "code": "UNCODED",
+      "layer": "qc",
+      "category": "other",
+      "message": "[C7b] Body shows per-person pricing but no per-court pricing - include both where venue charges per court"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"conquer padel phoenix padel\" not in WP title (theme H1): \"conquer padel phoenix\""
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 933 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 933 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 20602,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel garten by glassbox padel\" not in WP title (theme H1): \"padel garten by glassbox\""
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 1035 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "info",
+      "code": "E05",
+      "layer": "expert",
+      "category": "seo_word_count",
+      "message": "Word count: 1035 (target 600-900)"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19662,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"padel woodhall spa\" not in WP title (theme H1): \"spa padel\""
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 822 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 52% under 20 words (24/46 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible yes — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18332,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone should start with + followed by country code (got \"(410) 296-0601\")"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "warning",
+      "code": "M35",
+      "layer": "qc",
+      "category": "opening_hours",
+      "message": "_opening_hours is missing or empty — opening times table will not render"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"bmorepadel padel\" not in WP title (theme H1): \"bmorepadel\""
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 825 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 59% under 20 words (32/54 — target 75%+)"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "US",
+      "id": 19936,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "warning",
+      "code": "M35",
+      "layer": "qc",
+      "category": "opening_hours",
+      "message": "_opening_hours is missing or empty — opening times table will not render"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"widnes padel club padel\" not in WP title (theme H1): \"widnes padel club\""
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 869 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 50% under 20 words (23/46 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 17531,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "warning",
+      "code": "M30",
+      "layer": "qc",
+      "category": "contact_phone",
+      "message": "_phone is empty"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "warning",
+      "code": "M31",
+      "layer": "qc",
+      "category": "website",
+      "message": "_website is empty"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "info",
+      "code": "E01",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword \"the ranch padel padel\" not in WP title (theme H1): \"the ranch padel\""
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "warning",
+      "code": "E02",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in first 100 words — add it to the intro"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "warning",
+      "code": "E03",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Keyword density: 0.00% (0 occurrences in 846 words — target 0.5-2.5%)"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "warning",
+      "code": "E07",
+      "layer": "expert",
+      "category": "seo_keyword",
+      "message": "Focus keyword not found in any section heading — add a subtopic heading with the keyword"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "info",
+      "code": "E08",
+      "layer": "expert",
+      "category": "seo_internal_links",
+      "message": "Internal links: 0 (target 2+, deferred until publish)"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "info",
+      "code": "E18",
+      "layer": "expert",
+      "category": "seo_brevity",
+      "message": "Sentence brevity: 58% under 20 words (28/48 — target 75%+)"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "info",
+      "code": "E26",
+      "layer": "expert",
+      "category": "seo_dates",
+      "message": "Date signals: schema no, visible no — AI agents use both for freshness trust"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "warning",
+      "code": "E29",
+      "layer": "expert",
+      "category": "seo_voice",
+      "message": "First-hand experience markers: 0 pattern(s) found — AI Overviews favour distinctive perspective over generic summary"
+    },
+    {
+      "country": "GB",
+      "id": 18237,
+      "severity": "warning",
+      "code": "E31",
+      "layer": "expert",
+      "category": "seo_author",
+      "message": "Author byline / Person schema: no Person schema · no byline in first 500 chars — E-E-A-T signal for AI Search"
+    }
+  ]
+}
