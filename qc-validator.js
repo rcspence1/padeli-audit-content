@@ -1192,6 +1192,36 @@ function validatePayload(wpPayload, venueName, options = {}) {
     }
   }
 
+  // Check G71 (written 2026-05-19, WIRED UP 2026-09-06). `_booking_link` is the
+  // ONLY field that renders the "Book Now" CTA — the theme hides the button
+  // outright when it is empty, so the venue is unreachable from its own page.
+  // `_direct_booking_url` and `_playtomic_url` are source markers and render
+  // nothing.
+  //
+  // G71 was written into validateListing(), which NOTHING in this repo calls —
+  // content-auditor.js imports only validatePayload — and the padeli-notion copy
+  // of validateListing has no G71 at all. So it never fired anywhere, and 92
+  // published club listings are currently unbookable.
+  //
+  // Clubs only. Coaches are a different contact model by design (messaged, not
+  // booked — see coach-qc.js [Q4]); 59 coaches legitimately have this empty.
+  // readyToPublish comes from evaluateGate(), not from these errors, so raising
+  // this does not change what publishes — it only makes the gap visible.
+  {
+    const listingType = String(meta._listing_type || '').trim();
+    if (listingType !== 'coaches') {
+      const bookingLink = String(meta._booking_link || '').trim();
+      if (!bookingLink) {
+        errors.push('[G71] _booking_link is empty — the "Book Now" CTA will not render; this venue is unreachable from its own listing page');
+        const stranded = ['_direct_booking_url', '_playtomic_url', '_website']
+          .filter(f => String(meta[f] || '').trim());
+        if (stranded.length) {
+          warnings.push(`[G71b] A URL exists on this listing but never reached the CTA field: ${stranded.join(', ')} populated while _booking_link is empty`);
+        }
+      }
+    }
+  }
+
   // Check 30: _phone with +CC format (WARNING)
   if (meta._phone !== undefined) {
     if (!meta._phone || !String(meta._phone).trim()) {
