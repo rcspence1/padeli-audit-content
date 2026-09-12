@@ -1,0 +1,603 @@
+<title>FIP Gold Sao Paulo — Padeli</title>
+<style>
+/* ==========================================================================
+   PADELI DESIGN SYSTEM v1.0
+   Single source of truth. Derived from the two approved artifacts:
+     - Club page  (5774e736-712b-4229-ad66-18d691c64f00)  <- reference template
+     - Home page  (f393d83d-f49e-449b-8f5d-8baf515db4b3)  <- Template B
+   Both pages already shared an identical :root. This file resolves the 13
+   points where they had drifted apart. Where the two disagreed, the club
+   page wins, because that is the page the system was adopted from.
+   Do not fork this file per page. Add page-specific layout, never new colour,
+   type, radius or shadow values.
+   ========================================================================== */
+
+:root{
+  /* ---- Ground ---------------------------------------------------------- */
+  --white:#FFFFFF;      /* default page ground */
+  --mist:#F4F5F6;       /* alternating section ground, inset wells, image placeholder */
+  --hair:#DCDFE3;       /* every 1px border on light ground. Never used for text. */
+
+  /* ---- Text on light --------------------------------------------------- */
+  --ink:#22282F;        /* all primary text                14.87:1 on white */
+  --muted:#5D6773;      /* secondary text, labels, meta     5.75:1 on white */
+  --dim:#868E9B;        /* de-emphasised words in a large statement only.
+                           3.30:1 on white - LARGE BOLD TEXT ONLY (>=24px/700).
+                           Never use for body copy. */
+
+  /* ---- Action ---------------------------------------------------------- */
+  --blue:#2563EB;       /* button fill + link text on LIGHT   5.17:1 both ways */
+  --blue-dark:#5B9BFF;  /* link text on DARK ground only      6.18:1 on #171C23
+                           #2563EB as text on dark is 3.66:1 and is BANNED. */
+  --lime:#C8F03C;       /* action + live ONLY. See the scarcity rule. */
+  --lime-ink:#1A2410;   /* the only text colour permitted on lime  12.26:1 */
+
+  /* ---- Structural weight ----------------------------------------------- */
+  --slate:#3C444F;      /* heavy surface */
+  --slate-deep:#2A313A; /* claim blocks, CTA tiles */
+  --black:#0E1116;      /* full-bleed dark band */
+  --dk-card:#171C23;    /* card on a black band */
+  --dk-card-hi:#1E242D; /* its hover */
+  --dk-text:#98A1AD;    /* body text on --black / --dk-card     7.24:1 / 6.55:1 */
+  --dk-text-2:#A9B3BF;  /* body text on --slate-deep            6.18:1 */
+  --teal:#82AAAB;       /* SURFACE ONLY. 2.53:1 on white - never text on light,
+                           never a background for white text. Ink on teal = 5.87:1. */
+
+  /* ---- Radius ---------------------------------------------------------- */
+  --r-tile:28px;        /* large tiles, sidebar boxes, hero photo grid */
+  --r-card:20px;        /* cards, wells, fact strip, map */
+  --r-img:14px;         /* small gallery thumbs */
+  --r-tag:6px;          /* rectangular data badge */
+  --r-pill:980px;       /* buttons, chips, segmented control */
+
+  /* ---- Layout ---------------------------------------------------------- */
+  --maxw:1180px;
+  --gutter:24px;
+  --nav-h:56px;         /* load-bearing: .subnav and .side stick to it */
+
+  /* ---- Type ------------------------------------------------------------ */
+  --sys:ui-sans-serif,-apple-system,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  /* ---- Motion ---------------------------------------------------------- */
+  --ease:cubic-bezier(.2,.7,.3,1);
+  --t-fast:.2s;
+  --t:.35s;
+  --t-img:.6s;          /* image scale on hover is always slower than the card */
+  --lift:-3px;          /* the ONLY hover translate in the system */
+
+  /* ---- Elevation ------------------------------------------------------- */
+  /* Nothing is elevated at rest. Shadow appears on hover, or on an element
+     that floats over imagery. All shadows are ink-tinted, never pure black. */
+  --sh-card:0 20px 40px -30px rgba(34,40,47,.42);
+  --sh-tile:0 26px 50px -34px rgba(34,40,47,.5);
+  --sh-pop:0 12px 26px -18px rgba(34,40,47,.5);
+  --sh-seg:0 2px 8px -4px rgba(34,40,47,.3);
+  --sh-field:0 8px 28px -16px rgba(34,40,47,.42);
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--white); color:var(--ink);
+  font-family:var(--sys); font-size:17px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block; max-width:100%}
+a{color:inherit; text-decoration:none}
+:focus-visible{outline:3px solid var(--blue); outline-offset:3px; border-radius:6px}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 var(--gutter)}
+.num{font-variant-numeric:tabular-nums}   /* every figure that stacks in a column */
+
+/* Headings tighten as they grow. Never set letter-spacing ad hoc. */
+h1,h2,h3,h4{margin:0; font-weight:700; letter-spacing:-.035em; text-wrap:balance}
+p{margin:0 0 15px}
+
+/* ==========================================================================
+   TYPE SCALE
+   Five heading tiers. Pick by ROLE, not by size.
+   ========================================================================== */
+.t-display{font-size:clamp(42px,6.6vw,82px); line-height:1.00; letter-spacing:-.04em}  /* home h1 only */
+.t-page   {font-size:clamp(36px,5.2vw,60px); line-height:1.03; letter-spacing:-.04em}  /* entity h1: club, coach, city */
+.t-section{font-size:clamp(32px,4.6vw,56px); line-height:1.02}                          /* marketing band h2 */
+.t-rail   {font-size:clamp(26px,3.0vw,34px); line-height:1.06}                          /* rail / row heading */
+.t-content{font-size:clamp(24px,2.9vw,32px); line-height:1.1}                           /* in-document h2 */
+
+/* Body tiers */
+.lede{font-size:19px}                                  /* first paragraph of a document section */
+.sub {font-size:19px; color:var(--muted)}              /* supporting line under a heading */
+.sub-lg{font-size:21px; color:var(--muted)}            /* hero only */
+.meta{font-size:14.5px; color:var(--muted)}            /* card meta, nav, captions */
+.micro{font-size:13.5px; color:var(--muted)}           /* attribution, "you'll be taken to..." */
+
+/* Small titles: tighten less, they are set at text sizes */
+.t-xl{font-size:27px; font-weight:700; letter-spacing:-.035em; line-height:1.1}
+.t-lg{font-size:25px; font-weight:700; letter-spacing:-.035em; line-height:1.08}
+.t-md{font-size:21px; font-weight:700; letter-spacing:-.03em;  line-height:1.15}
+.t-sm{font-size:19px; font-weight:700; letter-spacing:-.03em;  line-height:1.2}
+.t-xs{font-size:17px; font-weight:700; letter-spacing:-.02em;  line-height:1.25}
+
+/* Coloured label above a centred heading. Sentence case. NOT a tracked-out
+   uppercase eyebrow - that reads as generated. Blue on light, lime on dark. */
+.label{color:var(--blue); font-size:15px; font-weight:600; margin:0 0 10px}
+.centre{text-align:center}
+.centre .sub,.centre .sub-lg{margin:14px auto 0; max-width:44ch}
+
+/* ==========================================================================
+   WORDMARK
+   Two lockups, one mark. The wordmark flips for its ground; the dot never does.
+   The dot is a drawn square, not the typeface's full stop, so it survives a
+   font change. Re-check the 0.19em ratio against any new brand face.
+   ========================================================================== */
+.mark{display:inline-flex; align-items:baseline; gap:.1em;
+      font-weight:800; font-size:21px; letter-spacing:-.045em; line-height:1}
+.mark .dot{width:.19em; height:.19em; background:var(--lime);
+           display:inline-block; border-radius:.02em}
+.mark--dark{color:#fff}       /* on any dark ground; dot stays lime */
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+nav{position:sticky; top:0; z-index:80;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:saturate(180%) blur(20px);
+    border-bottom:1px solid var(--hair)}
+.nav-in{display:flex; align-items:center; gap:30px; height:var(--nav-h); font-size:14.5px}
+.nav-links{display:flex; gap:24px; color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav-right{margin-left:auto; display:flex; align-items:center; gap:16px}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* In-page section nav, Apple product-page style. Sticks under the main nav. */
+.subnav{position:sticky; top:var(--nav-h); z-index:70;
+        background:rgba(255,255,255,.9);
+        backdrop-filter:saturate(180%) blur(18px);
+        border-bottom:1px solid var(--hair); margin-top:40px}
+.subnav .wrap{display:flex; gap:4px; overflow-x:auto; height:50px; align-items:center}
+.subnav a{font-size:14.5px; color:var(--muted); padding:7px 14px;
+          border-radius:var(--r-pill); white-space:nowrap;
+          transition:background var(--t-fast) var(--ease), color var(--t-fast) var(--ease)}
+.subnav a:hover{background:var(--mist); color:var(--ink)}
+.subnav a[aria-current="true"]{background:var(--mist); color:var(--ink)}
+
+.crumb{padding:18px 0 0; font-size:14px; color:var(--muted)}
+.crumb a:hover{color:var(--ink)}
+.crumb span{margin:0 7px; opacity:.6}
+
+/* ==========================================================================
+   BUTTONS
+   One .pill. Four variants. Never invent a fifth.
+   ========================================================================== */
+.pill{border:0; cursor:pointer; font-family:var(--sys); font-weight:600;
+      font-size:15px; padding:10px 20px; border-radius:var(--r-pill);
+      background:var(--blue); color:#fff;
+      transition:transform .25s var(--ease), filter .25s var(--ease)}
+.pill:hover{filter:brightness(1.07); transform:scale(1.02)}
+.pill.lime {background:var(--lime); color:var(--lime-ink)}   /* the booking action */
+.pill.dark {background:var(--ink);  color:#fff}              /* on mist/photo grounds */
+.pill.ghost{background:transparent; color:var(--ink); box-shadow:inset 0 0 0 1px var(--hair)}
+.pill.ghost:hover{box-shadow:inset 0 0 0 1px #B9C0C8; filter:none; transform:scale(1.02)}
+.pill.sm{font-size:14px; padding:8px 17px}
+.pill.block{width:100%}
+/* Ghost on a dark ground */
+.on-dark .pill.ghost{color:#fff; box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+
+/* Inline forward link. The chevron is the affordance - no underline. */
+.chev{color:var(--blue); font-weight:500; transition:opacity var(--t-fast) var(--ease)}
+.chev::after{content:" \203A"; font-weight:600}
+.chev:hover{opacity:.7}
+.on-dark .chev{color:var(--blue-dark)}
+
+/* ==========================================================================
+   SMALL LABELS - three distinct things, three distinct names.
+   These were all called .chip in the source pages. They are not the same.
+   ========================================================================== */
+/* 1. Suggestion / filter pill. Grey, tappable, pill-shaped. */
+.chip{font-size:14.5px; color:var(--muted); background:var(--mist);
+      padding:8px 15px; border-radius:var(--r-pill);
+      transition:background var(--t-fast) var(--ease), color var(--t-fast) var(--ease)}
+.chip:hover{background:var(--ink); color:#fff}
+
+/* 2. Data badge. Rectangular, sits inside a card, states a fact. */
+.tag{font-size:13px; font-weight:700; padding:2px 8px; border-radius:var(--r-tag);
+     background:var(--mist); color:var(--ink)}
+.tag--live{background:var(--lime); color:var(--lime-ink)}  /* free now, open now, live */
+
+/* 3. Overlay badge. Floats on a photo, so it carries its own white ground. */
+.badge{position:absolute; left:12px; top:12px; z-index:2;
+       background:var(--white); border-radius:var(--r-pill);
+       padding:4px 11px; font-size:12.5px; font-weight:700}
+
+/* Segmented control */
+.seg{display:inline-flex; background:var(--mist); border-radius:var(--r-pill); padding:4px; gap:2px}
+.seg button{border:0; cursor:pointer; font-family:var(--sys); font-size:14.5px;
+            font-weight:600; color:var(--muted); background:transparent;
+            padding:8px 20px; border-radius:var(--r-pill);
+            transition:background .22s var(--ease), color .22s var(--ease)}
+.seg button[aria-pressed="true"]{background:var(--white); color:var(--ink); box-shadow:var(--sh-seg)}
+
+/* ==========================================================================
+   SECTION RHYTHM
+   Two archetypes. A page is one or the other, never both interleaved.
+   ========================================================================== */
+/* A. Marketing band - full-bleed, generous, alternating ground, no rules. */
+.band{padding:74px 0}
+.band.mist{background:var(--mist)}
+.band.black{background:var(--black); color:#fff; padding:86px 0}
+.band.black h2,.band.black h3{color:#fff}
+.band.black .sub{color:var(--dk-text)}
+.band.black .label{color:var(--lime)}
+.after{text-align:center; margin-top:34px}   /* the "View all >" under a band */
+
+/* B. Document section - tight, hairline-separated, inside a .doc column. */
+.doc section{padding:30px 0; border-top:1px solid var(--hair)}
+.doc section:first-child{border-top:0; padding-top:4px}
+.doc h2{margin-bottom:14px}
+
+/* ==========================================================================
+   HERO - SEARCH (home)
+   ========================================================================== */
+.hero-home{padding:70px 0 8px; text-align:center}
+.hero-home h1{max-width:15ch; margin:0 auto}
+.hero-home .sub-lg{margin:20px auto 0; max-width:46ch}
+.ask{margin:32px auto 0; display:flex; gap:8px; max-width:560px;
+     background:var(--white); border:1px solid var(--hair);
+     border-radius:var(--r-pill); padding:6px}
+.ask:focus-within{border-color:#B9C0C8; box-shadow:var(--sh-field)}
+.ask input{flex:1; border:0; background:transparent; font-family:var(--sys);
+           font-size:17px; padding:13px 18px; color:var(--ink); min-width:0}
+.ask input:focus{outline:none}
+.ask input::placeholder{color:var(--muted)}
+.chips{display:flex; gap:8px; margin:16px auto 0; flex-wrap:wrap; justify-content:center}
+
+/* ==========================================================================
+   HERO - ENTITY (club, coach, city)
+   ========================================================================== */
+.hero{padding:22px 0 0}
+.hero-top{display:flex; align-items:flex-end; justify-content:space-between;
+          gap:28px; flex-wrap:wrap; margin-bottom:22px}
+.addr{margin:10px 0 0; color:var(--muted); font-size:17px}
+.hero-acts{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+
+/* Photo grid: one lead image, four supporting. */
+.shots{display:grid; grid-template-columns:2fr 1fr 1fr; grid-template-rows:150px 150px;
+       gap:10px; border-radius:var(--r-tile); overflow:hidden}
+.shots a{overflow:hidden; display:block; background:var(--mist)}
+.shots img{width:100%; height:100%; object-fit:cover; transition:transform var(--t-img) var(--ease)}
+.shots a:hover img{transform:scale(1.05)}
+.shots a:first-child{grid-row:span 2}
+@media(max-width:820px){
+  .shots{grid-template-columns:1fr 1fr; grid-template-rows:140px 140px}
+  .shots a:first-child{grid-column:span 2; grid-row:auto}
+  .shots a:nth-child(4){display:none}
+}
+
+/* Fact strip - hairline grid, no shadow, sits directly under the photos. */
+.facts{display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+       background:var(--hair); border:1px solid var(--hair);
+       border-radius:var(--r-card); overflow:hidden; margin-top:26px}
+.fact{background:var(--white); padding:20px 22px; display:flex; flex-direction:column; gap:3px}
+.fact b{font-size:25px; font-weight:700; letter-spacing:-.035em}
+.fact span{font-size:14.5px; color:var(--muted)}
+@media(max-width:760px){.facts{grid-template-columns:repeat(2,1fr)}}
+
+/* ==========================================================================
+   DOCUMENT LAYOUT - content column + sticky rail
+   ========================================================================== */
+main{display:grid; grid-template-columns:1fr 356px; gap:52px; padding:46px 0 10px}
+@media(max-width:980px){main{grid-template-columns:1fr; gap:36px}}
+.side{position:sticky; top:calc(var(--nav-h) + 62px); align-self:start;
+      display:flex; flex-direction:column; gap:16px}
+@media(max-width:980px){.side{position:static}}
+.box{border:1px solid var(--hair); border-radius:var(--r-tile); padding:22px}
+.box h3{font-size:19px; margin-bottom:4px}
+.box p{font-size:15px; color:var(--muted); margin:0 0 16px}
+.box .pill{width:100%}
+.via{margin:12px 0 0; font-size:13.5px; color:var(--muted); text-align:center}
+.box.dark{background:var(--slate-deep); color:#fff; border-color:transparent}
+.box.dark h3{color:#fff}
+.box.dark p{color:var(--dk-text-2)}
+
+/* Key/value list. Right-aligned values. Unknowns are stated, never hidden. */
+.kv{border-top:1px solid var(--hair); margin:0}
+.kv div{display:flex; justify-content:space-between; gap:20px; padding:14px 0;
+        border-bottom:1px solid var(--hair); font-size:16px}
+.kv dt{color:var(--muted); margin:0}
+.kv dd{margin:0; text-align:right}
+.kv .unknown{color:var(--muted)}   /* "Not listed yet" - see the honesty rule */
+
+/* Spec tiles - inset wells on mist, no border, no shadow. */
+.courts{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:18px 0 4px}
+.court{background:var(--mist); border-radius:var(--r-card); padding:18px 20px}
+.court b{display:block; font-size:19px; font-weight:700; letter-spacing:-.03em}
+.court span{font-size:14.5px; color:var(--muted)}
+@media(max-width:620px){.courts{grid-template-columns:1fr}}
+
+/* Person row */
+.coach{display:flex; gap:12px; align-items:center; padding:11px 0; border-bottom:1px solid var(--hair)}
+.coach:last-of-type{border-bottom:0}
+.coach img{width:44px; height:44px; border-radius:50%; object-fit:cover; flex:none; background:var(--mist)}
+.coach b{font-size:15.5px; display:block; letter-spacing:-.02em}
+.coach span{font-size:13.5px; color:var(--muted)}
+
+/* Gallery */
+.gal{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+.gal a{border-radius:var(--r-img); overflow:hidden; background:var(--mist); aspect-ratio:4/3}
+.gal img{width:100%; height:100%; object-fit:cover; transition:transform var(--t-img) var(--ease)}
+.gal a:hover img{transform:scale(1.06)}
+@media(max-width:700px){.gal{grid-template-columns:repeat(2,1fr)}}
+
+/* Map - drawn from the listing's real coordinates. Never a screenshot. */
+.map{border-radius:var(--r-card); overflow:hidden; border:1px solid var(--hair);
+     position:relative; height:250px; background:var(--mist)}
+.map canvas{width:100%; height:100%; display:block}
+.map .flag{position:absolute; left:16px; bottom:14px; background:var(--white);
+           border-radius:12px; padding:10px 14px; font-size:14.5px; box-shadow:var(--sh-pop)}
+.map .flag b{display:block; font-size:15px}
+
+/* ==========================================================================
+   CARDS - ONE listing card for the whole site.
+   The two source pages had forked this into .cd and .card. Unified here.
+   ========================================================================== */
+.cards{display:grid; grid-template-columns:repeat(4,1fr); gap:18px}
+@media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+/* 4-up assumes the full 1180px container. Inside the .doc column (which loses
+   356px to the sidebar plus a 52px gap) four cards are ~170px wide and every
+   club name wraps to three lines. Drop to 2-up there. */
+.doc .cards{grid-template-columns:repeat(2,1fr)}
+@media(max-width:700px){.doc .cards{grid-template-columns:1fr}}
+
+.card{background:var(--white); border:1px solid var(--hair); border-radius:var(--r-card);
+      overflow:hidden; display:flex; flex-direction:column;
+      transition:transform var(--t) var(--ease), box-shadow var(--t) var(--ease)}
+.card:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-card)}
+.card .art{position:relative; height:150px; overflow:hidden; background:var(--mist)}
+.card .art img{width:100%; height:100%; object-fit:cover; transition:transform var(--t-img) var(--ease)}
+.card:hover .art img{transform:scale(1.05)}
+.card .m{padding:16px 18px 18px; display:flex; flex-direction:column; gap:5px; flex:1}
+.card h3{font-size:17.5px; letter-spacing:-.025em}
+.card .w{font-size:14.5px; color:var(--muted)}
+.card .r{margin-top:auto; padding-top:13px; display:flex;
+         justify-content:space-between; align-items:baseline; font-size:14.5px}
+.card .rate{color:var(--muted)}
+.card .rate b{color:var(--ink)}
+
+/* Poster card - photo-led, text burned into the gradient. For rails only. */
+.rail{display:grid; grid-auto-flow:column; grid-auto-columns:minmax(266px,1fr);
+      gap:18px; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x mandatory}
+.rail>a{scroll-snap-align:start}
+.rail-head{display:flex; justify-content:space-between; align-items:center;
+           gap:22px; margin-bottom:26px; flex-wrap:wrap}
+.pk{position:relative; height:402px; border-radius:var(--r-card); overflow:hidden;
+    display:block; background:var(--mist);
+    transition:transform var(--t) var(--ease), box-shadow var(--t) var(--ease)}
+.pk:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-tile)}
+.pk img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+        transition:transform .7s var(--ease)}
+.pk:hover img{transform:scale(1.05)}
+/* The scrim is what makes white text legible on ANY photo. Never remove it. */
+.pk::after{content:""; position:absolute; inset:0;
+           background:linear-gradient(180deg,rgba(0,0,0,0) 34%,rgba(0,0,0,.78) 100%)}
+.pk .txt{position:absolute; left:20px; right:20px; bottom:18px; z-index:2; color:#fff}
+.pk .city{font-size:13.5px; color:rgba(255,255,255,.8)}
+.pk h3{font-size:25px; line-height:1.08; margin:2px 0 8px}
+.pk p{margin:0 0 12px; font-size:15px; color:rgba(255,255,255,.86)}
+.pk .fig{display:flex; gap:16px; font-size:14px; color:rgba(255,255,255,.9); align-items:center}
+.pk .fig b{font-weight:700}
+
+/* Location mosaic - one tall lead tile, the rest even. */
+.mosaic{display:grid; grid-template-columns:2fr 1fr 1fr; grid-template-rows:190px 190px; gap:16px}
+.mos{position:relative; border-radius:var(--r-card); overflow:hidden; background:var(--mist);
+     display:block; transition:transform var(--t) var(--ease), box-shadow var(--t) var(--ease)}
+.mos:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-card)}
+.mos img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+         transition:transform var(--t-img) var(--ease)}
+.mos:hover img{transform:scale(1.05)}
+.mos::after{content:""; position:absolute; inset:0;
+            background:linear-gradient(180deg,rgba(0,0,0,0) 42%,rgba(0,0,0,.7) 100%)}
+.mos .t{position:absolute; left:20px; bottom:16px; z-index:2; color:#fff}
+.mos .t b{display:block; font-size:27px; font-weight:700; letter-spacing:-.035em; line-height:1.1}
+.mos .t span{font-size:14px; color:rgba(255,255,255,.82)}
+.mos:first-child{grid-row:span 2}
+@media(max-width:900px){
+  .mosaic{grid-template-columns:1fr 1fr; grid-template-rows:repeat(3,170px)}
+  .mos:first-child{grid-column:span 2; grid-row:auto}
+}
+@media(max-width:560px){
+  .mosaic{grid-template-columns:1fr; grid-template-rows:repeat(5,160px)}
+  .mos:first-child{grid-column:auto}
+}
+
+/* Dark card, for use inside .band.black */
+.darks{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:42px}
+@media(max-width:900px){.darks{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.darks{grid-template-columns:1fr}}
+.dk{background:var(--dk-card); border-radius:var(--r-card); padding:26px 24px 24px;
+    display:flex; flex-direction:column; gap:10px; min-height:230px; text-align:left;
+    transition:background .3s var(--ease), transform .3s var(--ease)}
+.dk:hover{background:var(--dk-card-hi); transform:translateY(var(--lift))}
+.dk .k{font-size:14px; color:var(--dk-text)}
+.dk b{font-size:21px; font-weight:700; letter-spacing:-.03em; line-height:1.15}
+.dk p{margin:0; font-size:15px; color:var(--dk-text)}
+.dk .go{margin-top:auto; color:var(--blue-dark); font-weight:600; font-size:15px}
+.dk .go::after{content:" \203A"}
+
+/* Brand tiles */
+.brands{display:grid; grid-template-columns:repeat(6,1fr); gap:14px}
+@media(max-width:900px){.brands{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.brands{grid-template-columns:repeat(2,1fr)}}
+.br{background:var(--white); border-radius:var(--r-card); height:112px;
+    display:grid; place-items:center; padding:22px;
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease)}
+.br:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-card)}
+.br img{max-width:100%; max-height:42px; width:auto; height:auto; object-fit:contain}
+
+/* ==========================================================================
+   STATEMENT - one big sentence, most of it dimmed, the point in ink.
+   Use ONCE per page at most.
+   ========================================================================== */
+.statement{padding:96px 0; text-align:center}
+.statement p{font-size:clamp(26px,3.6vw,42px); line-height:1.28; letter-spacing:-.03em;
+             max-width:22ch; margin:0 auto; color:var(--dim); font-weight:700; text-wrap:balance}
+.statement b{color:var(--ink)}
+
+/* CTA tile - a rounded slab, not a full-bleed band. */
+.discover{background:var(--slate-deep); color:#fff; border-radius:var(--r-tile);
+          padding:60px 48px; text-align:center}
+.discover h2{color:#fff; max-width:18ch; margin:0 auto}
+.discover p{color:var(--dk-text-2); margin:16px auto 0; max-width:44ch}
+.discover .label{color:var(--lime)}
+.discover .acts{display:flex; gap:12px; margin-top:30px; justify-content:center; flex-wrap:wrap}
+
+/* Nearby band */
+.nearby{background:var(--mist); padding:52px 0; margin-top:34px}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer{background:var(--mist); border-top:1px solid var(--hair);
+       padding:44px 0 58px; font-size:14px; color:var(--muted)}
+.foot{display:flex; gap:44px; flex-wrap:wrap; justify-content:space-between}
+.foot h5{font-size:14px; font-weight:700; color:var(--ink); margin:0 0 12px}
+.foot ul{list-style:none; padding:0; margin:0; display:grid; gap:8px}
+.foot a:hover{color:var(--ink)}
+.legal{margin-top:32px; padding-top:18px; border-top:1px solid var(--hair); font-size:13px}
+
+/* ==========================================================================
+   MOTION
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important; transition:none!important}
+}
+
+
+.thero{padding:26px 0 0}
+.tmeta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
+.datebig{font-size:19px;color:var(--muted);margin:12px 0 0}
+.trow{display:grid;grid-template-columns:56px 1fr 14px;gap:16px;align-items:center;
+  padding:14px 0;border-bottom:1px solid var(--hair);transition:background var(--t-fast) var(--ease)}
+.trow:hover{background:var(--mist)}
+.trow .tdate{text-align:center;line-height:1.05}
+.trow .tdate b{display:block;font-size:19px;font-weight:700;letter-spacing:-.03em}
+.trow .tdate span{font-size:12.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+.trow .tname b{display:block;font-size:16.5px;font-weight:700;letter-spacing:-.02em;line-height:1.25}
+.trow .tname span{font-size:14px;color:var(--muted)}
+.unknown-tag{background:transparent;color:var(--muted);font-weight:500;padding-left:0}
+.warnbox{background:var(--mist);border-radius:var(--r-card);padding:18px 20px;margin:18px 0 0}
+.warnbox p{margin:0;font-size:15px;color:var(--muted)}
+
+</style>
+<nav><div class="wrap nav-in">
+  <a href="https://padeli.com/" class="mark">Padeli<span class="dot"></span></a>
+  <div class="nav-links"><a href="#">Clubs</a><a href="#">Cities</a><a href="#">Coaches</a><a href="#">Tournaments</a><a href="#">Learn</a></div>
+  <div class="nav-right"><a href="#" class="chev">Claim your club</a><button class="pill sm">Find a court</button></div>
+</div></nav>
+
+<div class="wrap crumb"><a href="#">Tournaments</a><span>/</span><a href="#">Brazil</a><span>/</span>Sao Paulo</div>
+<div class="wrap thero">
+  <div class="hero-top">
+    <div>
+      <div class="tmeta"><span class="tag">FIP Gold</span>
+        <span class="tag unknown-tag">Registration status not confirmed</span></div>
+      <h1 class="t-page">FIP Gold Sao Paulo</h1>
+      <p class="datebig">14&ndash;20 September 2026 · Sao Paulo, Brazil</p>
+    </div>
+    <div class="hero-acts">
+      <button class="pill lime">Go to registration</button>
+      <button class="pill ghost">Add to calendar</button>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="fact"><b class="num">14 Sep</b><span>starts</span></div>
+    <div class="fact"><b class="num">7</b><span>days of play</span></div>
+    <div class="fact"><b>FIP Gold</b><span>FIP ranking tier</span></div>
+    <div class="fact"><b>Brazil</b><span>Sao Paulo</span></div>
+  </div>
+</div>
+
+<div class="subnav"><div class="wrap">
+  <a href="#detail" aria-current="true">Details</a><a href="#enter">How to enter</a>
+  <a href="#venue">Venue</a><a href="#more">Other events</a>
+</div></div>
+
+<div class="wrap"><main><div class="doc">
+  <section id="detail">
+    <h2 class="t-content">About this event</h2>
+    <p class="lede">FIP Gold Sao Paulo runs from 14 September to
+    20 September 2026 in Sao Paulo, Brazil. It is a
+    FIP Gold event on the International Padel Federation calendar.</p>
+    <dl class="kv">
+      <div><dt>Dates</dt><dd class="num">14 Sep &ndash; 20 Sep 2026</dd></div>
+      <div><dt>Tier</dt><dd>FIP Gold</dd></div>
+      <div><dt>Organiser</dt><dd>International Padel Federation</dd></div>
+      <div><dt>City</dt><dd>Sao Paulo, Brazil</dd></div>
+      <div><dt>Draw and seeding</dt><dd class="unknown">Not published here</dd></div>
+      <div><dt>Prize money</dt><dd class="unknown">Not listed yet</dd></div>
+    </dl>
+  </section>
+
+  <section id="enter">
+    <h2 class="t-content">How to enter</h2>
+    <p>Entries are handled by the organiser. Padeli lists the event and links straight to their
+    registration page. We take no fee and hold no entries.</p>
+    <div class="warnbox"><p><strong>Registration status for this event is not confirmed.</strong>
+    We refresh statuses daily from the federation feed, and this one has not reported yet.
+    Check the organiser's page for the current position before making travel plans.</p></div>
+    <p style="margin-top:18px"><a href="https://www.padelfip.com/events/fip-gold-sao-paulo/" class="chev">Open the official registration page</a></p>
+  </section>
+
+  <section id="venue">
+    <h2 class="t-content">Venue</h2>
+    <p>Sao Paulo, Brazil.</p>
+    <div class="warnbox"><p>This event is not yet linked to a club listing, so there is no court
+    detail, no map and no direct booking. Linking events to venues is the next step for these
+    pages.</p></div>
+  </section>
+</div>
+
+<aside class="side">
+  <div class="box">
+    <h3>Enter this event</h3>
+    <p>Registration is on the organiser's own site.</p>
+    <button class="pill lime">Go to registration</button>
+    <p class="via">You'll be taken to padelfip.com</p>
+  </div>
+  <div class="box">
+    <h3>At a glance</h3>
+    <dl class="kv" style="border-top:0">
+      <div><dt>Starts</dt><dd class="num">14 Sep 2026</dd></div>
+      <div><dt>Ends</dt><dd class="num">20 Sep 2026</dd></div>
+      <div><dt>Duration</dt><dd class="num">7 days</dd></div>
+      <div><dt>Tier</dt><dd>FIP Gold</dd></div>
+      <div><dt>Status</dt><dd class="unknown">Unconfirmed</dd></div>
+    </dl>
+  </div>
+  <div class="box dark">
+    <h3>Playing in Brazil?</h3>
+    <p>Find a club to train at before the draw starts.</p>
+    <button class="pill lime">Clubs in Brazil</button>
+  </div>
+</aside></main></div>
+
+<div class="nearby" id="more"><div class="wrap">
+  <h2 class="t-rail" style="margin-bottom:6px">Other upcoming events</h2>
+  <p style="color:var(--muted);margin-bottom:12px">Same country or same tier.</p>
+  <div style="max-width:720px"><a class="trow" href="https://padeli.com/tournaments/hk/hong-kong/fip-gold-hong-kong/">
+        <span class="tdate"><b class="num">5</b>
+        <span>Oct</span></span>
+        <span class="tname"><b>FIP Gold Hong Kong</b><span>Hong kong, Hong Kong · FIP Gold</span></span>
+        <span class="chev"></span></a></div>
+</div></div>
+<footer><div class="wrap">
+  <div class="foot">
+    <div><h5>Find</h5><ul><li><a href="#">Clubs</a></li><li><a href="#">Coaches</a></li><li><a href="#">Cities</a></li><li><a href="#">Tournaments</a></li></ul></div>
+    <div><h5>Learn</h5><ul><li><a href="#">Rules of padel</a></li><li><a href="#">Your first session</a></li><li><a href="#">Rackets</a></li><li><a href="#">Blog</a></li></ul></div>
+    <div><h5>Clubs</h5><ul><li><a href="#">Claim your listing</a></li><li><a href="#">Add a club</a></li><li><a href="#">Advertise</a></li></ul></div>
+    <div><h5>Padeli</h5><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul></div>
+  </div>
+  <div class="legal">&copy; 2026 Padeli. Club and event data from public sources and owners.
+  Prices, dates and hours change, so always confirm with the organiser or club.</div>
+</div></footer>
+

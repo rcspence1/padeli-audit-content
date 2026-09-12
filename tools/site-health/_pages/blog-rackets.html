@@ -1,0 +1,1232 @@
+<title>Best Padel Rackets 2026, Ranked for UK Buyers — Padeli</title>
+<style>
+/* ==========================================================================
+   PADELI DESIGN SYSTEM v1.0
+   Single source of truth. Derived from the two approved artifacts:
+     - Club page  (5774e736-712b-4229-ad66-18d691c64f00)  <- reference template
+     - Home page  (f393d83d-f49e-449b-8f5d-8baf515db4b3)  <- Template B
+   Both pages already shared an identical :root. This file resolves the 13
+   points where they had drifted apart. Where the two disagreed, the club
+   page wins, because that is the page the system was adopted from.
+   Do not fork this file per page. Add page-specific layout, never new colour,
+   type, radius or shadow values.
+   ========================================================================== */
+
+:root{
+  /* ---- Ground ---------------------------------------------------------- */
+  --white:#FFFFFF;      /* default page ground */
+  --mist:#F4F5F6;       /* alternating section ground, inset wells, image placeholder */
+  --hair:#DCDFE3;       /* every 1px border on light ground. Never used for text. */
+
+  /* ---- Text on light --------------------------------------------------- */
+  --ink:#22282F;        /* all primary text                14.87:1 on white */
+  --muted:#5D6773;      /* secondary text, labels, meta     5.75:1 on white */
+  --dim:#868E9B;        /* de-emphasised words in a large statement only.
+                           3.30:1 on white - LARGE BOLD TEXT ONLY (>=24px/700).
+                           Never use for body copy. */
+
+  /* ---- Action ---------------------------------------------------------- */
+  --blue:#2563EB;       /* button fill + link text on LIGHT   5.17:1 both ways */
+  --blue-dark:#5B9BFF;  /* link text on DARK ground only      6.18:1 on #171C23
+                           #2563EB as text on dark is 3.66:1 and is BANNED. */
+  --lime:#C8F03C;       /* action + live ONLY. See the scarcity rule. */
+  --lime-ink:#1A2410;   /* the only text colour permitted on lime  12.26:1 */
+
+  /* ---- Structural weight ----------------------------------------------- */
+  --slate:#3C444F;      /* heavy surface */
+  --slate-deep:#2A313A; /* claim blocks, CTA tiles */
+  --black:#0E1116;      /* full-bleed dark band */
+  --dk-card:#171C23;    /* card on a black band */
+  --dk-card-hi:#1E242D; /* its hover */
+  --dk-text:#98A1AD;    /* body text on --black / --dk-card     7.24:1 / 6.55:1 */
+  --dk-text-2:#A9B3BF;  /* body text on --slate-deep            6.18:1 */
+  --teal:#82AAAB;       /* SURFACE ONLY. 2.53:1 on white - never text on light,
+                           never a background for white text. Ink on teal = 5.87:1. */
+
+  /* ---- Radius ---------------------------------------------------------- */
+  --r-tile:28px;        /* large tiles, sidebar boxes, hero photo grid */
+  --r-card:20px;        /* cards, wells, fact strip, map */
+  --r-img:14px;         /* small gallery thumbs */
+  --r-tag:6px;          /* rectangular data badge */
+  --r-pill:980px;       /* buttons, chips, segmented control */
+
+  /* ---- Layout ---------------------------------------------------------- */
+  --maxw:1180px;
+  --gutter:24px;
+  --nav-h:56px;         /* load-bearing: .subnav and .side stick to it */
+
+  /* ---- Type ------------------------------------------------------------ */
+  --sys:ui-sans-serif,-apple-system,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  /* ---- Motion ---------------------------------------------------------- */
+  --ease:cubic-bezier(.2,.7,.3,1);
+  --t-fast:.2s;
+  --t:.35s;
+  --t-img:.6s;          /* image scale on hover is always slower than the card */
+  --lift:-3px;          /* the ONLY hover translate in the system */
+
+  /* ---- Elevation ------------------------------------------------------- */
+  /* Nothing is elevated at rest. Shadow appears on hover, or on an element
+     that floats over imagery. All shadows are ink-tinted, never pure black. */
+  --sh-card:0 20px 40px -30px rgba(34,40,47,.42);
+  --sh-tile:0 26px 50px -34px rgba(34,40,47,.5);
+  --sh-pop:0 12px 26px -18px rgba(34,40,47,.5);
+  --sh-seg:0 2px 8px -4px rgba(34,40,47,.3);
+  --sh-field:0 8px 28px -16px rgba(34,40,47,.42);
+}
+
+/* ==========================================================================
+   BASE
+   ========================================================================== */
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--white); color:var(--ink);
+  font-family:var(--sys); font-size:17px; line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block; max-width:100%}
+a{color:inherit; text-decoration:none}
+:focus-visible{outline:3px solid var(--blue); outline-offset:3px; border-radius:6px}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 var(--gutter)}
+.num{font-variant-numeric:tabular-nums}   /* every figure that stacks in a column */
+
+/* Headings tighten as they grow. Never set letter-spacing ad hoc. */
+h1,h2,h3,h4{margin:0; font-weight:700; letter-spacing:-.035em; text-wrap:balance}
+p{margin:0 0 15px}
+
+/* ==========================================================================
+   TYPE SCALE
+   Five heading tiers. Pick by ROLE, not by size.
+   ========================================================================== */
+.t-display{font-size:clamp(42px,6.6vw,82px); line-height:1.00; letter-spacing:-.04em}  /* home h1 only */
+.t-page   {font-size:clamp(36px,5.2vw,60px); line-height:1.03; letter-spacing:-.04em}  /* entity h1: club, coach, city */
+.t-section{font-size:clamp(32px,4.6vw,56px); line-height:1.02}                          /* marketing band h2 */
+.t-rail   {font-size:clamp(26px,3.0vw,34px); line-height:1.06}                          /* rail / row heading */
+.t-content{font-size:clamp(24px,2.9vw,32px); line-height:1.1}                           /* in-document h2 */
+
+/* Body tiers */
+.lede{font-size:19px}                                  /* first paragraph of a document section */
+.sub {font-size:19px; color:var(--muted)}              /* supporting line under a heading */
+.sub-lg{font-size:21px; color:var(--muted)}            /* hero only */
+.meta{font-size:14.5px; color:var(--muted)}            /* card meta, nav, captions */
+.micro{font-size:13.5px; color:var(--muted)}           /* attribution, "you'll be taken to..." */
+
+/* Small titles: tighten less, they are set at text sizes */
+.t-xl{font-size:27px; font-weight:700; letter-spacing:-.035em; line-height:1.1}
+.t-lg{font-size:25px; font-weight:700; letter-spacing:-.035em; line-height:1.08}
+.t-md{font-size:21px; font-weight:700; letter-spacing:-.03em;  line-height:1.15}
+.t-sm{font-size:19px; font-weight:700; letter-spacing:-.03em;  line-height:1.2}
+.t-xs{font-size:17px; font-weight:700; letter-spacing:-.02em;  line-height:1.25}
+
+/* Coloured label above a centred heading. Sentence case. NOT a tracked-out
+   uppercase eyebrow - that reads as generated. Blue on light, lime on dark. */
+.label{color:var(--blue); font-size:15px; font-weight:600; margin:0 0 10px}
+.centre{text-align:center}
+.centre .sub,.centre .sub-lg{margin:14px auto 0; max-width:44ch}
+
+/* ==========================================================================
+   WORDMARK
+   Two lockups, one mark. The wordmark flips for its ground; the dot never does.
+   The dot is a drawn square, not the typeface's full stop, so it survives a
+   font change. Re-check the 0.19em ratio against any new brand face.
+   ========================================================================== */
+.mark{display:inline-flex; align-items:baseline; gap:.1em;
+      font-weight:800; font-size:21px; letter-spacing:-.045em; line-height:1}
+.mark .dot{width:.19em; height:.19em; background:var(--lime);
+           display:inline-block; border-radius:.02em}
+.mark--dark{color:#fff}       /* on any dark ground; dot stays lime */
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+nav{position:sticky; top:0; z-index:80;
+    background:rgba(255,255,255,.82);
+    backdrop-filter:saturate(180%) blur(20px);
+    border-bottom:1px solid var(--hair)}
+.nav-in{display:flex; align-items:center; gap:30px; height:var(--nav-h); font-size:14.5px}
+.nav-links{display:flex; gap:24px; color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav-right{margin-left:auto; display:flex; align-items:center; gap:16px}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* In-page section nav, Apple product-page style. Sticks under the main nav. */
+.subnav{position:sticky; top:var(--nav-h); z-index:70;
+        background:rgba(255,255,255,.9);
+        backdrop-filter:saturate(180%) blur(18px);
+        border-bottom:1px solid var(--hair); margin-top:40px}
+.subnav .wrap{display:flex; gap:4px; overflow-x:auto; height:50px; align-items:center}
+.subnav a{font-size:14.5px; color:var(--muted); padding:7px 14px;
+          border-radius:var(--r-pill); white-space:nowrap;
+          transition:background var(--t-fast) var(--ease), color var(--t-fast) var(--ease)}
+.subnav a:hover{background:var(--mist); color:var(--ink)}
+.subnav a[aria-current="true"]{background:var(--mist); color:var(--ink)}
+
+.crumb{padding:18px 0 0; font-size:14px; color:var(--muted)}
+.crumb a:hover{color:var(--ink)}
+.crumb span{margin:0 7px; opacity:.6}
+
+/* ==========================================================================
+   BUTTONS
+   One .pill. Four variants. Never invent a fifth.
+   ========================================================================== */
+.pill{border:0; cursor:pointer; font-family:var(--sys); font-weight:600;
+      font-size:15px; padding:10px 20px; border-radius:var(--r-pill);
+      background:var(--blue); color:#fff;
+      transition:transform .25s var(--ease), filter .25s var(--ease)}
+.pill:hover{filter:brightness(1.07); transform:scale(1.02)}
+.pill.lime {background:var(--lime); color:var(--lime-ink)}   /* the booking action */
+.pill.dark {background:var(--ink);  color:#fff}              /* on mist/photo grounds */
+.pill.ghost{background:transparent; color:var(--ink); box-shadow:inset 0 0 0 1px var(--hair)}
+.pill.ghost:hover{box-shadow:inset 0 0 0 1px #B9C0C8; filter:none; transform:scale(1.02)}
+.pill.sm{font-size:14px; padding:8px 17px}
+.pill.block{width:100%}
+/* Ghost on a dark ground */
+.on-dark .pill.ghost{color:#fff; box-shadow:inset 0 0 0 1px rgba(255,255,255,.3)}
+
+/* Inline forward link. The chevron is the affordance - no underline. */
+.chev{color:var(--blue); font-weight:500; transition:opacity var(--t-fast) var(--ease)}
+.chev::after{content:" \203A"; font-weight:600}
+.chev:hover{opacity:.7}
+.on-dark .chev{color:var(--blue-dark)}
+
+/* ==========================================================================
+   SMALL LABELS - three distinct things, three distinct names.
+   These were all called .chip in the source pages. They are not the same.
+   ========================================================================== */
+/* 1. Suggestion / filter pill. Grey, tappable, pill-shaped. */
+.chip{font-size:14.5px; color:var(--muted); background:var(--mist);
+      padding:8px 15px; border-radius:var(--r-pill);
+      transition:background var(--t-fast) var(--ease), color var(--t-fast) var(--ease)}
+.chip:hover{background:var(--ink); color:#fff}
+
+/* 2. Data badge. Rectangular, sits inside a card, states a fact. */
+.tag{font-size:13px; font-weight:700; padding:2px 8px; border-radius:var(--r-tag);
+     background:var(--mist); color:var(--ink)}
+.tag--live{background:var(--lime); color:var(--lime-ink)}  /* free now, open now, live */
+
+/* 3. Overlay badge. Floats on a photo, so it carries its own white ground. */
+.badge{position:absolute; left:12px; top:12px; z-index:2;
+       background:var(--white); border-radius:var(--r-pill);
+       padding:4px 11px; font-size:12.5px; font-weight:700}
+
+/* Segmented control */
+.seg{display:inline-flex; background:var(--mist); border-radius:var(--r-pill); padding:4px; gap:2px}
+.seg button{border:0; cursor:pointer; font-family:var(--sys); font-size:14.5px;
+            font-weight:600; color:var(--muted); background:transparent;
+            padding:8px 20px; border-radius:var(--r-pill);
+            transition:background .22s var(--ease), color .22s var(--ease)}
+.seg button[aria-pressed="true"]{background:var(--white); color:var(--ink); box-shadow:var(--sh-seg)}
+
+/* ==========================================================================
+   SECTION RHYTHM
+   Two archetypes. A page is one or the other, never both interleaved.
+   ========================================================================== */
+/* A. Marketing band - full-bleed, generous, alternating ground, no rules. */
+.band{padding:74px 0}
+.band.mist{background:var(--mist)}
+.band.black{background:var(--black); color:#fff; padding:86px 0}
+.band.black h2,.band.black h3{color:#fff}
+.band.black .sub{color:var(--dk-text)}
+.band.black .label{color:var(--lime)}
+.after{text-align:center; margin-top:34px}   /* the "View all >" under a band */
+
+/* B. Document section - tight, hairline-separated, inside a .doc column. */
+.doc section{padding:30px 0; border-top:1px solid var(--hair)}
+.doc section:first-child{border-top:0; padding-top:4px}
+.doc h2{margin-bottom:14px}
+
+/* ==========================================================================
+   HERO - SEARCH (home)
+   ========================================================================== */
+.hero-home{padding:70px 0 8px; text-align:center}
+.hero-home h1{max-width:15ch; margin:0 auto}
+.hero-home .sub-lg{margin:20px auto 0; max-width:46ch}
+.ask{margin:32px auto 0; display:flex; gap:8px; max-width:560px;
+     background:var(--white); border:1px solid var(--hair);
+     border-radius:var(--r-pill); padding:6px}
+.ask:focus-within{border-color:#B9C0C8; box-shadow:var(--sh-field)}
+.ask input{flex:1; border:0; background:transparent; font-family:var(--sys);
+           font-size:17px; padding:13px 18px; color:var(--ink); min-width:0}
+.ask input:focus{outline:none}
+.ask input::placeholder{color:var(--muted)}
+.chips{display:flex; gap:8px; margin:16px auto 0; flex-wrap:wrap; justify-content:center}
+
+/* ==========================================================================
+   HERO - ENTITY (club, coach, city)
+   ========================================================================== */
+.hero{padding:22px 0 0}
+.hero-top{display:flex; align-items:flex-end; justify-content:space-between;
+          gap:28px; flex-wrap:wrap; margin-bottom:22px}
+.addr{margin:10px 0 0; color:var(--muted); font-size:17px}
+.hero-acts{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+
+/* Photo grid: one lead image, four supporting. */
+.shots{display:grid; grid-template-columns:2fr 1fr 1fr; grid-template-rows:150px 150px;
+       gap:10px; border-radius:var(--r-tile); overflow:hidden}
+.shots a{overflow:hidden; display:block; background:var(--mist)}
+.shots img{width:100%; height:100%; object-fit:cover; transition:transform var(--t-img) var(--ease)}
+.shots a:hover img{transform:scale(1.05)}
+.shots a:first-child{grid-row:span 2}
+@media(max-width:820px){
+  .shots{grid-template-columns:1fr 1fr; grid-template-rows:140px 140px}
+  .shots a:first-child{grid-column:span 2; grid-row:auto}
+  .shots a:nth-child(4){display:none}
+}
+
+/* Fact strip - hairline grid, no shadow, sits directly under the photos. */
+.facts{display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+       background:var(--hair); border:1px solid var(--hair);
+       border-radius:var(--r-card); overflow:hidden; margin-top:26px}
+.fact{background:var(--white); padding:20px 22px; display:flex; flex-direction:column; gap:3px}
+.fact b{font-size:25px; font-weight:700; letter-spacing:-.035em}
+.fact span{font-size:14.5px; color:var(--muted)}
+@media(max-width:760px){.facts{grid-template-columns:repeat(2,1fr)}}
+
+/* ==========================================================================
+   DOCUMENT LAYOUT - content column + sticky rail
+   ========================================================================== */
+main{display:grid; grid-template-columns:1fr 356px; gap:52px; padding:46px 0 10px}
+@media(max-width:980px){main{grid-template-columns:1fr; gap:36px}}
+.side{position:sticky; top:calc(var(--nav-h) + 62px); align-self:start;
+      display:flex; flex-direction:column; gap:16px}
+@media(max-width:980px){.side{position:static}}
+.box{border:1px solid var(--hair); border-radius:var(--r-tile); padding:22px}
+.box h3{font-size:19px; margin-bottom:4px}
+.box p{font-size:15px; color:var(--muted); margin:0 0 16px}
+.box .pill{width:100%}
+.via{margin:12px 0 0; font-size:13.5px; color:var(--muted); text-align:center}
+.box.dark{background:var(--slate-deep); color:#fff; border-color:transparent}
+.box.dark h3{color:#fff}
+.box.dark p{color:var(--dk-text-2)}
+
+/* Key/value list. Right-aligned values. Unknowns are stated, never hidden. */
+.kv{border-top:1px solid var(--hair); margin:0}
+.kv div{display:flex; justify-content:space-between; gap:20px; padding:14px 0;
+        border-bottom:1px solid var(--hair); font-size:16px}
+.kv dt{color:var(--muted); margin:0}
+.kv dd{margin:0; text-align:right}
+.kv .unknown{color:var(--muted)}   /* "Not listed yet" - see the honesty rule */
+
+/* Spec tiles - inset wells on mist, no border, no shadow. */
+.courts{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:18px 0 4px}
+.court{background:var(--mist); border-radius:var(--r-card); padding:18px 20px}
+.court b{display:block; font-size:19px; font-weight:700; letter-spacing:-.03em}
+.court span{font-size:14.5px; color:var(--muted)}
+@media(max-width:620px){.courts{grid-template-columns:1fr}}
+
+/* Person row */
+.coach{display:flex; gap:12px; align-items:center; padding:11px 0; border-bottom:1px solid var(--hair)}
+.coach:last-of-type{border-bottom:0}
+.coach img{width:44px; height:44px; border-radius:50%; object-fit:cover; flex:none; background:var(--mist)}
+.coach b{font-size:15.5px; display:block; letter-spacing:-.02em}
+.coach span{font-size:13.5px; color:var(--muted)}
+
+/* Gallery */
+.gal{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+.gal a{border-radius:var(--r-img); overflow:hidden; background:var(--mist); aspect-ratio:4/3}
+.gal img{width:100%; height:100%; object-fit:cover; transition:transform var(--t-img) var(--ease)}
+.gal a:hover img{transform:scale(1.06)}
+@media(max-width:700px){.gal{grid-template-columns:repeat(2,1fr)}}
+
+/* Map - drawn from the listing's real coordinates. Never a screenshot. */
+.map{border-radius:var(--r-card); overflow:hidden; border:1px solid var(--hair);
+     position:relative; height:250px; background:var(--mist)}
+.map canvas{width:100%; height:100%; display:block}
+.map .flag{position:absolute; left:16px; bottom:14px; background:var(--white);
+           border-radius:12px; padding:10px 14px; font-size:14.5px; box-shadow:var(--sh-pop)}
+.map .flag b{display:block; font-size:15px}
+
+/* ==========================================================================
+   CARDS - ONE listing card for the whole site.
+   The two source pages had forked this into .cd and .card. Unified here.
+   ========================================================================== */
+.cards{display:grid; grid-template-columns:repeat(4,1fr); gap:18px}
+@media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+/* 4-up assumes the full 1180px container. Inside the .doc column (which loses
+   356px to the sidebar plus a 52px gap) four cards are ~170px wide and every
+   club name wraps to three lines. Drop to 2-up there. */
+.doc .cards{grid-template-columns:repeat(2,1fr)}
+@media(max-width:700px){.doc .cards{grid-template-columns:1fr}}
+
+.card{background:var(--white); border:1px solid var(--hair); border-radius:var(--r-card);
+      overflow:hidden; display:flex; flex-direction:column;
+      transition:transform var(--t) var(--ease), box-shadow var(--t) var(--ease)}
+.card:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-card)}
+.card .art{position:relative; height:150px; overflow:hidden; background:var(--mist)}
+.card .art img{width:100%; height:100%; object-fit:cover; transition:transform var(--t-img) var(--ease)}
+.card:hover .art img{transform:scale(1.05)}
+.card .m{padding:16px 18px 18px; display:flex; flex-direction:column; gap:5px; flex:1}
+.card h3{font-size:17.5px; letter-spacing:-.025em}
+.card .w{font-size:14.5px; color:var(--muted)}
+.card .r{margin-top:auto; padding-top:13px; display:flex;
+         justify-content:space-between; align-items:baseline; font-size:14.5px}
+.card .rate{color:var(--muted)}
+.card .rate b{color:var(--ink)}
+
+/* Poster card - photo-led, text burned into the gradient. For rails only. */
+.rail{display:grid; grid-auto-flow:column; grid-auto-columns:minmax(266px,1fr);
+      gap:18px; overflow-x:auto; padding-bottom:8px; scroll-snap-type:x mandatory}
+.rail>a{scroll-snap-align:start}
+.rail-head{display:flex; justify-content:space-between; align-items:center;
+           gap:22px; margin-bottom:26px; flex-wrap:wrap}
+.pk{position:relative; height:402px; border-radius:var(--r-card); overflow:hidden;
+    display:block; background:var(--mist);
+    transition:transform var(--t) var(--ease), box-shadow var(--t) var(--ease)}
+.pk:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-tile)}
+.pk img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+        transition:transform .7s var(--ease)}
+.pk:hover img{transform:scale(1.05)}
+/* The scrim is what makes white text legible on ANY photo. Never remove it. */
+.pk::after{content:""; position:absolute; inset:0;
+           background:linear-gradient(180deg,rgba(0,0,0,0) 34%,rgba(0,0,0,.78) 100%)}
+.pk .txt{position:absolute; left:20px; right:20px; bottom:18px; z-index:2; color:#fff}
+.pk .city{font-size:13.5px; color:rgba(255,255,255,.8)}
+.pk h3{font-size:25px; line-height:1.08; margin:2px 0 8px}
+.pk p{margin:0 0 12px; font-size:15px; color:rgba(255,255,255,.86)}
+.pk .fig{display:flex; gap:16px; font-size:14px; color:rgba(255,255,255,.9); align-items:center}
+.pk .fig b{font-weight:700}
+
+/* Location mosaic - one tall lead tile, the rest even. */
+.mosaic{display:grid; grid-template-columns:2fr 1fr 1fr; grid-template-rows:190px 190px; gap:16px}
+.mos{position:relative; border-radius:var(--r-card); overflow:hidden; background:var(--mist);
+     display:block; transition:transform var(--t) var(--ease), box-shadow var(--t) var(--ease)}
+.mos:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-card)}
+.mos img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+         transition:transform var(--t-img) var(--ease)}
+.mos:hover img{transform:scale(1.05)}
+.mos::after{content:""; position:absolute; inset:0;
+            background:linear-gradient(180deg,rgba(0,0,0,0) 42%,rgba(0,0,0,.7) 100%)}
+.mos .t{position:absolute; left:20px; bottom:16px; z-index:2; color:#fff}
+.mos .t b{display:block; font-size:27px; font-weight:700; letter-spacing:-.035em; line-height:1.1}
+.mos .t span{font-size:14px; color:rgba(255,255,255,.82)}
+.mos:first-child{grid-row:span 2}
+@media(max-width:900px){
+  .mosaic{grid-template-columns:1fr 1fr; grid-template-rows:repeat(3,170px)}
+  .mos:first-child{grid-column:span 2; grid-row:auto}
+}
+@media(max-width:560px){
+  .mosaic{grid-template-columns:1fr; grid-template-rows:repeat(5,160px)}
+  .mos:first-child{grid-column:auto}
+}
+
+/* Dark card, for use inside .band.black */
+.darks{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:42px}
+@media(max-width:900px){.darks{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.darks{grid-template-columns:1fr}}
+.dk{background:var(--dk-card); border-radius:var(--r-card); padding:26px 24px 24px;
+    display:flex; flex-direction:column; gap:10px; min-height:230px; text-align:left;
+    transition:background .3s var(--ease), transform .3s var(--ease)}
+.dk:hover{background:var(--dk-card-hi); transform:translateY(var(--lift))}
+.dk .k{font-size:14px; color:var(--dk-text)}
+.dk b{font-size:21px; font-weight:700; letter-spacing:-.03em; line-height:1.15}
+.dk p{margin:0; font-size:15px; color:var(--dk-text)}
+.dk .go{margin-top:auto; color:var(--blue-dark); font-weight:600; font-size:15px}
+.dk .go::after{content:" \203A"}
+
+/* Brand tiles */
+.brands{display:grid; grid-template-columns:repeat(6,1fr); gap:14px}
+@media(max-width:900px){.brands{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:520px){.brands{grid-template-columns:repeat(2,1fr)}}
+.br{background:var(--white); border-radius:var(--r-card); height:112px;
+    display:grid; place-items:center; padding:22px;
+    transition:transform .3s var(--ease), box-shadow .3s var(--ease)}
+.br:hover{transform:translateY(var(--lift)); box-shadow:var(--sh-card)}
+.br img{max-width:100%; max-height:42px; width:auto; height:auto; object-fit:contain}
+
+/* ==========================================================================
+   STATEMENT - one big sentence, most of it dimmed, the point in ink.
+   Use ONCE per page at most.
+   ========================================================================== */
+.statement{padding:96px 0; text-align:center}
+.statement p{font-size:clamp(26px,3.6vw,42px); line-height:1.28; letter-spacing:-.03em;
+             max-width:22ch; margin:0 auto; color:var(--dim); font-weight:700; text-wrap:balance}
+.statement b{color:var(--ink)}
+
+/* CTA tile - a rounded slab, not a full-bleed band. */
+.discover{background:var(--slate-deep); color:#fff; border-radius:var(--r-tile);
+          padding:60px 48px; text-align:center}
+.discover h2{color:#fff; max-width:18ch; margin:0 auto}
+.discover p{color:var(--dk-text-2); margin:16px auto 0; max-width:44ch}
+.discover .label{color:var(--lime)}
+.discover .acts{display:flex; gap:12px; margin-top:30px; justify-content:center; flex-wrap:wrap}
+
+/* Nearby band */
+.nearby{background:var(--mist); padding:52px 0; margin-top:34px}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer{background:var(--mist); border-top:1px solid var(--hair);
+       padding:44px 0 58px; font-size:14px; color:var(--muted)}
+.foot{display:flex; gap:44px; flex-wrap:wrap; justify-content:space-between}
+.foot h5{font-size:14px; font-weight:700; color:var(--ink); margin:0 0 12px}
+.foot ul{list-style:none; padding:0; margin:0; display:grid; gap:8px}
+.foot a:hover{color:var(--ink)}
+.legal{margin-top:32px; padding-top:18px; border-top:1px solid var(--hair); font-size:13px}
+
+/* ==========================================================================
+   MOTION
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important; transition:none!important}
+}
+
+
+.artwrap{padding:26px 0 0}
+.art-h .label{margin-bottom:8px}
+.byline{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:16px 0 0;
+  font-size:14.5px;color:var(--muted)}
+.byline .dotsep{width:3px;height:3px;border-radius:50%;background:var(--hair);display:inline-block}
+.hero-img{margin:26px 0 0;border-radius:var(--r-tile);overflow:hidden;background:var(--mist);max-height:420px}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+/* The direct-answer block. It exists so answer engines can lift a clean
+   answer, so it leads the article and is visually distinct from body copy. */
+.da{background:var(--mist);border-radius:var(--r-card);padding:24px 26px;margin:0 0 26px}
+.da .dal{color:var(--blue);font-size:15px;font-weight:600;display:block;margin-bottom:8px}
+.da .dat{font-size:18px;line-height:1.5;margin:0}
+.prose{font-size:17px;line-height:1.62}
+.prose h2{font-size:clamp(24px,2.9vw,32px);line-height:1.1;margin:40px 0 12px;scroll-margin-top:120px}
+.prose h3{font-size:21px;letter-spacing:-.03em;margin:28px 0 8px}
+.prose p{margin:0 0 16px}
+.prose ul,.prose ol{margin:0 0 16px;padding-left:22px}
+.prose li{margin-bottom:7px}
+.prose a{color:var(--blue)}
+.prose a:hover{opacity:.75}
+.prose strong{font-weight:700}
+.prose figure{margin:24px 0}
+.prose figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+.prose .tblwrap,.prose table{margin:0 0 22px}
+.prose table{border-collapse:collapse;width:100%;font-size:15px}
+.prose th,.prose td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--hair);vertical-align:top}
+.prose th{font-size:14px;font-weight:700;color:var(--ink);
+  white-space:nowrap;border-bottom:1px solid var(--ink)}
+.prose tbody tr:hover{background:var(--mist)}
+.prose details{border-top:1px solid var(--hair);padding:14px 0}
+.prose details summary{cursor:pointer;font-weight:700;font-size:17px;letter-spacing:-.02em;list-style:none}
+.prose details summary::-webkit-details-marker{display:none}
+.prose details summary::after{content:"+";float:right;color:var(--muted);font-weight:500}
+.prose details[open] summary::after{content:"\2013"}
+.prose details .padeli-faq-answer{margin-top:10px;color:var(--muted)}
+.prose .related-reading{background:var(--mist);border-radius:var(--r-card);padding:20px 22px;margin:26px 0}
+.toc{position:sticky;top:calc(var(--nav-h) + 22px)}
+.toc .tl{font-size:15px;font-weight:600;color:var(--blue);margin:0 0 12px;display:block}
+.toc a{display:block;font-size:14.5px;color:var(--muted);padding:6px 0 6px 13px;
+  border-left:2px solid var(--hair);line-height:1.4}
+.toc a:hover{color:var(--ink);border-left-color:var(--blue)}
+
+</style>
+<nav><div class="wrap nav-in">
+  <a href="https://padeli.com/" class="mark">Padeli<span class="dot"></span></a>
+  <div class="nav-links"><a href="#">Clubs</a><a href="#">Cities</a><a href="#">Coaches</a><a href="#">Tournaments</a><a href="#">Learn</a></div>
+  <div class="nav-right"><a href="#" class="chev">Claim your club</a><button class="pill sm">Find a court</button></div>
+</div></nav>
+
+<div class="wrap crumb"><a href="#">Blog</a><span>/</span><a href="#">Gear</a><span>/</span>Rackets</div>
+<div class="wrap artwrap">
+  <div class="art-h">
+    <p class="label">Gear</p>
+    <h1 class="t-page">Best Padel Rackets 2026, Ranked for UK Buyers</h1>
+    <div class="byline">
+      <span>By the Padeli team</span><span class="dotsep"></span>
+      <span>Updated 27 April 2026</span><span class="dotsep"></span>
+      <span class="num">23 min read</span><span class="dotsep"></span>
+      <span class="num">5,118 words</span>
+    </div>
+  </div>
+  <div class="hero-img"><img src="data:image/jpeg;base64,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/sL6k/oK/Q3S9LsdGsItM0yNYYIVCoijAAFVtA0HTPDWlRaNpEQighGAB3Pcn1J7mtqgxCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/0/v6iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigArxj4x/Cqy+JGgMsSqmo24Jt5emfWNj6Ht6GvZ6QgEYNAH4nappl3ouoS6ffxtFJExSRGGCCOCDWfbXsuk3guIhujbhlPRlPUV+g/wC0l8IU1ywfxzoUf+lQL/pSKOZIx/H9V7+30r89/LO4wSjjtVICfV9OW2ZLyyy1tOMxn0/2T7isfy2J5rrdGuIl3aNqBzBMeD/cfsRWLqNhcafdtazdV6H1HYimBm7PL607G8YzilAyfetfRtKbUrrax2xIN0jeij/GgCzpdvFYWx1y/GQhxCh/if1+grHzLeXDXt0dzMc59TWhq9//AGreLHb/ACwQjbGvoB3+prZ8M+H9Q8R6tb6NpcZkmncIijuT6+3r7Urgd38JvhnqHxD8Qx2MQKW0eHuJscImf/Qj0A/wr9TdE0TTvD2lwaPpMYit7dQiKPQdz6k9Sa5P4a+AtP8Ah94ai0a0AaYgPcS45eTv+A6D2r0OpAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//U+/qKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCOSNZFKOAQRgg9wa/M79oX4UN4I186xpMeNOvmLR4HEb9TGf5j2+lfprXKeNfCWmeNvDlz4d1Vcxzr8rd0cfdYe4NAH40H95Hk9V611MQ/4SLSvIb/j8tRlT3dPT6/1qr4m0O58LeIbrQr8r5ttIYnwQeR349etZFpdz6XeLcw9VOfYj0qwKK2csk32eNGLk424Oc+ldXqrR6LpiaJbn97KA85/pW+3i7Slh8+ONjMR93Hf3b0rzuV5b26a5nOWc7jQA62h6IB8xr9Gv2b/haPDejDxhq8eL28X9yrDmOI9/q/8AKvmT4AfDqLxv4uSTUQDaWQE0ykjLYPyrjrgnr7V+nyIqKFQYA4AHpUsB9FFFIAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//V+/qKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApDS0h6UAfjR8Y7V7P4i6vBKoVhdyZAx3OR0NcvaaBqWqWI1K0C7PMERLOka7iMgDc4ySOelfQ/7Sfw+vLb4kyy6WZLuTU4zd+XGmSgBwRgdQMZzXzuujXC2DRStsZXz5Z6jjrjFWhMtXHgnxXbRNPLauiojyNllyFQkMdu7OBtPbtTdT8N61oulRX2oQSRLc42M4GGBGQVIYnke2Kx2j1EAxNM+DwRk4OetWr2O/aCKC4kYr1UOQwGfTH9aAR9m/sbQgajqszKMiBBnHPL/AJ9q++h0r4+/ZE8Nx6f4Vvdf8ws91MIdoGABHzn3JLV9g1AwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9b7+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD47+OGs6foHxJi1S6mWGVNFnEBY4JlLHaF968a+F/i7WPHWvweHvFNva6nBIH8x5oU8wKqk7gwAPbv61tftebf8AhNdP6/8AHnz7/Oa+ZNG1bUtGBvtKmktplJAkjYhuevI/WqEfRGs+D/hl4b8NnxJrlvcyi9vpo4BBJtKRq7KvB4IAXvzyK46bwh8P9d0K/wBY8PXt8h06DzWjnjQjBOFG4EdTXPaX8VvGGm2EekmSC7tYhhIbmFJVGee4z+tXdS+J0l1pE2ijSrO1iu2Q3JtVMTOqHdt4JAz644psLH3d+ztpVrpPw8jjsZxcwyytKkgXaSGA4IyeQcg17zXh37P2sW+t/D6O8s7VbOFZnjSFDkKqYxzgZ9z617jUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/X+/qKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigApD0paQ0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0Doj7oXP5hh+orh7G7+PHwDnJMFxbWxOWWRfOtW/EZUfgQaQHLfFvwhq/hnx/qkV9A8cL3DvFIVYK6udwKseDwa4gXaCLbuOTmvtjwb+114b1iEWHxK04QN/z2gTzYj9Y2yw/DNfNfxw+I+i+P8AxQG8LWsdnpdqNsZWJYnlY/ed8DP0B6CgDzLz1JO3Iz+NSmUSgLnOcDH/AOqsVJIkYSJLyvIHXkcjjvX6lfs8ahovjjwDDrV7pVlFeQStbyvFBGgcoAQ4wOCQRnHegDxf9lbwFePr0vjLUbeSOG2jKW7SKQGd+CVJ64XP51980xUVAAowB0Ap9ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/1fv6iiigAooooAKKKKACiiigAooooAKKKKAEwK5fWvBHhDxFn+29Ntrknqzxru/76xn9a6migDwLVf2bPhZqLFobWa0J/wCeErY/JtwriLv9kvwu5zYareQjsGWN/wCgr60op3A+K7j9kVyD9m13I/6aW4/o9YU/7Ievf8sNWtm/3o3X+Wa+8aKLhY/PuT9kXxepzHf2J/Bx/wCy1LD+yT4x/j1GxX/gLn/2Wvv+ii4HwrD+yV4jAxJrNsP92Jz/AFFaC/sk6gy7Ztcj/C3P/wAXX21RRcD4iP7HKSNmXXSM/wB23/8As6uW/wCxvooP+la3cMP9iFF/mTX2jRSA+VrD9kj4c27Br64vbn2Lqg/8dWu60z9nb4Q6ayuNJWdl6Gd3f9CcfpXt9FAFOx0+x0y1Sy0+JIIYxtSOMBVUegA4q5RRQAmKimt4LiJoZ0EiMMMrDII9CDU1FAHzJ8R/2YPAnjGGS78PRLo+oHJEkI/dMf8Abj6D6rg/WvlRf2R/i2939ll+xiEtgzCbI256hcZ/Cv1GooA+NIv2MfBKogbVL7cMbyBHg+uPl4r6i8HeD9D8DaDD4d8PxeVbw56nLMx6sx7k11NFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9b7+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//X+/qKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//2Q==" alt="NOX AT10 Genius 18K padel racket" /></div>
+</div>
+
+<div class="wrap"><main><div class="doc">
+  <section style="border-top:0;padding-top:26px">
+    <div class="da"><span class="dal">The short answer</span>
+      <p class="dat">The best padel rackets in the UK in 2026 are the <strong>NOX AT10 Genius 18K</strong> for intermediate-to-advanced players who want a tour-grade diamond (£260-£340), the <strong>Bullpadel Vertex 05 Tello</strong> for aggressive players who need a forgiving sweet spot at the same price band, and the <strong>Babolat Counter Veron 2.6</strong> for improvers stepping up from a beginner frame (£180-£220). UK buyers should plan around three retailers per shortlist: Padel Nuestro for breadth, Decathlon UK for click-and-collect speed, and PDH Sports for genuine UK next-day delivery on Spanish brands. For global pricing in USD and EUR, see our <a href="https://padeli.com/best-padel-rackets/">global padel rackets buyer guide</a>. Last updated: September 2026.</p></div>
+    <div class="prose">
+
+
+
+
+
+
+<h2 class="wp-block-heading" id="h-how-we-ranked-the-best-padel-rackets-for">How we ranked the best padel rackets for UK buyers</h2>
+
+
+
+<p class="wp-block-paragraph">We grade this list by aggregating recent player reviews on Google, <a href="/get-started/glossary/playtomic/">Playtomic</a> and specialist review sites, then cross-checking what we saw against published spec sheets, pro-tour usage and UK retailer stock data from Padel Nuestro, Decathlon UK and PDH Sports. A racket climbs the list when UK players consistently report durability beyond 12 months, a sweet spot that matches its stated shape and reliable UK retailer availability with sane delivery times. It drops when frames go dead within months, when UK delivery is patchy because the brand only ships from Spain at extra duty, or when the handling contradicts the published weight and balance.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-padel-rackets-in-the-uk-in-2026-at-a-gla">Padel rackets in the UK in 2026 at a glance</h2>
+
+
+
+<p class="wp-block-paragraph">The UK padel-racket market in 2026 is increasingly serviced by domestic stockists. Padel Nuestro&#8217;s UK warehouse, PDH Sports&#8217; growing padel range and Decathlon UK&#8217;s mass-market presence mean most major frames now arrive within three working days at sane prices.</p>
+
+
+
+<p class="wp-block-paragraph">The pricing reality post-Brexit: Spanish brands (NOX, StarVie, Bullpadel) sit £20-£40 higher in the UK than at their Spanish home retailers because of duty and shipping. Ordering direct from Spain rarely beats the UK retailer once you factor in import VAT and the 14-day cooling-off complication on cross-border returns.</p>
+
+
+
+<p class="wp-block-paragraph">The cleanest UK strategy is to use Padel Nuestro UK or PDH Sports for Spanish-brand rackets, and Decathlon UK or Babolat UK for the in-house Babolat range.</p>
+
+
+
+<p class="wp-block-paragraph">Demo programmes have improved across the country. <a href="https://padeli.com/best-padel-courts-london-2026/">London clubs</a> like <a href="/clubs/gb/canary-wharf/padium-canary-wharf/">Padium Canary Wharf</a>, <a href="/clubs/gb/chiswick/rocks-lane-chiswick/">Rocks Lane Chiswick</a> and <a href="/clubs/gb/stratford/stratford-padel-club/">Stratford Padel Club</a> run formal demo schemes; Withdean Sports Complex&#8217;s covered courts in Brighton added a demo programme with the venue opening in April 2026. Try before you buy is now realistic in most major UK markets.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-at-a-glance-best-padel-rackets-uk-2026">At a glance: best padel rackets UK 2026</h2>
+
+
+
+<p class="wp-block-paragraph">Quick reference for the 7 rackets we cover in depth below. Specs sourced from each manufacturer&#8217;s official UK product page in May 2026. Prices reflect verified UK stockist listings - Spain-direct can be 10 to 20% cheaper but watch the post-Brexit duty point covered later.</p>
+
+
+
+<figure class="wp-block-table padeli-table"><table><thead><tr><th>Racket</th><th>Shape</th><th>Weight</th><th>Level</th><th>UK price</th><th>Best for</th></tr></thead><tbody>
+<tr><td>NOX AT10 Genius 18K 2026</td><td>Diamond</td><td>365 to 375g</td><td>Intermediate to advanced</td><td>£260 to £290</td><td>Power players, Tapia pro signature</td></tr>
+<tr><td>Bullpadel Vertex 05 Tello 2026</td><td>Diamond / teardrop hybrid</td><td>360 to 380g</td><td>Intermediate to advanced</td><td>£240 to £270</td><td>Balanced power and control</td></tr>
+<tr><td>Babolat Counter Veron 2.6</td><td>Round / teardrop hybrid</td><td>360 to 375g</td><td>Intermediate</td><td>£165 to £200</td><td>All-round improvers</td></tr>
+<tr><td>StarVie Black Titan 2026</td><td>Diamond</td><td>360 to 380g</td><td>Intermediate to advanced</td><td>£200 to £240</td><td>Power plus control combo</td></tr>
+<tr><td>Head Delta Elite</td><td>Diamond</td><td>365 to 385g</td><td>Advanced</td><td>£180 to £220</td><td>Pure power, attacking play</td></tr>
+<tr><td>Babolat Technical Vertuo 2.5</td><td>Round</td><td>350 to 365g</td><td>Beginner</td><td>£110 to £140</td><td>First-racket value</td></tr>
+<tr><td>Bullpadel Elite W 2026</td><td>Round</td><td>355 to 370g</td><td>Beginner to intermediate</td><td>£160 to £190</td><td>Control-first improvers</td></tr>
+</tbody></table></figure>
+
+
+<h2 class="wp-block-heading" id="h-1-nox-at10-genius-18k-2026-best-overall-">1. NOX AT10 Genius 18K 2026 - Best overall (intermediate to advanced)</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><figcaption class="wp-element-caption">NOX AT10 Genius 18K 2026: 18K carbon faces, MLD Black EVA core, diamond shape - around £260-£340 in the UK.</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The NOX AT10 is the racket Agustín Tapia uses on the <a href="/get-started/glossary/premier-padel/">Premier Padel</a> tour, and the 2026 18K Genius has become the default UK shortlist answer when a club player asks which single frame covers every situation.</p>
+
+
+
+<p class="wp-block-paragraph">Diamond shape, head-heavy balance, MLD Black EVA core and 18K carbon faces give it the punch of a power diamond with enough forgiveness to hold up across 90 minutes of mixed-tempo play. UK delivery on this frame is reliably fast through PDH Sports and Padel Nuestro UK; both stock the 2026 model in volume.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>What you get:</strong> Diamond shape, 365-375g, head-heavy balance, 18K Carbon Fiber Alum faces, MLD Black EVA core, medium feel, 38mm profile.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where to buy in the UK:</strong> Around £260-£340. <a href="https://www.padelnuestro.com/uk/nox-at10-genius-18k-by-agustin-tapia-23-31576-p" target="_blank" rel="noopener noreferrer">Padel Nuestro UK</a> typically lists the lowest peak price; <a href="https://www.decathlon.co.uk/p/mp/nox-at10-genius-18k-padel-racket-25/0ac4580f-eadd-47ab-9a20-39a504376055/c1c4" target="_blank" rel="noopener noreferrer">Decathlon UK</a> offers free click-and-collect; <a href="https://pdhsports.com/products/nox-at10-genius-18k-alum-agustin-tapia-padel-racket-2025" target="_blank" rel="noopener noreferrer">PDH Sports</a> is the safest bet for UK next-day delivery.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Who it is for:</strong> Club-level UK players ready to upgrade from their first intermediate frame, or advanced players who want a tour-used racket with enough forgiveness for long Saturday-morning sessions.</p>
+
+
+
+<h3 class="wp-block-heading">What other players say about the NOX AT10 Genius 18K</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Rating: 9.4/10 aggregated from independent padel review sites (April 2026)</strong></p>
+
+
+
+<p class="wp-block-paragraph">UK reviewers praise the clean feedback on every shot, the way it handles both smashes and defensive lobs, and how the 18K carbon face holds up through heavy use without going dead within the first season. The Padel Nuestro UK and PDH Sports listings consistently average 4.7-4.8 stars across hundreds of UK customer reviews.</p>
+
+
+
+<p class="wp-block-paragraph">The most common UK criticism is the price - £380 at peak puts it in the top 5% of the market - and the way the head-heavy balance tires the arm if you are not yet conditioned for a diamond frame.</p>
+
+
+
+<p class="wp-block-paragraph">Several UK reviewers report switching back to a teardrop after a month before returning to the AT10 once they had built shoulder strength.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-2-bullpadel-vertex-05-tello-2026-best-ba">2. Bullpadel Vertex 05 Tello 2026 - Best balanced diamond</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><figcaption class="wp-element-caption">Bullpadel Vertex 05 Tello 2026: Xtend Carbon 12K face, MultiEVA core, balanced diamond - around £320-£360 in the UK.</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The Bullpadel Vertex 05 is Juan Tello&#8217;s tour racket and sits at the top of the balanced-diamond category.</p>
+
+
+
+<p class="wp-block-paragraph">It brings diamond power without the full forgiveness penalty - the Xtend Carbon 12K face is stiffer than most diamonds but the sweet spot stays generous enough that mid-session drops in concentration do not punish you as harshly as a pure power stick would.</p>
+
+
+
+<p class="wp-block-paragraph">The 2026 Tello edition is the racket UK players keep coming back to when they want diamond aggression without the AT10&#8217;s price tag.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>What you get:</strong> Diamond shape, 360-375g, medium-high balance, Xtend Carbon 12K faces, MultiEVA core, 38mm profile, 9.1 sweet-spot rating on spec sheets.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where to buy in the UK:</strong> Around £320-£360. <a href="https://www.expresspadel.co.uk/products/bullpadel-vertex-05-2026-padel-racket" target="_blank" rel="noopener noreferrer">Express Padel</a> is the UK specialist with consistent stock; <a href="https://www.padelnuestro.com/uk/bullpadel-vertex-05" target="_blank" rel="noopener noreferrer">Padel Nuestro UK</a> for breadth across older and current models; <a href="https://www.ongoal.co.uk/products/bullpadel-vertex-05-tello-2026" target="_blank" rel="noopener noreferrer">Ongoal</a> occasionally undercuts on the 2026 edition during sale periods.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Who it is for:</strong> Aggressive intermediate-to-advanced UK players who want a diamond frame that does not punish off-centre hits as harshly as a pure power stick, particularly players coming up through the LTA pathway.</p>
+
+
+
+<h3 class="wp-block-heading">What other players say about the Bullpadel Vertex 05 Tello</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Rating: 8.7/10 aggregated from independent padel review sites (April 2026)</strong></p>
+
+
+
+<p class="wp-block-paragraph">UK players consistently call out the balance between power and sweet-spot forgiveness, the way the frame handles low defensive balls, and the durability over a full year of three-times-a-week play. The 2026 edition is rated as the strongest of the recent Vertex generations across UK retailer customer reviews.</p>
+
+
+
+<p class="wp-block-paragraph">The most common negative is that the stiffer 12K face demands clean technique - UK reviewers with softer strokes find it unforgiving for the first month. Several also flag the price as a step up from earlier Vertex generations, with the 2025 edition still available at lower prices through some UK retailers if budget is tighter than spec.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-3-babolat-counter-veron-2-6-best-all-rou">3. Babolat Counter Veron 2.6 - Best all-round intermediate</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><figcaption class="wp-element-caption">Babolat Counter Veron 2.6: Carbon Flex face, large sweet spot, teardrop shape - around £180-£220 in the UK.</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The Counter Veron is Babolat&#8217;s most forgiving modern racket - the largest sweet spot in their range and a Carbon Flex face (carbon plus fibreglass) that delivers elastic, tolerant feel. It is the UK racket to buy when you have outgrown your first beginner frame but do not want to commit to a power diamond yet.</p>
+
+
+
+<p class="wp-block-paragraph">As a Babolat in-house brand, UK distribution is strongest on this frame: Babolat UK, Decathlon UK and PDH Sports all stock the 2.6 reliably with same-week delivery in most postcodes.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>What you get:</strong> Teardrop shape, 360-370g, medium balance, Carbon Flex (carbon + fibreglass), large sweet spot, 38mm profile.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where to buy in the UK:</strong> Around £180-£220. <a href="https://www.decathlon.co.uk/p/padel-racket-counter-veron-2-6/380904/m9000221" target="_blank" rel="noopener noreferrer">Decathlon UK</a> is the simplest pick with click-and-collect at most stores; <a href="https://www.babolat.com/gb/counter-veron-2.6/150181.html" target="_blank" rel="noopener noreferrer">Babolat UK</a> direct gives full warranty and a clean returns process; <a href="https://pdhsports.com/collections/babolat-counter-range" target="_blank" rel="noopener noreferrer">PDH Sports</a> stocks the wider Babolat Counter range and bundles racket with grip occasionally.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Who it is for:</strong> UK intermediate players working on a varied attacking-and-defensive game. Also a strong choice for returning players who want forgiveness without losing power.</p>
+
+
+
+<h3 class="wp-block-heading">What other players say about the Babolat Counter Veron 2.6</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Rating: 8.6/10 aggregated from independent padel review sites (April 2026)</strong></p>
+
+
+
+<p class="wp-block-paragraph">UK reviewers praise the sweet-spot size, the ease of transition shots and the way it rewards players still developing consistency. The weight range gets repeated mentions as beginner-friendly without feeling like a toy, and Decathlon UK customer reviews consistently average above 4.5 stars on the Counter Veron line.</p>
+
+
+
+<p class="wp-block-paragraph">The most common UK negative is that advanced players find it under-powered - players who progressed past intermediate frequently upgraded within a year. A handful of reviewers flag that the grip runs on the thicker side and an overgrip is usually needed for smaller hands.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-4-starvie-black-titan-2026-best-power-pl">4. StarVie Black Titan 2026 - Best power plus control combo</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><figcaption class="wp-element-caption">StarVie Black Titan 2026: 24K Carbon Master face, H-EVA Power core, teardrop-diamond hybrid - around £240-£300 in the UK.</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">StarVie&#8217;s Black Titan 2026 pulls off the trick most rackets do not - 9.4 power and 9.6 control on the spec sheet, which in practice means a diamond-adjacent frame that you can still steer.</p>
+
+
+
+<p class="wp-block-paragraph">It is the racket to pick up when you have decided you want more punch than a teardrop allows but are not ready for a pure power stick.</p>
+
+
+
+<p class="wp-block-paragraph">UK distribution is thinner than the bigger Spanish brands - StarVie does not have a UK warehouse - so plan on UK delivery times of 5-7 working days from the specialist UK retailers.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>What you get:</strong> Teardrop-diamond hybrid, 360-370g, medium-high balance, 24K Carbon Master face, H-EVA Power core, Anti-Vibe and Dynamic Star (interchangeable weight) tech.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where to buy in the UK:</strong> Around £240-£300. <a href="https://ninepadel.com/product/starvie-black-titan-2026-padel-racket/" target="_blank" rel="noopener noreferrer">NinePadel</a> ships from a UK warehouse with next-day delivery on stock items; <a href="https://www.padelshack.com/product/starvie-black-titan-padel-racket-2026/" target="_blank" rel="noopener noreferrer">Padelshack</a> is the UK specialist with the deepest StarVie range; <a href="https://starvie.com/en/products/black-titan" target="_blank" rel="noopener noreferrer">StarVie direct</a> for international shipping if the UK retailers are out of stock.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Who it is for:</strong> Intermediate UK players climbing towards advanced who want one racket that handles every shot.</p>
+
+
+
+<h3 class="wp-block-heading">What other players say about the StarVie Black Titan</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Rating: 9.5/10 aggregated from independent padel review sites (April 2026)</strong></p>
+
+
+
+<p class="wp-block-paragraph">Reviewers flag the combination of power and control as the standout, with several calling it the single most versatile frame of the 2026 season. The Anti-Vibe technology gets repeated mentions for reducing arm fatigue across long sessions, and the interchangeable Dynamic Star weight system has been called out as the cleanest customisation feature on the 2026 market.</p>
+
+
+
+<p class="wp-block-paragraph">The most common UK negative is distribution - StarVie is a smaller brand than Bullpadel, Head or Babolat, so availability in UK pro shops can be patchy. UK reviewers note ordering from Spain adds shipping cost and delivery time even when the brand fulfils direct.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-5-head-delta-elite-best-pure-power-advan">5. Head Delta Elite - Best pure power (advanced)</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><figcaption class="wp-element-caption">Head Delta Elite: carbon face, Auxetic frame technology, diamond shape - around £260-£320 in the UK.</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Head&#8217;s Delta Elite is the sharp end of the Head padel range - a diamond-shaped carbon-face frame built for players who want to end points with dominant smashes. If your technique is reliable and your conditioning is there, this is one of the hardest-hitting frames on the 2026 UK market.</p>
+
+
+
+<p class="wp-block-paragraph">UK availability has been mixed in 2026 - some specialist retailers stock the current generation while others list the 2022 model still - so price-shop carefully.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>What you get:</strong> Diamond shape, 360-375g, high balance, carbon face, Auxetic frame technology, 38mm profile.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where to buy in the UK:</strong> Around £260-£320. <a href="https://www.tennisnuts.com/shop/new/head-delta-elite-padel-racket-1540717.html" target="_blank" rel="noopener noreferrer">Tennis Nuts</a> stocks the current Delta Elite at competitive UK pricing; <a href="https://www.amazon.co.uk/HEAD-Delta-Padel-Tennis-Paddle/dp/B0BZM7XZTS" target="_blank" rel="noopener noreferrer">Amazon UK</a> for Prime delivery on the 2022 generation if budget matters more than the latest spec; <a href="https://pdhsports.com/collections/head-padel-rackets" target="_blank" rel="noopener noreferrer">PDH Sports</a> for the wider Head padel range and bundle deals.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Who it is for:</strong> Advanced UK players with proven technique who prioritise smashes and attacking finishes. Not a beginner or early-intermediate racket.</p>
+
+
+
+<h3 class="wp-block-heading">What other players say about the Head Delta Elite</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Rating: 8.8/10 aggregated from independent padel review sites (April 2026)</strong></p>
+
+
+
+<p class="wp-block-paragraph">UK reviewers praise the sheer power on attacking shots, the stiffness of the frame and the Auxetic technology that helps with off-centre feel. The Tennis Nuts and PDH Sports listings carry consistently strong customer ratings on the Delta Elite line, with several reviewers specifically calling out reliable durability over a full UK season.</p>
+
+
+
+<p class="wp-block-paragraph">The common negative is the steep learning curve - this is a frame that punishes mis-hits and rewards conditioning. Several UK reviewers note their first month was demoralising before the technique caught up to the spec.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-6-babolat-technical-vertuo-2-5-best-begi">6. Babolat Technical Vertuo 2.5 - Best beginner racket</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><figcaption class="wp-element-caption">Babolat Technical Vertuo 2.5: Carbon Flex face, soft EVA core, round-teardrop hybrid - around £100-£140 in the UK.</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Babolat&#8217;s Technical Vertuo 2.5 is the racket UK clubs hand to first-timers and the frame coaches recommend for the first six months. Diamond-adjacent shape with soft materials and a forgiving sweet spot, it gives new players the feel of a real padel frame at half the price of the tour-grade options.</p>
+
+
+
+<p class="wp-block-paragraph">The 2025 edition (the current generation in UK retail) is bundled into Decathlon UK&#8217;s beginner kit packages and ships fast.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>What you get:</strong> Round-teardrop hybrid, soft EVA core, Carbon Flex (carbon + fibreglass) face, large sweet spot, 38mm profile.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where to buy in the UK:</strong> Around £100-£140. <a href="https://www.decathlon.co.uk/p/adult-padel-racket-technical-vertuo-juan-lebron-2-5-2025/_/R-p-355794" target="_blank" rel="noopener noreferrer">Decathlon UK</a> is the default pick for first-time buyers - bundle deals with grips and balls are common; <a href="https://www.babolat.com/gb/technical-vertuo-juan-lebron/150168.html" target="_blank" rel="noopener noreferrer">Babolat UK</a> direct for full warranty and a clean returns flow; <a href="https://everythingpadel.co.uk/product/babolat-technical-vertuo-padel-racket-2025/" target="_blank" rel="noopener noreferrer">Everything Padel</a> for the UK specialist alternative with stock detail.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Who it is for:</strong> UK first-time buyers in the first six months of playing padel. Also suitable for casual social players who do not need a tour-grade frame.</p>
+
+
+
+<h3 class="wp-block-heading">What other players say about the Babolat Technical Vertuo 2.5</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Rating: 8.4/10 aggregated from independent padel review sites (April 2026)</strong></p>
+
+
+
+<p class="wp-block-paragraph">UK reviewers praise the price-to-quality ratio, the forgiving sweet spot for new players and the build quality you would expect from Babolat&#8217;s tennis pedigree. Decathlon UK customer reviews consistently average above 4.5 stars across hundreds of buyers, with several first-timers reporting they used it for the full first 12 months before upgrading.</p>
+
+
+
+<p class="wp-block-paragraph">The common negative is that intermediate players outgrow it within 6-9 months. UK reviewers progressing past the recreational stage flag the lack of power on attacking shots once their technique improves.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-7-bullpadel-elite-w-2026-best-round-fram">7. Bullpadel Elite W 2026 - Best round frame for improvers</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><figcaption class="wp-element-caption">Bullpadel Elite W: Fibrix material, Multieva core, hybrid round shape - around £140-£180 in the UK.</figcaption></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Bullpadel&#8217;s Elite W is Gemma Triay&#8217;s tour racket and the most popular round-frame upgrade in the UK improver market. Lighter than most of the rackets on this list (345-360g), it is a strong pick for players who want hand-speed and joint-friendly weight without losing the Bullpadel build quality.</p>
+
+
+
+<p class="wp-block-paragraph">The frame is positioned as a women&#8217;s racket but the round shape and lower weight make it equally suitable for any player working on hand-speed and shot variety.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>What you get:</strong> Hybrid round shape, 345-360g, medium balance (~25.8cm), Fibrix (glass + carbon mix), Multieva core, Carbontube, Air React Channel, 38mm profile.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Where to buy in the UK:</strong> Around £140-£180. <a href="https://www.padelnuestro.com/int/bullpadel-elite-w-25-women-s-113751-p" target="_blank" rel="noopener noreferrer">Padel Nuestro</a> for the widest stock and frequent sale pricing on the 2025 edition; <a href="https://www.expresspadel.co.uk/products/bullpadel-elite-w-2026-padel-racket" target="_blank" rel="noopener noreferrer">Express Padel</a> for the UK specialist 2026 stock; <a href="https://www.bullpadel.com/gb/proline/4554-pala-bullpadel-elite-w-25.html" target="_blank" rel="noopener noreferrer">Bullpadel UK</a> direct for full warranty and the official Gemma Triay edition.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Who it is for:</strong> UK improvers and intermediate players who want a lighter round frame for hand-speed and shot variety. Strong choice for players who have struggled with arm fatigue on heavier diamond frames.</p>
+
+
+
+<h3 class="wp-block-heading">What other players say about the Bullpadel Elite W</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>Rating: 8.5/10 aggregated from independent padel review sites (April 2026)</strong></p>
+
+
+
+<p class="wp-block-paragraph">UK reviewers consistently praise the lighter weight and the way it suits players progressing from a beginner frame without overwhelming them with diamond-shape demands. The Fibrix material gets repeated mentions for the smooth feel and reduced arm impact across long sessions.</p>
+
+
+
+<p class="wp-block-paragraph">The common negative is power - aggressive players upgrade out of this frame within 12 months once their technique catches up. Several UK reviewers also flag that the women&#8217;s branding can put off male players who would otherwise benefit from the lighter weight.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-honourable-mentions">Honourable mentions</h2>
+
+
+
+<p class="wp-block-paragraph"><strong>Adidas Metalbone Carbon HRD+</strong> - Diamond power frame favoured by Ale Galán on the Premier Padel tour. Around £280-£340 in the UK. Available through Padel Nuestro UK and Adidas direct. Worth shortlisting if you have tested the AT10 and want a stiffer alternative.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Wilson Carbon Force Pro</strong> - Wilson&#8217;s serious padel frame, well-built and relatively affordable for the spec. Around £180-£220 in the UK. Better UK distribution than StarVie but thinner than Babolat or Bullpadel.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Black Crown Genesis 1.0</strong> - The serious-padel-club favourite for players who want a frame from a cult brand. Around £240-£300 in the UK through specialist padel retailers only.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-verified-2026-padel-racket-prices-in-the">Verified 2026 padel racket prices in the UK</h2>
+
+
+
+<p class="wp-block-paragraph">Always cross-check the live retailer price - sale periods at Padel Nuestro UK, Decathlon UK and Express Padel can drop these prices £20-£50 below the headline range. The figures below are the typical 2026 UK retail bands.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Racket</th><th>Shape</th><th>UK price</th><th>Level</th></tr></thead><tbody><tr><td>NOX AT10 Genius 18K 2026</td><td>Diamond</td><td>£260-£340</td><td>Intermediate-advanced</td></tr><tr><td>Bullpadel Vertex 05 Tello 2026</td><td>Diamond</td><td>£320-£360</td><td>Intermediate-advanced</td></tr><tr><td>Babolat Counter Veron 2.6</td><td>Teardrop</td><td>£180-£220</td><td>Intermediate</td></tr><tr><td>StarVie Black Titan 2026</td><td>Teardrop-diamond</td><td>£240-£300</td><td>Intermediate-advanced</td></tr><tr><td>Head Delta Elite</td><td>Diamond</td><td>£260-£320</td><td>Advanced</td></tr><tr><td>Babolat Technical Vertuo 2.5</td><td>Round-teardrop</td><td>£100-£140</td><td>Beginner</td></tr><tr><td>Bullpadel Elite W 2026</td><td>Round-hybrid</td><td>£140-£180</td><td>Improver</td></tr></tbody></table></figure>
+
+
+
+<h2 class="wp-block-heading" id="h-what-to-know-before-you-buy-a-padel-rack">What to know before you buy a padel racket in the UK</h2>
+
+
+
+<h3 class="wp-block-heading">Try before you buy: UK demo programmes</h3>
+
+
+
+<p class="wp-block-paragraph">Demo programmes are now standard at most premium UK clubs.</p>
+
+
+
+<p class="wp-block-paragraph">Padium Canary Wharf runs a structured demo scheme with the major brands; Rocks Lane Chiswick stocks rackets across all the major manufacturers for trial; Stratford Padel Club offers demo rackets through the on-site shop; Withdean Sports Complex in Brighton added a demo scheme when the covered courts opened in April 2026.</p>
+
+
+
+<p class="wp-block-paragraph">The cost of a demo session is typically £5-£15 for the racket on top of court hire and the spend is usually deductible from a same-club purchase. See our <a href="https://padeli.com/best-padel-courts-london-2026/">guide to London padel venues</a> for more on demo availability.</p>
+
+
+
+<h3 class="wp-block-heading">Pricing watch-outs: post-Brexit duty and EU shipping reality</h3>
+
+
+
+<p class="wp-block-paragraph">Spanish brands (NOX, StarVie, Bullpadel) sit £20-£40 higher in the UK than at the brand&#8217;s home retailer because of import duty and shipping. Ordering direct from Spain rarely beats the UK retailer once you factor in import VAT (20%) and the complications of cross-border returns under the 14-day cooling-off rule.</p>
+
+
+
+<p class="wp-block-paragraph">The cleanest UK strategy: use Padel Nuestro UK or PDH Sports for Spanish-brand rackets, and Decathlon UK or Babolat UK for in-house Babolat. For the global pricing context in USD and EUR, see our <a href="https://padeli.com/best-padel-rackets/">global rackets buyer guide</a>.</p>
+
+
+
+<h3 class="wp-block-heading">UK Consumer Rights Act: returns and faulty rackets</h3>
+
+
+
+<p class="wp-block-paragraph">UK buyers have two important protections under the Consumer Rights Act 2015 and the Consumer Contracts Regulations.</p>
+
+
+
+<p class="wp-block-paragraph">First, online purchases come with a 14-day cooling-off period during which you can return the racket unused for a full refund. This applies to Padel Nuestro UK, Decathlon UK, PDH Sports, Express Padel and the Babolat / Bullpadel direct UK sites.</p>
+
+
+
+<p class="wp-block-paragraph">Second, if a racket develops a fault within 30 days you have a statutory right to a full refund, not just a repair or replacement. After 30 days but within six months, you have a right to repair or replacement.</p>
+
+
+
+<p class="wp-block-paragraph">Keep your order confirmation email and the original packaging if you want either right to apply cleanly.</p>
+
+
+
+<h3 class="wp-block-heading">Shape, weight and balance matter more than brand</h3>
+
+
+
+<p class="wp-block-paragraph">Shape and weight will tell you more about how a racket plays than the brand on the bumper guard.</p>
+
+
+
+<p class="wp-block-paragraph">Round frames give the largest sweet spot and the most forgiveness. Teardrops compromise between forgiveness and power. Diamonds maximise power at the cost of forgiveness.</p>
+
+
+
+<p class="wp-block-paragraph">Weight under 360g suits hand-speed and reduced arm fatigue. 360-375g is the standard intermediate-to-advanced band. Over 375g is for serious power players with the conditioning to handle it.</p>
+
+
+
+<p class="wp-block-paragraph">Balance is whether the weight sits in the head (more power, less control) or the handle (more control, less power).</p>
+
+
+
+<h3 class="wp-block-heading">Do not over-buy at the start</h3>
+
+
+
+<p class="wp-block-paragraph">The most common UK first-buy mistake is jumping straight to a tour-grade diamond because the pros use it. The AT10 and Vertex 05 are exceptional rackets but they punish technique gaps for the first month and tire the arm faster than your conditioning can absorb.</p>
+
+
+
+<p class="wp-block-paragraph">Beginners and early intermediates do better with a Babolat Technical Vertuo 2.5 or a Bullpadel Elite W, then upgrade once their technique justifies the spec. For more on equipment progression, see our <a href="https://padeli.com/beginners-guide-padel-2026/">padel beginner&#8217;s guide</a>.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-frequently-asked-questions">Frequently asked questions</h2>
+
+
+
+<div class="wp-block-group padeli-faq-accordion"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><details><summary>What is the best padel racket to buy in the UK in 2026?</summary><div>For a single all-round answer the NOX AT10 Genius 18K is the most-recommended frame across UK club players, with the Bullpadel Vertex 05 Tello a close second at the same price band. Beginners should start with the Babolat Technical Vertuo 2.5 (£100-£140); improvers stepping up should look at the Babolat Counter Veron 2.6 (£180-£220) or the Bullpadel Elite W (£140-£180).</div></details><details><summary>How much should I pay for a padel racket in the UK?</summary><div>Beginners should spend £80-£140 on a round or teardrop frame; intermediates £140-£240; serious club players £240-£400. Spending more than £400 only makes sense if you have tested the racket via a demo programme and your technique justifies the spec.</div></details><details><summary>Where can I buy padel rackets in the UK?</summary><div>The three biggest UK retailers are Padel Nuestro UK (broadest stock across Spanish and global brands), Decathlon UK (fastest click-and-collect on Babolat and entry-level rackets) and PDH Sports (UK next-day delivery on most Spanish brands). Specialist UK retailers like Express Padel, NinePadel, Padelshack and Tennis Nuts cover gaps when the bigger shops are out of stock.</div></details><details><summary>Should I order padel rackets from Spain instead of the UK?</summary><div>Usually no. Spanish brands sit £20-£40 higher in the UK than at home retailers, but ordering direct from Spain rarely beats the UK retailer once you factor in import VAT (20%) and the complications of cross-border returns under the 14-day cooling-off rule. Use Padel Nuestro UK or PDH Sports for Spanish-brand rackets unless the UK retailer is actually out of stock.</div></details><details><summary>Can I return a padel racket in the UK?</summary><div>Yes. Online purchases come with a statutory 14-day cooling-off period during which you can return the racket unused for a full refund. If the racket develops a fault within 30 days you have a right to a full refund (not just repair or replacement) under the Consumer Rights Act 2015. After 30 days but within six months you have a right to repair or replacement.</div></details><details><summary>Can I demo a padel racket before buying in the UK?</summary><div>Yes. Padium Canary Wharf, Rocks Lane Chiswick, Stratford Padel Club and Withdean Sports Complex in Brighton all run demo programmes with the major brands. Cost is typically £5-£15 for the racket on top of court hire, often deductible from a same-club purchase.</div></details><details><summary>What is the best beginner padel racket in the UK?</summary><div>The Babolat Technical Vertuo 2.5 (£100-£140) is the default UK first-buy. Round-teardrop hybrid shape, soft Carbon Flex face, large sweet spot - it gives new players the feel of a real padel frame at half the price of tour-grade options. Available with same-week delivery from Decathlon UK, Babolat UK and Everything Padel. The Bullpadel Elite W (£140-£180) is the strongest improver upgrade once the Vertuo is outgrown.</div></details></div></div>
+
+
+
+<details class="padeli-faq-item">
+<summary>Should I choose a round, teardrop or diamond padel racket?</summary>
+<div class="padeli-faq-answer"><p>Round rackets have the largest sweet spot and are most forgiving - the right choice for beginners and control players. Diamond rackets concentrate weight at the top for maximum power but punish off-centre hits, so they suit advanced players. Teardrop (or round-teardrop hybrid) sits in the middle, balancing forgiveness with power, and is the most popular shape for intermediates.</p></div>
+</details>
+
+
+
+<details class="padeli-faq-item">
+<summary>Stiff or soft padel racket - which is right for a beginner in the UK?</summary>
+<div class="padeli-faq-answer"><p>Softer rackets (lower stiffness rating) absorb more impact, generate spin more easily and reduce the risk of tennis-elbow-style injuries from off-centre hits. They&#8217;re the right call for beginners and players over 35. Stiffer rackets transmit more energy to the ball for advanced attackers but require clean technique. Most UK manufacturers print a stiffness or hardness rating on the racket - look for soft to medium-soft if you&#8217;re new.</p></div>
+</details>
+
+
+
+<div class="wp-block-group related-reading"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+
+<h2 class="wp-block-heading" id="h-related-reading">Related reading</h2>
+
+
+
+<ul class="wp-block-list"><li><a href="https://padeli.com/best-padel-rackets/">Best Padel Rackets 2026 - Global Buyer Guide (GBP, USD, EUR)</a></li><li><a href="https://padeli.com/best-padel-rackets-beginners-2026/">Best padel rackets for beginners 2026</a></li><li><a href="https://padeli.com/best-padel-rackets-intermediate-2026/">Best padel rackets for intermediate players 2026</a></li><li><a href="https://padeli.com/best-padel-shoes-2026/">Best padel shoes 2026</a></li><li><a href="https://padeli.com/best-padel-grips-overgrips-2026/">Best padel grips and overgrips 2026</a></li><li><a href="https://padeli.com/complete-guide-padel-uk-2026/">Complete guide to padel in the UK 2026</a></li></ul>
+
+</div></div>
+
+
+
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Padel Rackets UK 2026 - Buyer Guide with Verified UK Stockists",
+  "url": "https://padeli.com/?p=5363",
+  "numberOfItems": 7,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "NOX AT10 Genius 18K",
+        "brand": {
+          "@type": "Brand",
+          "name": "NOX"
+        },
+        "image": "https://padeli.com/wp-content/uploads/2026/04/nox-at10-genius-18k-padel-racket.jpg",
+        "description": "Best overall (intermediate to advanced)"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Bullpadel Vertex 05 Tello",
+        "brand": {
+          "@type": "Brand",
+          "name": "Bullpadel"
+        },
+        "image": "https://padeli.com/wp-content/uploads/2026/04/bullpadel-vertex-05-padel-racket-2026.jpg",
+        "description": "Best balanced diamond"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Babolat Counter Veron 2.6",
+        "brand": {
+          "@type": "Brand",
+          "name": "Babolat"
+        },
+        "image": "https://padeli.com/wp-content/uploads/2026/04/babolat-counter-veron-2-6-padel-racket.png",
+        "description": "Best all-round intermediate"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "StarVie Black Titan",
+        "brand": {
+          "@type": "Brand",
+          "name": "StarVie"
+        },
+        "image": "https://padeli.com/wp-content/uploads/2026/04/starvie-black-titan-padel-racket.png",
+        "description": "Best power plus control combo"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Head Delta Elite",
+        "brand": {
+          "@type": "Brand",
+          "name": "Head"
+        },
+        "image": "https://padeli.com/wp-content/uploads/2026/04/head-delta-elite-padel-racket.jpg",
+        "description": "Best pure power (advanced)"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Product",
+        "name": "Babolat Technical Vertuo 2.5",
+        "brand": {
+          "@type": "Brand",
+          "name": "Babolat"
+        },
+        "image": "https://padeli.com/wp-content/uploads/2026/04/babolat-technical-vertuo-25-padel-racket.png",
+        "description": "Best beginner racket"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Product",
+        "name": "Bullpadel Elite W",
+        "brand": {
+          "@type": "Brand",
+          "name": "Bullpadel"
+        },
+        "image": "https://padeli.com/wp-content/uploads/2026/04/bullpadel-elite-w-padel-racket-2025.jpg",
+        "description": "Best round frame for improvers"
+      }
+    }
+  ]
+}</script>
+
+
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best padel racket to buy in the UK in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "For a single all-round answer the NOX AT10 Genius 18K is the most-recommended frame across UK club players, with the Bullpadel Vertex 05 Tello a close second at the same price band. Beginners should start with the Babolat Technical Vertuo 2.5 (£100-£140); improvers stepping up should look at the Babolat Counter Veron 2.6 (£180-£220) or the Bullpadel Elite W (£140-£180)."}}, {"@type": "Question", "name": "How much should I pay for a padel racket in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Beginners should spend £80-£140 on a round or teardrop frame; intermediates £140-£240; serious club players £240-£400. Spending more than £400 only makes sense if you have tested the racket via a demo programme and your technique justifies the spec."}}, {"@type": "Question", "name": "Where can I buy padel rackets in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "The three biggest UK retailers are Padel Nuestro UK (broadest stock across Spanish and global brands), Decathlon UK (fastest click-and-collect on Babolat and entry-level rackets) and PDH Sports (UK next-day delivery on most Spanish brands). Specialist UK retailers like Express Padel, NinePadel, Padelshack and Tennis Nuts cover gaps when the bigger shops are out of stock."}}, {"@type": "Question", "name": "Should I order padel rackets from Spain instead of the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Usually no. Spanish brands sit £20-£40 higher in the UK than at home retailers, but ordering direct from Spain rarely beats the UK retailer once you factor in import VAT (20%) and the complications of cross-border returns under the 14-day cooling-off rule. Use Padel Nuestro UK or PDH Sports for Spanish-brand rackets unless the UK retailer is actually out of stock."}}, {"@type": "Question", "name": "Can I return a padel racket in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Online purchases come with a statutory 14-day cooling-off period during which you can return the racket unused for a full refund. If the racket develops a fault within 30 days you have a right to a full refund (not just repair or replacement) under the Consumer Rights Act 2015. After 30 days but within six months you have a right to repair or replacement."}}, {"@type": "Question", "name": "Can I demo a padel racket before buying in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Padium Canary Wharf, Rocks Lane Chiswick, Stratford Padel Club and Withdean Sports Complex in Brighton all run demo programmes with the major brands. Cost is typically £5-£15 for the racket on top of court hire, often deductible from a same-club purchase."}}, {"@type": "Question", "name": "What is the best beginner padel racket in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "The Babolat Technical Vertuo 2.5 (£100-£140) is the default UK first-buy. Round-teardrop hybrid shape, soft Carbon Flex face, large sweet spot - it gives new players the feel of a real padel frame at half the price of tour-grade options. Available with same-week delivery from Decathlon UK, Babolat UK and Everything Padel. The Bullpadel Elite W (£140-£180) is the strongest improver upgrade once the Vertuo is outgrown."}},
+{
+  "@type": "Question",
+  "name": "Should I choose a round, teardrop or diamond padel racket?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Round rackets have the largest sweet spot and are most forgiving - the right choice for beginners and control players. Diamond rackets concentrate weight at the top for maximum power but punish off-centre hits, so they suit advanced players. Teardrop (or round-teardrop hybrid) sits in the middle, balancing forgiveness with power, and is the most popular shape for intermediates."
+  }
+},
+{
+  "@type": "Question",
+  "name": "Stiff or soft padel racket - which is right for a beginner in the UK?",
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Softer rackets (lower stiffness rating) absorb more impact, generate spin more easily and reduce the risk of tennis-elbow-style injuries from off-centre hits. They're the right call for beginners and players over 35. Stiffer rackets transmit more energy to the ball for advanced attackers but require clean technique. Most UK manufacturers print a stiffness or hardness rating on the racket - look for soft to medium-soft if you're new."
+  }
+}
+]}</script>
+
+</div>
+  </section>
+</div>
+<aside class="side">
+  <div class="box toc"><span class="tl">On this page</span><a href="#h-how-we-ranked-the-best-padel-rackets-for">How we ranked the best padel rackets for UK buyers</a><a href="#h-padel-rackets-in-the-uk-in-2026-at-a-gla">Padel rackets in the UK in 2026 at a glance</a><a href="#h-at-a-glance-best-padel-rackets-uk-2026">At a glance: best padel rackets UK 2026</a><a href="#h-1-nox-at10-genius-18k-2026-best-overall-">1. NOX AT10 Genius 18K 2026 - Best overall (intermediate to advanced)</a><a href="#h-2-bullpadel-vertex-05-tello-2026-best-ba">2. Bullpadel Vertex 05 Tello 2026 - Best balanced diamond</a><a href="#h-3-babolat-counter-veron-2-6-best-all-rou">3. Babolat Counter Veron 2.6 - Best all-round intermediate</a><a href="#h-4-starvie-black-titan-2026-best-power-pl">4. StarVie Black Titan 2026 - Best power plus control combo</a><a href="#h-5-head-delta-elite-best-pure-power-advan">5. Head Delta Elite - Best pure power (advanced)</a><a href="#h-6-babolat-technical-vertuo-2-5-best-begi">6. Babolat Technical Vertuo 2.5 - Best beginner racket</a><a href="#h-7-bullpadel-elite-w-2026-best-round-fram">7. Bullpadel Elite W 2026 - Best round frame for improvers</a><a href="#h-honourable-mentions">Honourable mentions</a><a href="#h-verified-2026-padel-racket-prices-in-the">Verified 2026 padel racket prices in the UK</a></div>
+  <div class="box dark">
+    <h3>Play more, spend less</h3>
+    <p>Find a court near you and book straight with the club. Padeli never takes a cut.</p>
+    <button class="pill lime">Find a court</button>
+  </div>
+</aside></main></div>
+
+<div class="nearby"><div class="wrap">
+  <h2 class="t-rail" style="margin-bottom:6px">More from the Padeli blog</h2>
+  <p style="color:var(--muted);margin-bottom:22px">Guides, gear and city round-ups.</p>
+  <div class="cards"><a class="card" href="https://padeli.com/best-padel-clubs-in-dubai-2026/">
+      <div class="art"><img src="data:image/jpeg;base64,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" alt="Best Padel Clubs in Dubai (2026)" loading="lazy"/></div>
+      <div class="m"><h3>Best Padel Clubs in Dubai (2026)</h3>
+      <div class="r"><span class="w">23 Jul 2026</span><span class="chev">Read</span></div>
+      </div></a><a class="card" href="https://padeli.com/best-padel-clubs-in-jakarta-2026/">
+      <div class="art"><img src="data:image/jpeg;base64,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" alt="Best Padel Clubs in Jakarta (2026)" loading="lazy"/></div>
+      <div class="m"><h3>Best Padel Clubs in Jakarta (2026)</h3>
+      <div class="r"><span class="w">13 Jul 2026</span><span class="chev">Read</span></div>
+      </div></a><a class="card" href="https://padeli.com/padel-insurance-uk-2026/">
+      <div class="art"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/4QCARXhpZgAATU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAABIAAAAAQAAAEgAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAOygAwAEAAAAAQAAASwAAAAA/+0AOFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAAAOEJJTQQlAAAAAAAQ1B2M2Y8AsgTpgAmY7PhCfv/AABEIASwA7AMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2wBDAAYGBgYGBgsGBgsPCwsLDxQPDw8PFBoUFBQUFBofGhoaGhoaHx8fHx8fHx8lJSUlJSUrKysrKzAwMDAwMDAwMDD/2wBDAQcICAwLDBULCxUzIhwiMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzP/3QAEAA//2gAMAwEAAhEDEQA/APmoHpWjYSbX2djWfkd6sWzr5yivraqvG559RXiztrSZvunpjFOmbd97ntUdpxip5IiTtXqaFseG9zy6dfLndPRiP1pgrR1mLytQfHRsN+f/ANes0Gvl5x5ZNH1EJc0VIlUVKtRKwp/mKKaY2TADHNV5XwMClMpYYFVmOTSlIaQlKDTaKzGWFbsaHUHkVCDU6MDwatO+jEOtp2gkB7A16fo91G4xkdAa8rdSK6fw9eEO0bnkbSPoOv6Gu7CVXGXIzjxVPmjzLoelampu9PZj1TDA/Tg/pXHDGM+ldxbYmhaE9GBH4EYrhmVo2MR4Kkg/hX2OAk3FxPGkiTluBSAbaUcHinYyDivVtoZhyeOppFGeDUuEA4pmBnBqlruTcQg9FFO2sBzSqBkA1IwUfhRpsK5CxJG0ZAqRDs75po4OR+tOZ95z1NUlYPIHw3PemYI608eo6ijqeTQlYQgBzxSSMAcE08uCOMZqGQAtkGm5Al3P/9D5n6jmhCVYEdqTik719W3fc5T0DTWE8Ycc8VtvEzL8oGM1xehXhjPlE+9dmJN6fL09qSZ4tSnyyaOD8UWhhkimxwQVP4cj+dcnXpeuWzXVg4AyUG4fh/iK83rxMbC1S/c9fBzvTt2GUop2KNtcdjsGk9qZTyMVpzWZmjFxAOo/OrjTlNPl6Euaja5k5opWVlJVhgjrmkrIsKcDim0tAiypDjaevaiN5LaUSxnDLUC8HNX3XzIw46961jrqS/M9S0HUYr23Dp1xhh3BFVNWtxHesy9JPnH41w2h6g+nXyyE/Ixw49vX8K9J1tCYopvQkH6HkV9XlOI5pWe54eKpezlpsc/jA5HSm7uw61ICzcHmlCLu4NfVpHHfuCkDtS5BzSnCjmkxnp0p2JHgDO4c03kZFMUkfhTgDnPejTcVhCHI5pBkcVJ7D8TS4GRkGi47jVX+I1IQCBS/KFIPXtScAZJq077kXGgbTkVA7HNWSGI+SoGHPNJ22KR//9H5kpRnFFJivqEjmLNrMYZlcHHNei2Uxli7cD159q8yziuq0S9JHlseV/lSTszixVO65kdYwDqVA4PWvLdStDZXrw9s5X6GvVFPBA61yvieyL263qDlDhvof/r1z4ynzQ5l0MsHU5Z27nFAVKF71Cpq0oyteRHU9hlSQVcsr+S2KqMYBJyRnr7Hiq0gqBfvVdKbp1FKInFSVmdFNbRXiiTPJHUVi3FnNbnLDI9RVu0uWgcA8r3FdArRSjMR3Z619M8FQxseaPuyOJ1J0XbdHE0tb15pZwZLfr3UVhYIODXzWKwlTDy5aiOynUjNXiOArRtWH3G6GqAIqeNsGsoaMplh4vLkr1Gwk/tPw/sHMkXGPden6V5lPJuUGup8HagsM80MrYUpv/Lg/oa9PBVfZVUzixNNzhpuWl54NRvKkS5JAGe9TO6PKzKMAkkD0GaytSi8yMSLyR1FfoNSbjDmSPGhFOVmdJo+kX2vMV05QwXgseBWjrHhXWNFjEt4g8snG5Dkfj6V1Xw01GxttORHdV5OSxxzXpPiK4tr7QbhbdTMGjONo3ZPbGK/HcTxzjqObLDOmvZc3K9772vct01yylfY+blwOKcrDpjmmkFWxg5B5zQAFr9lsmtDmY9sMPQUmSRil3L0I4prITzmnsIGC4+nNKhG7LDIpoB/DvUg2gdhRvoMMMRlDnNRsrZ5AqTO4YX681ExOahruI//0vmWg57UtLX1ltDlIsGrFtO1tMJF/Go/ejA61l7PsDs1ZnpNjcieNSpGRyv09P8APark8CXELxuPlkGCK4nQ73y5fIc9T8td7DypVe/I+tUtVZnkVIOErHj91byWdy9tJ1Q4+vvT4mHQ113irTyyC/Qcp8r/AE7GuLjOK8OpTdObiezSqe0hzE0y44qkOGrQb5lzVBxhqyno0zWPYtqnGRViGV4W3KcetR26NKmV5x2puecV9NSfLGNRHPLW6Z1MTJLHujOaztQ00z5miGH7j1/+vSaU48wqc8jitsgc5r3XRhi6FqiPNcnRqe6cAwZCVYYI7GlDVd1WIx3bHs3NZ9fntem6VSVN9Ge1CXNFSLhfMdXtFkEeoJuPDAg/iKzU5XFWbFS17EijkuB+taU/enG4r8t2jtx83b60bMA96dgdBT846da/VbKx8vfsZPh1C/iGKC6YiMuWZOxI6cV9j6e8P2NRGBjGBivkSSAGVLlciVTlSvY/1rvLDxtrFlZrBtV2Xo3P6ivxfi7g/GY6vGrhVdetvmdbxNpKaXSxb8f2lraa4XgwDKoZwvHPTpXD7GPbg96t3d5cahdNd3jFnfkn/D2qD5tgzwK/T8mwlXC4Glhq0ryikmzz29SMqSNuakSInkelLkYAoViDg9eea9OVxXGgYJyeKjKnHzdBVs+Uybs/N3Hb+dVWXePSnF9xoacDkflUEjYPPpVgqF470jKxwQAaqT01KTP/0/nSaxljG5fmX2qjz3rqYZ450+Q9BzVaWxjlPy8H1FfeywikuakeTDENO0zAoqzNbSw/eHHr2qviuNwcXZo6lJPVDAdrbh2r0LStQM0Ssx4PGfRvf6154eDWtpF59nn8tmwr/kD2rkvaRjiKfNG66HpUkcd5CyvyGG1h9a8k1Cyl068e0k/hPB9R2Nep2tzET837tjwe6mjU9Jg1aHZIuJFHyuOv51jiqXPHmW6OfCVeWXL0Z5SjZGKqyDrWje2Nxps5guBj0PYiqMgzXj35onsNOLszR0ho9+HOD0/OrGoW6xuHX+LtWFE22TFdNZ3cUgENwASOhPNfVZZWhWw/sJ6NdThrxlCftEO060libzX4yOBW6TuUjHT8KrCQdvypRcFSWAzX0dKMaUeSJ5dRym+ZmPrFuZIPNHVD+lcqK7u4bzAUYcEYNcRIhjlaM/wnFfH59h1Gqqy6nq4KbcOV9B8ZxV+zvZrCZpoMbmRo8kZwGGCR7+hrNXir1tNHb3MdxNGJVRtxQ8BsdjXiQex1tHcrnYM+gqfbt4HHr9agilZkEjc7hk1KHHf9a/VoO8Uz5aSdxwAYe4pwJFIxBPTpQGwODRZECj1zSHJIHShn79abuAoaYWHLnFSqp5PUDrioASDnFWUbGe26i1iWMCbutNbjp1p7sDnFIGHQihahqRr97B6+tSElTjigAM2EPXjmmOWJ444olED/1PmtZGibfGcVegu7meZIVYKGODVOe3khOG6HoahR2hcSJ2r6yrUq04yjB2ZwuMZq6PU7a80e1iENzbpKh4ORlj7g1ha7oNpE0d1pbZimXcq5zg9xXJtqO4ksant9ZcKsD5KKSR7Z618vlKqwxalWqOzve7b/AKdzhjhasPeg/UozwSQttkBFQZK8iuyElveQ7MqwPPNYtxphPz23I9DX2VfBS+Onqjpp4hPSasze0u6aWNfMG4ng+4rtLVSVyvBHBHpXkVveT2EmGXOD0ORXV2PiSLeDMoXJzkZOPavIniY01ae5KwU5T9zY09Zjg1VnsGIE0XI+pGR+fevMnVo3MUnBU4NemanZpcxNrFgGa4AUAA8MOmCK5rxP57xWslxbxW7hCh2Nlmx/eHtXgxqJzfLse/VpNQTlukckw+YEVJubrmkAz+FLj1r08OmlddThZu6dehiIZjg9A1bOwA+v9K4nkHiui068Eq+RJ94dD619NgMdzfuqm55uIoW9+JqlBjBGK5HVYzHet7gGuwzjoOOnWuf12PHlyD3FVnVJzwzl2af6GeDlapbuc+Ku2zwLcRvdKXiDAuoOCR3GfeqQq7ZtAl1G90pkjDZZQcZ9vzr4uG6R67O8Vg6htoGecelOx04oGGQZ60wEk5PORX6rHRJHy7HfKnBPNKDv6Zpm0tg9KVFI+UnGPWqTFYm4PHanrGM59u/eotyr060B2JIHQda1bJsy0BtOz9cU0qWXpg01AHJA/CrQxkKx61lexm9CsiDIDZ98VIRhsrRs+bk9BTgSx3HmrXcTZGFxzUEvLVbyNu31OaglcZHTpTbBH//V8SMSyKRIuRjtWTNpbfMYj07GtoHK46DpxQOvNfplTDQqK0j5+FWUdjjZLWRD86kfWmBQK6+4uLe3Oycbj2A5zWLNNZMwQwurH8K8DEYOjSek1c9CnXlPeJUgmWEqyAl/rxXUxSl4huAUnqKpQQWq8Qjcx6E9/oT1/CroUY+XrXpZfJW92VzlxLTewy5topuJVB9x1rLOmyQv5lsw+jDII9DWzhgAW6djQSc11V8LRr6TiZU604fCzEjvdXs1aKEYQ9vvY+lUGt9Rv5/NuCST1ZvSunIUHnk0K4C9OleXHIaCle7OyWPqSjYqwaZFHAYiu4nv/Wsm706SEkr8y+1dPGVUdffpQcsOT/k16s8DSlBQStY5I4icZNs4bGOtKpIOR1FdFe6YHBltgc9SP8K55lZeDXgV8JOjLU9KnVjNXR02nXqzKUl++O3rVi4sv7QUWoIRmPBPQGuRVmUhlOCO9dNpurI1xFHMpzkDPY13wxcalGVGr2OSpQcZc9MD4C8VZ/cWhnB6NEwYfzz+ldx4W+EviCW4/tHxBbCC0gVnZHYb3IBIAVc9/XFe5+Dgjwo25cY9RXfa9L5OgXcluTuED4ZRk52nG0dz6V81KjGnNKJ2qbcW2fFo+YgH8ak2BWxnI9aAxXhQaduIOOPQ1+kK7PnWxucHFScHIPSkxyAOM96CTn5B0FWtCRjDafk5pyqpGfzpAMDB61OiFiFXkkgYNDdgbHp1wOPT60pUnAHTr+NNwUOAMk9+wpnzHgcms7XdySTJA5FScVDksucE47UnXp/OtUS1cUnc2McUOh4+UnI7DNO2rgNnnrUcmN3pTld7Af/W8Y+6OOSaUNkZNIFbr6UwsSMHPWv1e1j5qxkyQSQ3LT/Mc8hl5I+oNQ3ESTjcZfnxx8pH51u5x0NKcMRuHFeZUwUWmk9H/XRo6VXaszn9MZXY2svyyL/q2PY+gzWst9DIdp+V92CMH+fTmqmrWyCP7QvyuMdKh00wW9g1zOpY+YFA7dM5I71897OrgqyV9P0Ot8taHNY2h84ppIBwvJPNZttq1jIdt0rxc9U+Yfkef1rSkuLBCDHcI6EDkAqfy55/GvXhm2G+07fL/IiGX1p/Al96X5sAuScnjinDGcH0qvHqNmziNc5PA471Ml7aOdvmAdueP516lPEUJ2tJfecUoTWjROsSkfTpThGFNSxgH5kxgfyp3Xkds16DiraHO5O40/3R3rG1TTsg3MI56sB/Ot4Ic7hUFw1zGP3QG1hzgAn6c9K5cTTUoWZdGbjJcpwjLjkVY09C9/Co67x+nNWby1eJjIFIUnvjj8qi0uf7LqcE/HyuOvTNfJ4iHs3Zo9uMuaN0fWekWd8XsIJoRDayxNLI+FjkZh91cnkA9flGfcV6vcaU0tvbixCxsrozM5Mm0AgkKGJwfQ9q8r8LeJbO9vYP7YigV5VJjJBZ94xnDSM2d3TA6V6dr0ery2Edx4ZJScyKXQbQGU9c7uARxyOa8jEOTkk9B0rW0PIfGPgx7fVZdTsNONwHOcFhHCp/vN8wLE+gIHGTmuP1TSpLbRWl1iWziuJHUwQwhN6qOW3GIdDwMEnnnIxXpfxIsbrUB9ikYSSLEJEBwPnVj0Gf4lIGcYzXzscjJ6cn86+ryrnr0otz2+/8/wBDysVaE2kh4XcPf0pBgj5etPHyfOO/FGAD1r6Wx5tyI5zmnoTg54zTzyPlAxUeGIJGBjina473FJDDrTUOOCM8+tKBz604tg0WESAFRnJx1NRnAIz37U07ieKQrjgfWpsMn3pkgjmonUk5yfwpBnkdCOn+FBY8YGanZaCsf//X8YY5wR6dKaTjp6UDOBn86eQMfLzX6pzHzQgQg4YcAetOOA+0ce9Io5yOanU4BAGadupLZi6s22FUP8Rz+VQNAy2EEUZG9mMhz0A7ZqvqUnnXW1ei/KP61saXp82o3S2MckaMwJLyuEX5Rnkn9K+TzKfta109Ee3h6saNGUXG7kvu1v8A8Alt4dBskE8kbXtwwyQwCRoSPTnOPyrINnd6peCdY1hjnl8sSEbIVb03HgYrvdN0eOO0XUoUE0true4S4wINvITbzubPWtvS/DzXpjs7VHvbS5Zgskm6O3t5W+aRkjB52jge+K8epXgnyx3Ouhg60oOrU0iv6/4buYXh7wgv9kXmu58ya0aSOJiyrC7bcKyE8nBOecDgYya4q50dhpg1GxMkyQgC6Zk2rE7dFBJ+b6gV9GeI9Me5is9CsIGDxItx5sxJVRDlI1YKCGLdh2zzXE+J9CurLUDqUfk3N7DH5l2s20xs8gIVY4gBkqOe4FZutJTs1p3Lp0IzpcyfvX28jxK1vri0cNGcj+6eV/Kuss79LuP5RtI6j3rO1rQ0hgXV9NZ5LKVigeQLGxkH3gEBJwD0rJsZGgnVhxXuZfjalKSi37rPLxNCM1fqdiXJGf5UFAwGfypyMrcYAIHbvnpSZIPPBr69a7nj7bCyRhxtcBlPUetcdqdg1q+5M7CePb6117NhcVWmjWWExyDII/KuTGYSNem4vc3w9V03foWvCuvPPcR2FxuZ8gKQTww+64xyCOjeoPtX2N4OvrnUdID3omWVDiTcMZbH8IyTj0zXwGhk02/SU5GxgeO4/wD1V9keFdfbT7WC5lUywTIBvUDAY/3uhH15r4qvCXK4S3R6ytGXMtmejalpUF/PHcTA4gVvkIBDEj+I8nHoPWvmvxtoEtjem+jjKQzk5AAADZ+8MEjaT+R4IHFfQ+maFPbSzTwy+Us7NIRHyCzZ55z68YwKzrHR7bXvDi6ddEkqJEyeoyx/+sfqBVYDFvDT507rqRiKXtVa2p8pkgYw2TiojuOSfzq9eWktpdS2k4xJC7Ie3KnBqkDnhufav0SDTV0z5+wckjGKVQzA+3OKQY3ZPAPTNOzu4Hbj8qvYVhhVgARzTuiDuc08v8vSmFgHyhzjke9O/QFqL5gjUgDr60gYYJI5zxULZBH8qeBuGD270uXqULvzTW69f1qUINvzdqVowxyRn6VLEf/Q8a4IwOBShflyTge1RrxjjirIiYruJ2j09fp71+p7K58yyEx/xjIPpTpJGhhZsA/KfxqXzGyVT7vv7etNaMSRFD0wRVK7TFdX1OLiJaYFjXaaEmm3QlsbsRxTS4Md1K7KkQUEn5QPmJ6DNcc8TQTMp4Kc81oRS5AZTXxlWLUnFnq1OkketrezzodXnKfb7QeZI91gLIOiCKIgE8c9K9D06XSvD2ly6hq87pNctEuFZS6EKGZAoyE+Y9Bls++K8ji1SfWYRqkTpDqmnjzjcTOzmUL8qqkZDDPrxjvXU+HUjv7ldYiBtotji+M+1pRIF3M6qR8gz0bqM4615E6Ps580FuezDFfWKHs60rcq07vyPUta1mysES7vporG8ZW8pWBcsdrBdwHYDqOeeMjNeStcvvGozuLTVrUebLLcbjJMCMAxxEYzjtjj19DxB4hTWGe81QLbWV0oW2uXQNOqoCMpGMld7DksR2xwK4K58XG0w2ih1uwTv1CVy87r2HIwo9cdaVTDSqSV3oPCY2GGpvkV5v7rdvO/VPyLes31nBDJqWjwqnnAwym82md34LOsfRAT3xXIreW5t/strbrGCo8yRvmdiOeCeFGfT86rKt3qdw80zGSR/md2P6k1vzaDc2TJDOnl5jWY7j8xVz8uR1GeoB7c16+HoXaijyatbVye5oJtHbtT2HXJ6UwZAyTn6e9IWLZ96+8itLHgPcjIJOMew9qgIIOetXF4685pQm7pTcCuexg6laC5g3IPnUce/tX0L4Dv4JtBVSwdGCgxngjjBH1BB61408aMQAOnWtHRtUbR7vd5fmxSf62InGfdT2avEzDL3UTqw3/M66NdWUGfXehHUYozZyxkov8Aq3JGCvpWrYabDpkUqK2TI5kbn7uf6V82ap8Ub4aSuneHmmt3YjdNKBvRR/CpGc59eOK8+Gq6rLJJdvdTPNMNruXILL0I68g+9fNU8qxFWVkrI73iYQWpq+JryLUNevryAgxyXDlCO4yefxrEVMjJ49PenxoET5uv+FSL74Ir9ApwUIKC6Hz05Xk2VNgBye9KWPAzU5IB5pm3+52/GtHcV+5GWP1qMtt+Uc81IwcjaT3phiccEdaRasA55PPrTgOpHYVMI9wAAxz9KUKyoAMZzS8iWyPBI3Y4/wAaY0hQ4AB+v/66mb5icmmlR2J/ECm13BM//9HxxQqgEHI44p7AH592famgBRweehz2pdwyA2DX6ul1PmGOAAOTwKk3BuMcetRY54/EVIBxyBn0rRaIzfczNRso7lP3fDjoT3Hoa5YPLaSGOQEEdjXfbQVBwfQ+w7f5NUrq0guciVcgDg9xXj47L/bvnpu0jtoYhRXLLVGNZ6jLBKlzZymGaM7kYHaQfrW1a+IdYsLSdbSQ/abx8zzHDMUUYCg89ckk/SsabQioDQycHs1Qrp16Bs+Uj1z0rw54KvF2lA61Up292RoWuga/rDmWCCWbPJfBIwO5PpW7beCrkWsmoTpJNFCu9/LwqAD1kfAz7AE13A1nU38Ijw/ZxXbBUCmUYUcDgAAHCj0HJ7nrWPfeI9UvtNi0m4SKOCNBEVRMEgepJJGTyaeHw06zahbTz2MpYmH8xqXGkaLomkr55VriVYHjhTgpltz5BySQoAy3UngVg6vqlzrmoSajdEb3wAAMBQOgH+etZQGTjOc9+9SsoIPOCByK+jwuBjR96WrOCrXctFsQLkkgmn7BnAyAaf1QNjNNZcde/wDntXppnPcFjGPmpyjByfpSlWwD09B/nvQG7tzx0NWhMeq5+bvTChLbj1PPNPDgDPJP0xinvjAfPOKTFciWLI3Dp3FOART06frSB2ZvT0p+FAwep9KLgx+4cjsTn8TTg+FBA/8ArVnXWow2p2ysckdMZNdl4S8Pz+J8zBmihU43HG4keleZmGa4TAUnWxU0kgdOVk7bnNMcgkgfhTgTjgYyP84r1jUPhm8VuZ7CdnlHO1wOfoRXlMsLwOY5OGQkEehHHNYZRn+BzWMpYKd+Xdapr5P8wnTlDSSsMYsfkYUjj5iPT/PQ0o3E7l7dqUuCdz8npjNe5YhMFYFduPm6g/ShtrHFKynIC+3FRnOdueBQhocBz+tQSud3DEVONpXGM4pkxQt93dx1pSbBH//S8bRtq7T3ozzwc49KjVNw469jU6IMDP8AjX61fsfMuyAcNlSc/rU5AAwecetMY8ketODLuyR9aqKRm9RgfJAP6U9uCVNP8tCNwPfp3pnHOB25NNW6CKV/LJb27GLk8c+lJ4TtDqWsgTksF+bBPU9quTJHNHtb5gev+fWs7TTd6FqSXkYMkfRtvJx9K+a4gpYieHn9Xvex1QknTlFbn1vpVnbC2VUUAAdK8z+I2jWtqY7+BQrO218d/Q1taN410qa1EjzKOOcnBH4VxPi/xANblSK3y0UR4Pqx9vpX47wbleYU83jWScYq/Ne6VrPTz1/zMatSnKCjFanFhSMntTsEDPP19akTGOQMfpT94GMDA96/oS5y3IO/HbrSgqQcY9PxpzFVOfX09/elUoF469sVT0AaRt565HHFJgSEbscDk1Ju/venFOAUNg9M/pVIVyP5VAyBimAknI9O9WMqMkHAFVtxz8pwapagSoVQ89f8803O5ue1Kqp/HnGO1Kzrjb6DijqByutxMl15p5VhxX0T8Lr22bRIYUIDAV45LapLH5c44YA4PtU2h3d94cnEmmy7o2JLRv2+hFfnnGPD1fMsPy4bVp3sdftvdjbeP4n1Nq2qfZoxb23M8mFTjIBJ43egNfPPicxSeILp4sAGQ5x03YGf1zWnP41vZi00S7ZnUqJCclVPYDgD69a5AuZGOcnnJrzeBeF8VllSpicUrOSta/nf9NPmZ4jFyru7VkiMhgTxSFhnC9/WlZ9xz0zSZBPzcfQV+rpdWcw4HPf36daT58ZbgGnZMqnGAF7dz2ph+btQmMUAnhRgfXimsgY8uFxxzTm+X5jn/A1CysTnOKHqB//T8YjYcE+nFTLwfUVCi/KNuMdqdyOB1FfrK2sfMtEy7S2TQd4O6ot3GRzTlJLZPBrVdibEyghsueKAwAOKRT3PNKSexAND02IFLKTgH3NPiBYkrwO9NPysMd+vFKFPRR1/E0ctxMkKKOFHfORU+NjAp83r/hUKbVYB+g4p4JUgjqBS5exDJ264YAnGcelQ9s4wKGJPznk9B3pCecd6ErEjgQoOQOeM/wCFOI+XJwT14qB5o4/lYgA+pFdJpvh7WdTUTWsPydQWOB+GetcmJxtDDR9piKiiu7aX5jaMANu4GPQU7CjkdulaOpaPf6XIIryMxljxnGD9PWszAJ2rmuihXp1oKrSkmn1WqJHAbmAfoB/OlwqjjkH86UpkZPGDj6H6UKxQZjGTkg5rVsQrNkFl4Hf/APXTQCOTjHYfypSc4DHJamlgWz6U4oGPaXPuT6+lMBVTyKVUVPv/AKVKm3zDxx0Gf89qGuwMiPLFh+vNOIKqCOlSrE7g+XlivQLyaiUfNknHQ8c4/CpUlYVhuckAd+31pAp3E46VYKRMvmHIb2HH/wBam/MCWUkc7Tz2PampaDRD85ySeM4oQPu2dM9/pUspVQNuSQOT7Uzhfm4HTpVoBpID5YcdvwqQyRrx0pzYJxnHFQTBS+eeR2I/wqZxugR//9Txg4wO2R2pQ5IGelAUuPl4Hp3+nvUgYrjHI96/W1Y+ZY0ouSc0/d8u5uvrS7uzClwhAPOSc5PSquTcdGRgcnBNP5Cdf8+1Rt6p09qFAH3j0J6VRD7jmXdgt0B5qThm/wAKQHj5jn29M04ZJ+XjNVqSw6kY6U+Qqn3efU0wEIcHn2ppUHr0o5fMkeDuOxfwNR3bCKzkkUHcF4I9alTJJYEE0+RWkUq/Ixgg1lUTcWkxppSTOX0WFLzV4EuDuUtk5745r7H0KGNLRFGOBXx61jc2F2t5ZguI23Y7+4r3fw146sUtV+1yeXtHIfgj65r8M48yvG1ZQnTi2l2/M9CVWKqxqbq33HoHjGxt7vQpzIBujQyKfQrzXzmSM47V6xrPitfEcJ0nQM3BkHzspxhfr71xt94Q1ywgFxJCCp7qQx+mOte7wHXWX4T6tmNRQlKV4xbs7enS5xYqcZTco7HOKEIO4Z7nnn6CmEgKCePp2owAuOmPakc7ZNygDgcV+tJHMRFN3zKRzz9aMr0POOhHqae2CBnr14qMrtJDnr/OqKRJkgE/pT1lc43cgDb096ijGW7hT3608DCjJOB04pNCZKHZTlDjIxkZ/GhQoycg7e9Qbm+4DhalCkqdvf061NrCsShUZS4ZeuB6nPtSE7iyrggdeOai2bV3HIGcCpAjlflBPcY+tCXW4BwPmbuOlQt8mDnPpT2x1HSgEbi5/lxWghDj+I5qGTGflUH61s6Xpl3rF0tnaR7pJMgZ6cDPXtxXrtt8NdMW3T+0SxmIy204/Dp1rgxmZUcNaNR6nRQw86vwo//V8gWNcKD174phC7xjp+lNXOcnv6VL8uPlzjrX64krHy7HjbjkfnTSSCABn3pqszH0qQhgowOtUidtxNwYMDxij/WMPX9KiU84/DNSgL1q7A9CRQwPB5P9KcgGOTyKRVYj+lBO3LAZBNUZjht+91NNZ2IAPQ/qaTJBz6daVSudvpU2Gg3bWwO/6VKGOQSMY70xQdwyOnft9T7VIXG4HGR3qWk9BMawIIK8etclqzySTmJydq9B2rq8KwJOfTFZt/pwulDRYDqPzHvXHjaLqUnFHRhpxhO8j2z4UWFvBpaSIBuk+Zj3JP8A9avaLiztruAw3Chl/kR3Hoa+XfAfiv8AsFxY6rmNc4ViOMfWvdP+Ez0eGz86SdenQHJP0x1r+YOIcozD6/PlhJtvSyZ1YavTpOUa/Vv5nlXjzT7ey15ltwAJVEhA7E8H864/yiFJY59B1/GtDxBq8ut6pJfuNqk4Qeir/WszeQQMn+vvX9J5DQr0cuoUcS/fUUn9x5E9W3HYiYnkHnHTNSFCV344GOaRwucjv/OpNsiqc9v89DXtNiuM5PBzzk+1S7TwvBAGTj2pEO1MOCGB6j0P4UzO35e/TNK4NDUK7uenT0NMZsDavX155p4UkkFsfyxQqBnKA9QeScDj0qvUaHdeGPPYGl3u/wAueDx6UjAYzg8dvSphGxBePP3fpkelLYVysvJzjg/0rZ0bRb7W7oWlnGXY8k/wj3JxxV3w74cutfv1sYh5fy7yzDHyj09a+jNH0Cx0aKOO1RVfYFZ+Ru9z7142Z5tDDLkhrI7cNhJVXd7FLwl4UtvD1tuZm890AkJ5B+gzgVuzxqz7nOOOMGp7q6S0gkurptkaDGWwcheT+deKa78RZ5r8nSoh5KjaN6jOQT0x2r4yFHEYycprVntOpSoRUWf/1vHI2Rlx0wB/k0ElfunP+FVUY5O3r2qckYy34Y96/XV5HzTjqThVI549ak4wAe1V1YqcNzT/ALv3T1OK0SZm0KTtfbjn3p/T5ux7ZoCliM546UwgFiG+hppdRDixPQYpy42kEck0wYBwwx/9anLkd/WmSyVhtLbARzjntUfQYPXpS8Ajnrz04p2GU5BNSgHYYkD26k1JsLAhsk44+v8AhTOTyeCP1+lO3EsCOQO3tVEAVKsUPb0pQCCegp5UFjwMZ6DqPzp7kFyqdM9aV9CLlYv1VuRSbfnB5CqcDHUVIF5y3Pt60hRzmQnHT8fpUNK9yrk6RgnnkDkc4zUgLMxxhRiq+Cp6j1qbcEwUYjBHJoaIE3DcM9B0/wA/WnMwI7k5x9aj2YyGPTHTuKfsXI5xijQQ4PhdmTtJ5xwetIvlspC/MT2J6VHwCf8AGnjb6EkHI7jHemwHqsedrNwecjt6fjTUiZvmI3enOOlOXa5xwCB+FOWRFycZJ7/570XENUyDIU9PWu28NeH312RdxJgQYdlAz9OSOPerPhLwRc6//pl6HhhLbQcYz6kfT0x+Ne+2um2+nwCCFFCIMADj6fpXzea5tGnelRfvfkelhMFzvnqLQjtLWy0m1McKbEAIBwAQoBOOgx0rzrV/F2qKAbd1hUsEUKBu5r0LWNT0/T9Oa51QhY+hHXrx06nqK+NNc8R30uvx3E42wQS5RR3X1PqcV8j7CrUpzqpf8OetVlb3Ke59UaQbvUIRLqjeZIhxj+Ee4HvU1/oumzTB5beNmK9SoNZXhfV7e9gVonBDRqc/nXSXUoMg+lfgWMxOKWIlJyafqzPCqjOHNLVn/9fxdRwFbHzHikALEgdR/IUvH3cEgdfxpm0L978AK/Wo+R82WFO5OCeP0pSxxuBwcUwN8uM5x0/GggFcZOT1rZaIhofGzE/NkCpMlRuPSm7QMBh7ZowFJFWvIhjhluc4pc9Nw7/jSgAnjpijq2cZ/WnsSBxjcvanfMevOKjZgGwvIIp7EM+VJ7dTSuFifIJyvJ7ZpvOPl+7nB9jSADHP50u9OhHPakQL5ny4PNSqc4J5GKh3BRjHP+NOD7gFA9vwpNCaJfk4Vug6HvTnK7vlOQw53AdT6VCmN+5uBnk9eD7U5sMApxx096Eu4hclVAbBwO1SDYJfMI+U9vaoGYq2ePpViKLzcMgAC/eyeKLJasXoRAA4APJ9fSpQE9Rxz+lDFmfHHNNYFTtHfpihoQsrghFXt39c+v8AKpl6F3A9MDt78U0BVYA8q2e3P+c0/AI4wMik4ktjY1yeRuOMjvXpnhHwJJrH/Ey1EFINwKp3cD73Xpzj9av+CvBFw9yNS1ADydpCIykFiDgjBAIH8xXt8UcaLiEJ8i4Hpx9B/Kvls1zjlbo4d69WethMFze/UKsNvBbxILdSsafIFB7dB/LGazPEHiC08PWbTzsu/ny0Jzk4z259veqfiHxRY6DE8nmK8hAGxTz9Mev4V8563q9xrd819dOWzwoPZfw/WvLyzK54mXtKmkfzOzFYuNJcsdy34g8SXev3JkmJMYJ2KeSM/wBf0rlZ4YJwVuVDj0781MpxyM8nHHrTVAOQ4zxyc4PFfdRoQhD2cFoeA5ycuZvUk0WbUdBYvps7BCcbG5X14roLjxh4gd8+aOnZf/11z5HBUfX1/lVeb5mzz0rx6nD+W1JupPDxb80hOTk+Zn//0PGUAkI3cHpzTG3Kcd/zpu4kcg8frT8DHB/Ov11ao+bFj5yo44qRTg4bnIqNFO7nuKcFx0q0yGTGQnjPtSbdvPWm8NgDn2qTAHB42AVTbI2HZAyc5xx609MBQevPTNREndgNnJpThc7ScU12JsLgnqMjHWlDKFAx931700Z4Y/gaeQWG49F6mhq+oMdgsByMngj0oRVPB7VGgycHgetTg4HPp+FKxL0BcFtuOtLgMdq9v5U/IBDnimESriRV78fhV7bkbiFyRjoO1AOzntQV7Z49KHAPCj8uRVASdcFenQ+1IDtO5f09aU8KGX6fjSICzANgf0qbIROMkENxt/rTCfLUbTz1PtT2EJA25757/Tnv702NHlIiUEljgY559KXS7JsTRKS+0dSeK9x8G+Bfsu3VL4CR8/Iu0jaykjJz94ED6Y5qbwT4JhsII9R1VP3xLbADkhGxgkjr3x6Zr1aRwnQcqvXPGSeBk96+MzfOOe9HDvTq+57GDwVv3lQRTsxBEM9v071x3ivxbZ+HV8rlppVJGOg6DGecHnIFVfF3i+10aJoVdxPKp2lTnafwPf1r571PU5dTuTd3jBnYYz0x2AGOwrlyrKXXaq1l7v5m2Lxns/chuM1DUp9UuWurtyz8jk5wM5GD7VQK/KGfPNRYyQAeB1qQhtg5yOwr7yMVFKMdjwXdu7FJBPye2RS5DMQOnqajG7duXjHQjtTmUnJ7n16nNV6ATKdiE7ufQVXnG99xGP0/lSg7cU18sc/1FNxEr9D/0fFMhxnvT1G5MsMYJ6d6ckSpbpIM5Yc1LgByOvy5/Wv1tbXZ8032G7oynHY96Adylj37VDncxHYGpBgLVK7JsKcfcXFSEEcN19RTerFvSmROzAZ7VotCR+0qBnr6VOBtGBgfWmBjuJHHJpoJKFz1NNMl6jsDkc5z0NTs4YINoU4wcdye9QKxMYY8nFS43soP8XWgQuFx70qYHWm7QE3Dvk/lSpkjOfemmSw80rznkDHtTwwCFu5600YaMkjnGaAP3ZfvnFUl3J0FO5cEcAfjUhlcgAntjHtTZBwvvSY2fd7DNVJdRC5K5BGMjoaep55PJHFR/fYFqmYADp0z/KlYTaLun6Zd6pcpaWal2Y9uw7k+mO9fRvg7wbb6DbiS5aOeRgcuF4weeCeSMVY8H+HNL0vR4bq2QmSZUd2Y5ySB+nNdihUj7o+RNwHuBmvgs2zWdaTow0ivxPbwmEUVzy1YiliRgF1KkZyAARj/ACK888XeNbHSA9nbkyTnCsvICjGQ278uKtePNXvNJ0yM2ZA+0ZDZycD/AGeeK+dbwkzSOxySTn8qMnyyNf8Ae1XouhONxbp+5Dcjubia9nkuJzud/mJqk+fu8elTZ27nHUKD/IVEgyisev8AhX3cElGyPF82IufpUwbChuv/ANaosYyR155p4+8cdxTvqJoTG75v8+tNZmZ+Djik3FelRg7ic+/8qb0GkSjoc/nULxrnI49s1PETIcN3FDIM1NwTP//Z" alt="Padel Insurance UK 2026 - Do You Need It, What&amp;#8217;s Covered and What It Costs" loading="lazy"/></div>
+      <div class="m"><h3>Padel Insurance UK 2026 - Do You Need It, What&amp;#8217;s Covered and What It Costs</h3>
+      <div class="r"><span class="w">17 May 2026</span><span class="chev">Read</span></div>
+      </div></a></div>
+</div></div>
+<footer><div class="wrap">
+  <div class="foot">
+    <div><h5>Find</h5><ul><li><a href="#">Clubs</a></li><li><a href="#">Coaches</a></li><li><a href="#">Cities</a></li><li><a href="#">Tournaments</a></li></ul></div>
+    <div><h5>Learn</h5><ul><li><a href="#">Rules of padel</a></li><li><a href="#">Your first session</a></li><li><a href="#">Rackets</a></li><li><a href="#">Blog</a></li></ul></div>
+    <div><h5>Clubs</h5><ul><li><a href="#">Claim your listing</a></li><li><a href="#">Add a club</a></li><li><a href="#">Advertise</a></li></ul></div>
+    <div><h5>Padeli</h5><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul></div>
+  </div>
+  <div class="legal">&copy; 2026 Padeli. Club and event data from public sources and owners.
+  Prices, dates and hours change, so always confirm with the organiser or club.</div>
+</div></footer>
+
