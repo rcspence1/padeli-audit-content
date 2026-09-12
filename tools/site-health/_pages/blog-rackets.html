@@ -486,6 +486,7 @@ footer{background:var(--mist); border-top:1px solid var(--hair);
 .da .dal{color:var(--blue);font-size:15px;font-weight:600;display:block;margin-bottom:8px}
 .da .dat{font-size:18px;line-height:1.5;margin:0}
 .prose{font-size:17px;line-height:1.62}
+.prose > :first-child{margin-top:0}
 .prose h2{font-size:clamp(24px,2.9vw,32px);line-height:1.1;margin:40px 0 12px;scroll-margin-top:120px}
 .prose h3{font-size:21px;letter-spacing:-.03em;margin:28px 0 8px}
 .prose p{margin:0 0 16px}
@@ -508,12 +509,29 @@ footer{background:var(--mist); border-top:1px solid var(--hair);
 .prose details summary::after{content:"+";float:right;color:var(--muted);font-weight:500}
 .prose details[open] summary::after{content:"\2013"}
 .prose details .padeli-faq-answer{margin-top:10px;color:var(--muted)}
-.prose .related-reading{background:var(--mist);border-radius:var(--r-card);padding:20px 22px;margin:26px 0}
-.toc{position:sticky;top:calc(var(--nav-h) + 22px)}
+/* Inset blocks inside prose. A heading's 40px top margin stacked on the box's
+   own padding, so the first child never keeps its margin, and headings step
+   down to component size rather than section size. */
+.prose .related-reading,.prose .padeli-faq-accordion{background:var(--mist);
+  border-radius:var(--r-card);padding:22px 24px;margin:26px 0}
+.prose .related-reading > :first-child,
+.prose .padeli-faq-accordion > :first-child{margin-top:0}
+.prose .related-reading > :last-child,
+.prose .padeli-faq-accordion > :last-child{margin-bottom:0}
+.prose .related-reading h2,.prose .related-reading h3,
+.prose .padeli-faq-accordion h2,.prose .padeli-faq-accordion h3{
+  font-size:19px;letter-spacing:-.03em;margin:0 0 10px}
+.prose .related-reading li:last-child{margin-bottom:0}
+.prose .padeli-faq-accordion details:first-of-type{border-top:0;padding-top:0}
+/* NOT sticky. .side is already sticky, and a sticky child inside a sticky
+   parent translates within it on scroll and rides over the box below. */
 .toc .tl{font-size:15px;font-weight:600;color:var(--blue);margin:0 0 12px;display:block}
-.toc a{display:block;font-size:14.5px;color:var(--muted);padding:6px 0 6px 13px;
+.tlist{max-height:44vh;overflow-y:auto;overscroll-behavior:contain;
+  -webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent);
+  mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent)}
+.tlist a{display:block;font-size:14.5px;color:var(--muted);padding:6px 0 6px 13px;
   border-left:2px solid var(--hair);line-height:1.4}
-.toc a:hover{color:var(--ink);border-left-color:var(--blue)}
+.tlist a:hover{color:var(--ink);border-left-color:var(--blue)}
 
 </style>
 <nav><div class="wrap nav-in">
@@ -1194,7 +1212,7 @@ footer{background:var(--mist); border-top:1px solid var(--hair);
   </section>
 </div>
 <aside class="side">
-  <div class="box toc"><span class="tl">On this page</span><a href="#h-how-we-ranked-the-best-padel-rackets-for">How we ranked the best padel rackets for UK buyers</a><a href="#h-padel-rackets-in-the-uk-in-2026-at-a-gla">Padel rackets in the UK in 2026 at a glance</a><a href="#h-at-a-glance-best-padel-rackets-uk-2026">At a glance: best padel rackets UK 2026</a><a href="#h-1-nox-at10-genius-18k-2026-best-overall-">1. NOX AT10 Genius 18K 2026 - Best overall (intermediate to advanced)</a><a href="#h-2-bullpadel-vertex-05-tello-2026-best-ba">2. Bullpadel Vertex 05 Tello 2026 - Best balanced diamond</a><a href="#h-3-babolat-counter-veron-2-6-best-all-rou">3. Babolat Counter Veron 2.6 - Best all-round intermediate</a><a href="#h-4-starvie-black-titan-2026-best-power-pl">4. StarVie Black Titan 2026 - Best power plus control combo</a><a href="#h-5-head-delta-elite-best-pure-power-advan">5. Head Delta Elite - Best pure power (advanced)</a><a href="#h-6-babolat-technical-vertuo-2-5-best-begi">6. Babolat Technical Vertuo 2.5 - Best beginner racket</a><a href="#h-7-bullpadel-elite-w-2026-best-round-fram">7. Bullpadel Elite W 2026 - Best round frame for improvers</a><a href="#h-honourable-mentions">Honourable mentions</a><a href="#h-verified-2026-padel-racket-prices-in-the">Verified 2026 padel racket prices in the UK</a></div>
+  <div class="box toc"><span class="tl">On this page</span><div class="tlist"><a href="#h-how-we-ranked-the-best-padel-rackets-for">How we ranked the best padel rackets for UK buyers</a><a href="#h-padel-rackets-in-the-uk-in-2026-at-a-gla">Padel rackets in the UK in 2026 at a glance</a><a href="#h-at-a-glance-best-padel-rackets-uk-2026">At a glance: best padel rackets UK 2026</a><a href="#h-1-nox-at10-genius-18k-2026-best-overall-">1. NOX AT10 Genius 18K 2026 - Best overall (intermediate to advanced)</a><a href="#h-2-bullpadel-vertex-05-tello-2026-best-ba">2. Bullpadel Vertex 05 Tello 2026 - Best balanced diamond</a><a href="#h-3-babolat-counter-veron-2-6-best-all-rou">3. Babolat Counter Veron 2.6 - Best all-round intermediate</a><a href="#h-4-starvie-black-titan-2026-best-power-pl">4. StarVie Black Titan 2026 - Best power plus control combo</a><a href="#h-5-head-delta-elite-best-pure-power-advan">5. Head Delta Elite - Best pure power (advanced)</a><a href="#h-6-babolat-technical-vertuo-2-5-best-begi">6. Babolat Technical Vertuo 2.5 - Best beginner racket</a><a href="#h-7-bullpadel-elite-w-2026-best-round-fram">7. Bullpadel Elite W 2026 - Best round frame for improvers</a><a href="#h-honourable-mentions">Honourable mentions</a><a href="#h-verified-2026-padel-racket-prices-in-the">Verified 2026 padel racket prices in the UK</a><a href="#h-what-to-know-before-you-buy-a-padel-rack">What to know before you buy a padel racket in the UK</a><a href="#h-frequently-asked-questions">Frequently asked questions</a><a href="#h-related-reading">Related reading</a></div></div>
   <div class="box dark">
     <h3>Play more, spend less</h3>
     <p>Find a court near you and book straight with the club. Padeli never takes a cut.</p>
